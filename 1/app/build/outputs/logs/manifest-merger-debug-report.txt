@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from F:\Miruk\Miruk_Android\1\app\src\main\AndroidManifest.xml:1:1-11:12
-INJECTED from F:\Miruk\Miruk_Android\1\app\src\main\AndroidManifest.xml:1:1-11:12
-INJECTED from F:\Miruk\Miruk_Android\1\app\src\main\AndroidManifest.xml:1:1-11:12
-INJECTED from F:\Miruk\Miruk_Android\1\app\src\main\AndroidManifest.xml:1:1-11:12
+ADDED from F:\Miruk\Miruk_Android\1\app\src\main\AndroidManifest.xml:1:1-19:16
+INJECTED from F:\Miruk\Miruk_Android\1\app\src\main\AndroidManifest.xml:1:1-19:16
+INJECTED from F:\Miruk\Miruk_Android\1\app\src\main\AndroidManifest.xml:1:1-19:16
+INJECTED from F:\Miruk\Miruk_Android\1\app\src\main\AndroidManifest.xml:1:1-19:16
 MERGED from [com.android.support:appcompat-v7:27.0.2] C:\Users\HomePC\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.0.2.aar\5c0316358f3bf8e0e315284a5bccdd48\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-fragment:27.0.2] C:\Users\HomePC\.gradle\caches\transforms-1\files-1.1\support-fragment-27.0.2.aar\44076bcca820cd48e496da995f4b584d\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-core-utils:27.0.2] C:\Users\HomePC\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.0.2.aar\1898719896ef70bc009b0efd0360da25\AndroidManifest.xml:17:1-22:12
@@ -12,25 +12,25 @@ MERGED from [com.android.support:support-vector-drawable:27.0.2] C:\Users\HomePC
 MERGED from [com.android.support:support-core-ui:27.0.2] C:\Users\HomePC\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.0.2.aar\91051cc7976a2458564c487d5842d09b\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-compat:27.0.2] C:\Users\HomePC\.gradle\caches\transforms-1\files-1.1\support-compat-27.0.2.aar\41696d925b951b2ec7db35927959b7f3\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:runtime:1.0.3] C:\Users\HomePC\.gradle\caches\transforms-1\files-1.1\runtime-1.0.3.aar\cd1c046d801aa6d82e4a4def2b068b97\AndroidManifest.xml:17:1-24:12
-INJECTED from F:\Miruk\Miruk_Android\1\app\src\main\AndroidManifest.xml:1:1-11:12
-INJECTED from F:\Miruk\Miruk_Android\1\app\src\main\AndroidManifest.xml:1:1-11:12
-INJECTED from F:\Miruk\Miruk_Android\1\app\src\main\AndroidManifest.xml:1:1-11:12
+INJECTED from F:\Miruk\Miruk_Android\1\app\src\main\AndroidManifest.xml:1:1-19:16
+INJECTED from F:\Miruk\Miruk_Android\1\app\src\main\AndroidManifest.xml:1:1-19:16
+INJECTED from F:\Miruk\Miruk_Android\1\app\src\main\AndroidManifest.xml:1:1-19:16
 	package
 		ADDED from F:\Miruk\Miruk_Android\1\app\src\main\AndroidManifest.xml:2:5-32
 		INJECTED from F:\Miruk\Miruk_Android\1\app\src\main\AndroidManifest.xml
 		INJECTED from F:\Miruk\Miruk_Android\1\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from F:\Miruk\Miruk_Android\1\app\src\main\AndroidManifest.xml
-		ADDED from F:\Miruk\Miruk_Android\1\app\src\main\AndroidManifest.xml:1:1-11:12
+		ADDED from F:\Miruk\Miruk_Android\1\app\src\main\AndroidManifest.xml:1:1-19:16
 		INJECTED from F:\Miruk\Miruk_Android\1\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from F:\Miruk\Miruk_Android\1\app\src\main\AndroidManifest.xml
-		ADDED from F:\Miruk\Miruk_Android\1\app\src\main\AndroidManifest.xml:1:1-11:12
+		ADDED from F:\Miruk\Miruk_Android\1\app\src\main\AndroidManifest.xml:1:1-19:16
 		INJECTED from F:\Miruk\Miruk_Android\1\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from F:\Miruk\Miruk_Android\1\app\src\main\AndroidManifest.xml:1:11-69
 application
-ADDED from F:\Miruk\Miruk_Android\1\app\src\main\AndroidManifest.xml:4:5-10:43
+ADDED from F:\Miruk\Miruk_Android\1\app\src\main\AndroidManifest.xml:4:5-18:20
 	android:supportsRtl
 		ADDED from F:\Miruk\Miruk_Android\1\app\src\main\AndroidManifest.xml:9:9-35
 	android:label
@@ -43,6 +43,20 @@ ADDED from F:\Miruk\Miruk_Android\1\app\src\main\AndroidManifest.xml:4:5-10:43
 		ADDED from F:\Miruk\Miruk_Android\1\app\src\main\AndroidManifest.xml:5:9-35
 	android:theme
 		ADDED from F:\Miruk\Miruk_Android\1\app\src\main\AndroidManifest.xml:10:9-40
+activity#by.nca.it_academy.classwork1.MainActivity
+ADDED from F:\Miruk\Miruk_Android\1\app\src\main\AndroidManifest.xml:11:9-17:20
+	android:name
+		ADDED from F:\Miruk\Miruk_Android\1\app\src\main\AndroidManifest.xml:12:13-52
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from F:\Miruk\Miruk_Android\1\app\src\main\AndroidManifest.xml:13:13-16:29
+action#android.intent.action.MAIN
+ADDED from F:\Miruk\Miruk_Android\1\app\src\main\AndroidManifest.xml:14:17-68
+	android:name
+		ADDED from F:\Miruk\Miruk_Android\1\app\src\main\AndroidManifest.xml:14:25-66
+category#android.intent.category.LAUNCHER
+ADDED from F:\Miruk\Miruk_Android\1\app\src\main\AndroidManifest.xml:15:17-76
+	android:name
+		ADDED from F:\Miruk\Miruk_Android\1\app\src\main\AndroidManifest.xml:15:27-74
 uses-sdk
 INJECTED from F:\Miruk\Miruk_Android\1\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from F:\Miruk\Miruk_Android\1\app\src\main\AndroidManifest.xml

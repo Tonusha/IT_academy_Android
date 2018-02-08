@@ -1,22 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#77eddaf4"
+    android:orientation="vertical">
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="75dp"
-        android:text="TextView" />
+        android:id="@+id/TextView1"
+        android:layout_width="123dp"
+        android:layout_height="32dp"
+        android:background="#77c962ef"
+        android:text="Press1"
+        android:textAppearance="@style/TextAppearance.AppCompat" />
 
     <TextView
+        android:id="@+id/TextView2"
         android:layout_width="match_parent"
-        android:layout_height="73dp"
-        android:text="TextView" />
+        android:layout_height="32dp"
+        android:background="#77bf40ed"
+        android:text="Press2"
+        android:textAppearance="@style/TextAppearance.AppCompat" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/Button"
+        style="@android:style/Widget.DeviceDefault.Light.Button.Borderless.Small"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:background="#4503"
+        android:text="Push me" />
 
 </LinearLayout>
+
