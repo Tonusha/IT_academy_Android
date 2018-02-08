@@ -64,13 +64,13 @@ public final class R {
         public static final int notify_panel_notification_icon_bg = 0x7f060061;
     }
     public static final class id {
-        public static final int action_container = 0x7f07000e;
-        public static final int action_divider = 0x7f070010;
-        public static final int action_image = 0x7f070011;
-        public static final int action_text = 0x7f070017;
-        public static final int actions = 0x7f070018;
-        public static final int async = 0x7f07001d;
-        public static final int blocking = 0x7f07001f;
+        public static final int action_container = 0x7f07000d;
+        public static final int action_divider = 0x7f07000f;
+        public static final int action_image = 0x7f070010;
+        public static final int action_text = 0x7f070016;
+        public static final int actions = 0x7f070017;
+        public static final int async = 0x7f07001c;
+        public static final int blocking = 0x7f07001e;
         public static final int chronometer = 0x7f070023;
         public static final int forever = 0x7f07002f;
         public static final int icon = 0x7f070032;
@@ -88,8 +88,8 @@ public final class R {
         public static final int tag_transition_group = 0x7f070066;
         public static final int text = 0x7f070067;
         public static final int text2 = 0x7f070068;
-        public static final int time = 0x7f07006b;
-        public static final int title = 0x7f07006c;
+        public static final int time = 0x7f07006d;
+        public static final int title = 0x7f07006e;
     }
     public static final class integer {
         public static final int status_bar_notification_info_maxnum = 0x7f080004;
