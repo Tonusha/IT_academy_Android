@@ -17,7 +17,13 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="by.nca.it_academy.classwork1.MainActivity" >
+        <activity
+            android:name="by.nca.it_academy.homework1.MainActivity"
+            android:parentActivityName="by.nca.it_academy.classwork2.Classwork2Activity" >
+        </activity>
+        <activity android:name="by.nca.it_academy.classwork2.Classwork2Activity" >
+
+            <!-- android:noHistory="true"> -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

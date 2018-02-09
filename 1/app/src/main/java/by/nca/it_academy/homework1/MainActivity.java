@@ -1,24 +1,39 @@
-package by.nca.it_academy.classwork1;
+package by.nca.it_academy.homework1;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import by.nca.it_academy.R;
+import by.nca.it_academy.classwork2.Singleton;
 
 
 public class MainActivity extends Activity {
     private Button button1;
     private TextView textView1, textView2;
 
+    private View.OnClickListener listener = new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            Singleton singleton = Singleton.getInstance();
+            if(singleton.text.contains("Hello")){
+                Log.e("AAA", "contain");
+            }else
+            {
+                Log.e("AAA","not contain");
+            }
+        }
+    };
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_classwork1);
+
 
         button1 = findViewById(R.id.button1);
         textView1 = findViewById(R.id.textView1);
@@ -52,4 +67,6 @@ public class MainActivity extends Activity {
         ChangeText changeText = new ChangeText();
         changeText.clickListener(textView1,textView2);
     };
+
+
 }

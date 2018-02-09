@@ -1,17 +1,17 @@
 #Internal package file, do not edit.
-#Fri Feb 09 10:29:46 GMT+03:00 2018
-2.base=C\:\\Users\\miruk\\StudioProjects\\IT_academy_Android\\1\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\22
+#Fri Feb 09 19:40:55 MSK 2018
+2.base=C\:\\Users\\user\\AndroidStudioProjects\\IT_academy_Android\\1\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\29
 5.set=DEX
 0.path=classes.dex
 2.baseType=DIRECTORY
-3.base=C\:\\Users\\miruk\\StudioProjects\\IT_academy_Android\\1\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\23
+3.base=C\:\\Users\\user\\AndroidStudioProjects\\IT_academy_Android\\1\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\26
 2.set=DEX
 1.path=classes.dex
-4.base=C\:\\Users\\miruk\\StudioProjects\\IT_academy_Android\\1\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\20
+4.base=C\:\\Users\\user\\AndroidStudioProjects\\IT_academy_Android\\1\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\27
 count=6
 5.baseType=DIRECTORY
 2.path=classes.dex
-5.base=C\:\\Users\\miruk\\StudioProjects\\IT_academy_Android\\1\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\24
+5.base=C\:\\Users\\user\\AndroidStudioProjects\\IT_academy_Android\\1\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\25
 4.set=DEX
 3.path=classes.dex
 3.baseType=DIRECTORY
@@ -19,9 +19,9 @@ count=6
 4.path=classes.dex
 1.baseType=DIRECTORY
 5.path=classes.dex
-0.base=C\:\\Users\\miruk\\StudioProjects\\IT_academy_Android\\1\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\19
+0.base=C\:\\Users\\user\\AndroidStudioProjects\\IT_academy_Android\\1\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\30
 0.baseType=DIRECTORY
 3.set=DEX
-1.base=C\:\\Users\\miruk\\StudioProjects\\IT_academy_Android\\1\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\21
+1.base=C\:\\Users\\user\\AndroidStudioProjects\\IT_academy_Android\\1\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\28
 4.baseType=DIRECTORY
 0.set=DEX

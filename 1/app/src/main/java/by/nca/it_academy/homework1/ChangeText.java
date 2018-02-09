@@ -1,4 +1,4 @@
-package by.nca.it_academy.classwork1;
+package by.nca.it_academy.homework1;
 
 import android.view.View;
 import android.widget.TextView;
