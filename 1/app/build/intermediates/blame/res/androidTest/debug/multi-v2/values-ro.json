@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "F:\\Miruk\\Miruk_Android\\1\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-ro\\values-ro.xml",
+            "outputFile": "C:\\Users\\miruk\\StudioProjects\\IT_academy_Android\\1\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-ro\\values-ro.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\HomePC\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\5c0316358f3bf8e0e315284a5bccdd48\\res\\values-ro\\values-ro.xml",
+                    "source": "C:\\Users\\miruk\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\0cef95da9dc9f407ae54797bf2867a5f\\res\\values-ro\\values-ro.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\HomePC\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.2.aar\\41696d925b951b2ec7db35927959b7f3\\res\\values-ro\\values-ro.xml",
+                    "source": "C:\\Users\\miruk\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.2.aar\\be0eb3bef7e31c480c1f0af2b7688b8d\\res\\values-ro\\values-ro.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

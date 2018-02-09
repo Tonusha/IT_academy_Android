@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "F:\\Miruk\\Miruk_Android\\1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en-rCA\\values-en-rCA.xml",
+            "outputFile": "C:\\Users\\miruk\\StudioProjects\\IT_academy_Android\\1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en-rCA\\values-en-rCA.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\HomePC\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\5c0316358f3bf8e0e315284a5bccdd48\\res\\values-en-rCA\\values-en-rCA.xml",
+                    "source": "C:\\Users\\miruk\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\0cef95da9dc9f407ae54797bf2867a5f\\res\\values-en-rCA\\values-en-rCA.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
