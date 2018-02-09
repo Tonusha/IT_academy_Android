@@ -23,7 +23,9 @@ public class Classwork2Activity extends Activity{
         @Override
         public void onClick(View view) {
             Intent intent = new Intent(Classwork2Activity.this,MainActivity.class);
+            intent.putExtra(MainActivity.KEY_TEX, "Helloooooooooooo");
             startActivity(intent);
+
             //finish();
         }
     };
@@ -34,8 +36,7 @@ public class Classwork2Activity extends Activity{
         super.onCreate(savedInstanceState);
         button1 = findViewById(R.id.button1);
         button1.setOnClickListener(lictener);
-        Singleton singleton = Singleton.getInstance();
-        singleton.text = "dfgfd";
-
+       // Singleton singleton = Singleton.getInstance();
+       // singleton.text = "dfgfd";
     }
 }

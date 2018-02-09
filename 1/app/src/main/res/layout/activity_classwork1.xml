@@ -1,36 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:background="#77eddaf4"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:weightSum="300">
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="123dp"
-        android:layout_height="32dp"
-        android:clickable="true"
-        android:background="#77c962ef"
-        android:text="Press1"
-        android:textAppearance="@style/TextAppearance.AppCompat" />
-
-    <TextView
-        android:id="@+id/textView2"
+    <View
         android:layout_width="match_parent"
-        android:layout_height="32dp"
-        android:background="#77bf40ed"
-        android:clickable="true"
-        android:text="Press2"
-        android:onClick="onMyTextViewClick"
-        android:textAppearance="@style/TextAppearance.AppCompat" />
+        android:layout_height="0dp"
+        android:layout_weight="100"
+        android:background="#0e1aef"
+        android:orientation="horizontal"/>
 
-    <Button
-        android:id="@+id/button1"
-        style="@android:style/Widget.DeviceDefault.Light.Button.Borderless.Small"
+    <View
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#4503"
-        android:text="Push me" />
+        android:layout_height="0dp"
+        android:layout_weight="100"
+        android:background="#77f6f6f9"
+        android:orientation="horizontal"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="100"
+        android:background="#faec081b"
+        android:orientation="horizontal"/>
 
 </LinearLayout>
 

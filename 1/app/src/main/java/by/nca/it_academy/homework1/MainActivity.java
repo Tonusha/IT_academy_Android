@@ -15,23 +15,32 @@ import by.nca.it_academy.classwork2.Singleton;
 public class MainActivity extends Activity {
     private Button button1;
     private TextView textView1, textView2;
+    public static final String KEY_TEX = "KEY_TEXT";
 
     private View.OnClickListener listener = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            Singleton singleton = Singleton.getInstance();
-            if(singleton.text.contains("Hello")){
+           // Singleton singleton = Singleton.getInstance();
+            /*   if(singleton.text.contains("Hello")){
                 Log.e("AAA", "contain");
             }else
             {
                 Log.e("AAA","not contain");
-            }
+            }*/
+
         }
     };
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        String text = getIntent().getStringExtra(KEY_TEX);
+        if(text.contains("Hello")){
+            Log.e("AAA", "contain");
+        }else
+        {
+            Log.e("AAA","not contain");
+        }
         setContentView(R.layout.activity_classwork1);
 
 
