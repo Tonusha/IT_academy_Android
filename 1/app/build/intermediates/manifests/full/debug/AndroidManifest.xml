@@ -18,10 +18,10 @@
         android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="by.nca.it_academy.homework1.MainActivity"
-            android:parentActivityName="by.nca.it_academy.classwork2.Classwork2Activity" >
+            android:name="by.nca.it_academy.hw1.ActivityHW1"
+            android:parentActivityName="by.nca.it_academy.main.ActivityMain" >
         </activity>
-        <activity android:name="by.nca.it_academy.classwork2.Classwork2Activity" >
+        <activity android:name="by.nca.it_academy.main.ActivityMain" >
 
             <!-- android:noHistory="true"> -->
             <intent-filter>
