@@ -35,7 +35,8 @@ public class ActivityMain extends Activity implements View.OnClickListener {
             case R.id.button4:
                 startActivity(new Intent(ActivityMain.this, ActivityHW2.class));
                 break;
-        };
+        }
+        ;
     };
 
     @Override
@@ -44,11 +45,11 @@ public class ActivityMain extends Activity implements View.OnClickListener {
         setContentView(R.layout.activity_main);
         button1 = findViewById(R.id.button1);
         button1.setOnClickListener(this);
-        /*button2.findViewById(R.id.button2);
+        button2 = findViewById(R.id.button2);
         button2.setOnClickListener(this);
-        button3.findViewById(R.id.button3);
+        button3 = findViewById(R.id.button3);
         button3.setOnClickListener(this);
-        button4.findViewById(R.id.button4);
-        button4.setOnClickListener(this);*/
+        button4 = findViewById(R.id.button4);
+        button4.setOnClickListener(this);
     }
 }

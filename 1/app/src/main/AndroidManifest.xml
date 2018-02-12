@@ -9,7 +9,19 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".cw1.ActivityCW1"
+            android:parentActivityName=".main.ActivityMain">
+        </activity>
+        <activity
             android:name=".hw1.ActivityHW1"
+            android:parentActivityName=".main.ActivityMain">
+        </activity>
+        <activity
+            android:name=".cw2.ActivityCW2"
+            android:parentActivityName=".main.ActivityMain">
+        </activity>
+        <activity
+            android:name=".hw2.ActivityHW2"
             android:parentActivityName=".main.ActivityMain">
         </activity>
         <activity android:name=".main.ActivityMain">

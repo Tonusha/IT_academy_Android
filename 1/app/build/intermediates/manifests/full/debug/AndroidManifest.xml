@@ -18,7 +18,19 @@
         android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
+            android:name="by.nca.it_academy.cw1.ActivityCW1"
+            android:parentActivityName="by.nca.it_academy.main.ActivityMain" >
+        </activity>
+        <activity
             android:name="by.nca.it_academy.hw1.ActivityHW1"
+            android:parentActivityName="by.nca.it_academy.main.ActivityMain" >
+        </activity>
+        <activity
+            android:name="by.nca.it_academy.cw2.ActivityCW2"
+            android:parentActivityName="by.nca.it_academy.main.ActivityMain" >
+        </activity>
+        <activity
+            android:name="by.nca.it_academy.hw2.ActivityHW2"
             android:parentActivityName="by.nca.it_academy.main.ActivityMain" >
         </activity>
         <activity android:name="by.nca.it_academy.main.ActivityMain" >
