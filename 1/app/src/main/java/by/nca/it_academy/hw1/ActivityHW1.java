@@ -45,6 +45,8 @@ public class ActivityHW1 extends AppCompatActivity implements View.OnClickListen
 
         /*способ 3:в виде переменной отдельно как делали в классе*/
         textView2.setOnClickListener(listener);
+        /*способ 1: анонимным классом прямо впихивая его в аргумент*/
+        textView1.setOnClickListener(this);
     }
 
 

@@ -22,7 +22,7 @@ public class ActivityCW2 extends Activity{
         @Override
         public void onClick(View view) {
             Intent intent = new Intent(ActivityCW2.this,ActivityHW1.class);
-            intent.putExtra(ActivityHW1.KEY_TEXT, "Helloooooooooooo");
+            //intent.putExtra(ActivityHW1.KEY_TEXT, "Helloooooooooooo");
             startActivity(intent);
 
             //finish();
