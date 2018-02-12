@@ -17,27 +17,13 @@ public class ActivityHW1 extends AppCompatActivity implements View.OnClickListen
     private TextView textView1, textView2;
     public static final String KEY_TEXT = " KET_TEXT";
 
-        private Button button;
-        private TextView textView1;
-        private TextView textView2;
-
-        private View.OnClickListener listener = new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                exchange(textView1, textView2);
-            }
-        };
-
-    public void exchange(TextView tv1, TextView tv2) {
-        String textView1Text = (String)tv1.getText();
-        tv1.setText(tv2.getText());
-        tv2.setText(textView1Text);
-    }
-
-    @Override
-    public void onClick(View v) {
-        exchange(textView1, textView2);
-    }
+    /*способ 3:в виде переменной отдельно как делали в классе*/
+    private View.OnClickListener listener = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            changeText(textView1, textView2);
+        }
+    };
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -45,21 +31,34 @@ public class ActivityHW1 extends AppCompatActivity implements View.OnClickListen
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_homework1);
 
-        button = findViewById(R.id.button);
+        button1 = findViewById(R.id.button1);
         textView1 = findViewById(R.id.textView1);
         textView2 = findViewById(R.id.textView2);
 
-        button.setOnClickListener(new View.OnClickListener() {
-
+        /*способ 2: делать имплемент OnClickListener на текущую активити*/
+        button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                exchange(textView1, textView2);
+                changeText(textView1, textView2);
             }
         });
 
+        /*способ 3:в виде переменной отдельно как делали в классе*/
         textView2.setOnClickListener(listener);
+    }
+
+
+    /*способ 1: анонимным классом прямо впихивая его в аргумент*/
+    @Override
+    public void onClick(View v) {
+        changeText(textView1, textView2);
+    }
+
+            /*Функция для смены текста в TextView*/
+        public void changeText(TextView textView1, TextView textView2) {
+            String textView1Save = (String) textView1.getText();
+            textView1.setText(textView2.getText());
+            textView2.setText(textView1Save);
+        }
 
     }
-    // Повесьте клик плиз 3-мя разными способами: сделать имплемент OnClickListener на текущую активити, анонимным классом прямо впихивая его в аргумент и в виде переменной отдельно как делали в классе.
-
-}

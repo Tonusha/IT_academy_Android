@@ -21,7 +21,6 @@
         android:background="#77bf40ed"
         android:clickable="true"
         android:text="Press2"
-        android:onClick="onMyTextViewClick"
         android:textAppearance="@style/TextAppearance.AppCompat" />
 
     <Button
