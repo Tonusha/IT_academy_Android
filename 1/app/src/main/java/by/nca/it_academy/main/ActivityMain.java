@@ -11,6 +11,7 @@ import android.widget.Button;
 import by.nca.it_academy.R;
 import by.nca.it_academy.cw1.ActivityCW1;
 import by.nca.it_academy.cw2.ActivityCW2;
+import by.nca.it_academy.cw3.ActivityCW3;
 import by.nca.it_academy.hw1.ActivityHW1;
 import by.nca.it_academy.hw2.ActivityHW2;
 
@@ -19,6 +20,7 @@ public class ActivityMain extends Activity implements View.OnClickListener {
     private Button button2;
     private Button button3;
     private Button button4;
+    private Button button5;
 
     @Override
     public void onClick(View view) {
@@ -34,6 +36,9 @@ public class ActivityMain extends Activity implements View.OnClickListener {
                 break;
             case R.id.button4:
                 startActivity(new Intent(ActivityMain.this, ActivityHW2.class));
+                break;
+            case R.id.button5:
+                startActivity(new Intent(ActivityMain.this, ActivityCW3.class));
                 break;
         }
         ;
@@ -51,5 +56,7 @@ public class ActivityMain extends Activity implements View.OnClickListener {
         button3.setOnClickListener(this);
         button4 = findViewById(R.id.button4);
         button4.setOnClickListener(this);
+        button5 = findViewById(R.id.button5);
+        button5.setOnClickListener(this);
     }
 }

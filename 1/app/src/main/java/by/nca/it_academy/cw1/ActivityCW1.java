@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import by.nca.it_academy.BuildConfig;
 import by.nca.it_academy.R;
 
 /**
@@ -26,6 +27,7 @@ public class ActivityCW1 extends AppCompatActivity {
         setContentView(R.layout.activity_classwork1);
 
         button1 = findViewById(R.id.button1);
+        button1.setText(BuildConfig.API_URL);
 
         button1.setOnClickListener(new View.OnClickListener() {
             @Override

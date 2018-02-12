@@ -33,6 +33,10 @@
             android:name="by.nca.it_academy.hw2.ActivityHW2"
             android:parentActivityName="by.nca.it_academy.main.ActivityMain" >
         </activity>
+        <activity
+            android:name="by.nca.it_academy.cw3.ActivityCW3"
+            android:parentActivityName="by.nca.it_academy.main.ActivityMain" >
+        </activity>
         <activity android:name="by.nca.it_academy.main.ActivityMain" >
 
             <!-- android:noHistory="true"> -->

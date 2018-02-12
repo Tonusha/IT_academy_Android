@@ -6,9 +6,8 @@ android {
         applicationId "by.nca.it_academy"
         minSdkVersion 15
         targetSdkVersion 27
-        versionCode 1
-        versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary true
     }
     buildTypes {
         release {
@@ -16,6 +15,26 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    flavorDimensions "typeVersion"//, "store"
+    productFlavors {
+        dev {
+            versionCode 1
+            versionName "1.0"
+            dimension "typeVersion"
+            buildConfigField "String", "API_URL", "\"http://test\""
+        }
+        live {
+            versionCode 2
+            versionName "2.0"
+            dimension "typeVersion"
+            buildConfigField "String", "API_URL", "\"http://live\""
+        }
+//        google {
+//            dimension "store"
+//        }
+    }
+
 }
 
 dependencies {
@@ -24,4 +43,5 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    implementation 'com.google.code.gson:gson:2.8.2'
 }

@@ -24,6 +24,10 @@
             android:name=".hw2.ActivityHW2"
             android:parentActivityName=".main.ActivityMain">
         </activity>
+        <activity
+            android:name=".cw3.ActivityCW3"
+            android:parentActivityName=".main.ActivityMain">
+        </activity>
         <activity android:name=".main.ActivityMain">
             <!--android:noHistory="true">-->
             <intent-filter>

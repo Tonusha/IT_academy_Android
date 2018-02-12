@@ -8,4 +8,13 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="SW3ButtonStyle">
+        <item name="android:background">#c98686</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="SW3ButtonStyleYellow" parent = "SW3ButtonStyle">
+        <item name="android:background">#bea726</item>
+    </style>
+
 </resources>
