@@ -12,22 +12,22 @@ import by.nca.it_academy.cw1.ActivityCW1;
 
 public class ActivityMain extends AppCompatActivity {
     private Button button1;
-    private Button button4;
-    private View.OnClickListener listener = new View.OnClickListener() {
+    //private Button button4;
+    /*private View.OnClickListener listener = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
             Intent intent = new Intent(ActivityMain.this, ActivityCW1.class);
             startActivity(intent);
         }
-    };
+    };*/
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_classwork1);
         button1.findViewById(R.id.button1);
-        button1.setOnClickListener(listener);
+       /* button1.setOnClickListener(listener);
         button4.findViewById(R.id.button4);
-        button4.setOnClickListener(listener);
+        button4.setOnClickListener(listener);*/
     }
 }
