@@ -1,4 +1,4 @@
-package by.nca.it_academy.classwork2;
+package by.nca.it_academy.cw2;
 
 /**
  * Created by user on 09.02.2018.

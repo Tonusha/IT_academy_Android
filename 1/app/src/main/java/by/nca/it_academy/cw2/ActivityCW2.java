@@ -1,29 +1,28 @@
-package by.nca.it_academy.classwork2;
+package by.nca.it_academy.cw2;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
 import by.nca.it_academy.R;
-import by.nca.it_academy.homework1.MainActivity;
+import by.nca.it_academy.hw1.ActivityHW1;
 
 /**
  * Created by user on 09.02.2018.
  */
 
-public class Classwork2Activity extends Activity{
+public class ActivityCW2 extends Activity{
 
     private Button button1;
     private View.OnClickListener lictener = new View.OnClickListener(){
 
         @Override
         public void onClick(View view) {
-            Intent intent = new Intent(Classwork2Activity.this,MainActivity.class);
-            intent.putExtra(MainActivity.KEY_TEX, "Helloooooooooooo");
+            Intent intent = new Intent(ActivityCW2.this,ActivityHW1.class);
+            intent.putExtra(ActivityHW1.KEY_TEXT, "Helloooooooooooo");
             startActivity(intent);
 
             //finish();
