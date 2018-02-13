@@ -1,62 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#efecd4"
-    android:orientation="vertical">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
 
     <FrameLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_weight="100"
-        android:weightSum="100">
+        android:background="#ec98bc"
+        android:visibility="visible">
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="#efecd4"
-            android:orientation="vertical"
-            android:weightSum="100">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
 
             <EditText
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:height="50dp"
-                android:width="100dp"
-                android:background="#afa8a8"
-                android:layout_marginTop="100dp"
-                android:layout_marginLeft="100dp"
-                android:padding_start="10dp"
-                android:inputType="textEmailAddress"
-                android:layout_gravity="center"/>
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:height="50dp"
-                android:width="100dp"
-                android:background="#afa8a8"
-                android:padding_start="10dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginLeft="100dp"
-                android:inputType="textPassword"
-                android:layout_gravity="center"/>
-
-            <Button
+                android:id="@+id/EditText1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:height="50dp"
-                android:width="100dp"
-                android:layout_marginTop="100dp"
-                android:layout_marginLeft="100dp"
+                android:layout_gravity="center"
+                android:hint="e-mail"
+                android:width="150dp"
+                android:background="#afa8a8"
+                android:inputType="textEmailAddress"/>
 
-                android:layout_gravity="center"/>
+            <EditText
+                android:id="@+id/EditText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:width="150dp"
+                android:height="30dp"
+                android:background="#afa8a8"
+                android:hint="password"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Enter" />
 
         </LinearLayout>
 
     </FrameLayout>
-
+</LinearLayout>
     <!--<Button-->
     <!--style="@style/SW3ButtonStyle"-->
     <!--android:id="@+id/button1"-->
@@ -95,5 +91,3 @@
 
     <!--</LinearLayout>-->
 
-
-</LinearLayout>

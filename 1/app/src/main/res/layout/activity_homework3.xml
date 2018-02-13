@@ -1,0 +1,55 @@
+
+
+
+
+
+
+<!--Тренировка со стартовой страницей логирования
+<?xml version="1.0" encoding="utf-8"?>-->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:orientation="vertical" android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <!--<FrameLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="100"-->
+        <!--android:background="#ec98bc"-->
+        <!--android:visibility="visible">-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:gravity="center"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<EditText-->
+                <!--android:id="@+id/editText3"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:ems="10"-->
+                <!--android:background="#b1acac"-->
+                <!--android:hint="e-mail"-->
+                <!--android:inputType="textEmailAddress" />-->
+
+            <!--<EditText-->
+                <!--android:id="@+id/editText2"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:ems="10"-->
+                <!--android:background="#b1acac"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:hint="password"-->
+                <!--android:inputType="textPassword" />-->
+
+            <!--<Button-->
+                <!--android:id="@+id/button"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Button"-->
+                <!--tools:text="Enter" />-->
+
+        <!--</LinearLayout>-->
+    <!--</FrameLayout>-->
+<!--</LinearLayout>-->
