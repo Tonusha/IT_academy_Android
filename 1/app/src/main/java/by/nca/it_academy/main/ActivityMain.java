@@ -13,6 +13,7 @@ import by.nca.it_academy.cw1.ActivityCW1;
 import by.nca.it_academy.cw2.ActivityCW2;
 import by.nca.it_academy.cw3.ActivityCW3;
 import by.nca.it_academy.cw4.ActivityCW4;
+import by.nca.it_academy.cw4.CustomView;
 import by.nca.it_academy.hw1.ActivityHW1;
 import by.nca.it_academy.hw2.ActivityHW2;
 import by.nca.it_academy.hw3.ActivityHW3;
