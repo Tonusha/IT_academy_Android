@@ -1,4 +1,5 @@
 <resources>
     <string name="button_one">Кнопка один</string>
     <string name="button_two">Кнопка два</string>
+    <string name="button_load">Загрузить</string>
 </resources>

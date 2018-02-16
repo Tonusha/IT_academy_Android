@@ -2,4 +2,5 @@
     <string name="app_name">IT_academy</string>
     <string name="button_one">Button one</string>
     <string name="button_two">Button two</string>
+    <string name="button_load">Load</string>
 </resources>

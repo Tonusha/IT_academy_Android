@@ -14,6 +14,7 @@ import by.nca.it_academy.cw2.ActivityCW2;
 import by.nca.it_academy.cw3.ActivityCW3;
 import by.nca.it_academy.hw1.ActivityHW1;
 import by.nca.it_academy.hw2.ActivityHW2;
+import by.nca.it_academy.hw3.ActivityHW3;
 
 public class ActivityMain extends Activity implements View.OnClickListener {
     private Button button1;
@@ -21,6 +22,7 @@ public class ActivityMain extends Activity implements View.OnClickListener {
     private Button button3;
     private Button button4;
     private Button button5;
+    private Button button6;
 
     @Override
     public void onClick(View view) {
@@ -40,6 +42,9 @@ public class ActivityMain extends Activity implements View.OnClickListener {
             case R.id.button5:
                 startActivity(new Intent(ActivityMain.this, ActivityCW3.class));
                 break;
+            case R.id.button6:
+                startActivity(new Intent(ActivityMain.this, ActivityHW3.class));
+                break;
         }
         ;
     };
@@ -58,5 +63,7 @@ public class ActivityMain extends Activity implements View.OnClickListener {
         button4.setOnClickListener(this);
         button5 = findViewById(R.id.button5);
         button5.setOnClickListener(this);
+        button6 = findViewById(R.id.button6);
+        button6.setOnClickListener(this);
     }
 }
