@@ -8,6 +8,7 @@ android {
         targetSdkVersion 27
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary true
+        buildConfigField "String", "API_ENDPOINT", '"содержимое любое"'
     }
     buildTypes {
         release {
@@ -45,4 +46,9 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
     implementation 'com.google.code.gson:gson:2.8.2'
     implementation 'com.android.support:design:27.0.2'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.github.bumptech.glide:glide:4.6.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.6.1'
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+
 }

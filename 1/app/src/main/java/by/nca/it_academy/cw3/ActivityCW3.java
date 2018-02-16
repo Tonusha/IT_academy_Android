@@ -1,15 +1,20 @@
 package by.nca.it_academy.cw3;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Toast;
+
+import com.squareup.picasso.Picasso;
 
 import by.nca.it_academy.R;
 import by.nca.it_academy.cw1.ActivityCW1;
+import by.nca.it_academy.hw3.ActivityHW3;
 
 /**
  * Created by user on 12.02.2018.
@@ -20,6 +25,7 @@ public class ActivityCW3 extends AppCompatActivity {
     private static final String TAG = ActivityCW3.class.getSimpleName();
 
     private Button button1;
+    private Context context;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -31,7 +37,16 @@ public class ActivityCW3 extends AppCompatActivity {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(ActivityCW3.this, "Hello", Toast.LENGTH_SHORT).show();
+                //editText1  =findViewById(R.id.editText1);
+                button1 = findViewById(R.id.button1);
+                final ImageView imageView1 = (ImageView) findViewById(R.id.imageView1);
+                button1.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        context = ActivityCW3.this;
+                        Picasso.with(context).load(/*editText1.getText().toString()*/"https://i.imgur.com/DvpvklR.jpg").into(imageView1);
+                    }
+                });
             }
         });
         Log.e(TAG, "onCreate()");
