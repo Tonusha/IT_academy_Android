@@ -13,36 +13,35 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".cw1.ActivityCW1"
-            android:parentActivityName=".main.ActivityMain">
-        </activity>
+            android:parentActivityName=".main.ActivityMain"></activity>
         <activity
             android:name=".hw1.ActivityHW1"
-            android:parentActivityName=".main.ActivityMain">
-        </activity>
+            android:parentActivityName=".main.ActivityMain"></activity>
         <activity
             android:name=".cw2.ActivityCW2"
-            android:parentActivityName=".main.ActivityMain">
-        </activity>
+            android:parentActivityName=".main.ActivityMain"></activity>
         <activity
             android:name=".hw2.ActivityHW2"
-            android:parentActivityName=".main.ActivityMain">
-        </activity>
+            android:parentActivityName=".main.ActivityMain"></activity>
         <activity
             android:name=".cw3.ActivityCW3"
-            android:parentActivityName=".main.ActivityMain">
-        </activity>
+            android:parentActivityName=".main.ActivityMain"></activity>
         <activity
             android:name=".hw3.ActivityHW3"
+            android:parentActivityName=".main.ActivityMain"></activity>
+        <activity android:name=".cw4.ActivityCW4">
             android:parentActivityName=".main.ActivityMain">
         </activity>
         <activity
-            android:name=".cw4.ActivityCW4">
+            android:name=".hw4.ActivityHW4">
             android:parentActivityName=".main.ActivityMain">
         </activity>
-        <activity android:name=".main.ActivityMain">
+        <activity
+            android:name=".main.ActivityMain"
+            android:theme="@style/AnimationActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
     </application>
