@@ -1,5 +1,6 @@
 package by.nca.it_academy.cw4;
 
+import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -17,7 +18,7 @@ import by.nca.it_academy.R;
  * Created by user on 12.02.2018.
  */
 
-public class ActivityCW4 extends AppCompatActivity {
+public class ActivityCW4 extends Activity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

@@ -29,8 +29,8 @@
         <activity
             android:name=".hw3.ActivityHW3"
             android:parentActivityName=".main.ActivityMain"></activity>
-        <activity android:name=".cw4.ActivityCW4">
-            android:parentActivityName=".main.ActivityMain">
+        <activity android:name=".cw4.ActivityCW4"
+            android:theme="@style/AnimationActivity">
         </activity>
         <activity
             android:name=".hw4.ActivityHW4">
