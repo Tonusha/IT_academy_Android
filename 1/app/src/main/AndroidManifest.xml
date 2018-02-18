@@ -29,11 +29,11 @@
         <activity
             android:name=".hw3.ActivityHW3"
             android:parentActivityName=".main.ActivityMain"></activity>
-        <activity android:name=".cw4.ActivityCW4"
-            android:theme="@style/AnimationActivity">
+        <activity android:name=".cw4.ActivityCW4">
         </activity>
         <activity
-            android:name=".hw4.ActivityHW4">
+            android:name=".hw4.ActivityHW4"
+            android:theme="@style/AnimationActivity">
             android:parentActivityName=".main.ActivityMain">
         </activity>
         <activity
