@@ -24,4 +24,5 @@
         <item name="android:activityCloseEnterAnimation">@anim/activity_down_up_close_enter</item>
     </style>
 
+
 </resources>
