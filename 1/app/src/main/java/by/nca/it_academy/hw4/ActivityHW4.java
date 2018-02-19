@@ -24,10 +24,13 @@ public class ActivityHW4 extends Activity {
         super.onCreate(savedInstanceState);
 
         sovaImage = findViewById(R.id.sovaImage);
-        /*sovaImage.setOnClickListener((View.OnClickListener) this);
         sovaImage.setBackgroundResource(R.drawable.sova_animation);
         animationDrawable = (AnimationDrawable)sovaImage.getBackground();
-        animationDrawable.start();*/
+        animationDrawable.start();
+
+
+
+
 
 
 

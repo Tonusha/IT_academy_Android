@@ -51,7 +51,7 @@ public class ClockView extends View {
     private void init() {
         paint = new Paint();
         paint.setColor(10);
-        paint.setColor(Color.BLUE);
+        paint.setColor(Color.parseColor("#888888"));
         paint.setAntiAlias(true);
     }
 
@@ -60,20 +60,20 @@ public class ClockView extends View {
         super.onSizeChanged(w, h, oldw, oldh);
         ch = h;
         cw = w;
-        cx = w / 8;
-        cy = h / 8;
+        cx = w / 5;
+        cy = h / 5;
         radius = cx > cy ? cy : cx;
         // line =
-        rect = new RectF();
+        //circle = new RectF();
 
-        float wRec = h * 0.2f; // h/100% * 20%
+        //float wRec = h * 0.2f; // h/100% * 20%
         float hRec = w * 0.9f; // w/100% * 90%
 
 
-        rect.left = (w - wRec) / 2;
-        rect.right = w - rect.left;
-        rect.top = (h - hRec) / 2;
-        rect.bottom = h - rect.top;
+        //rect.left = (w - wRec) / 2;
+        //rect.right = w - rect.left;
+        //rect.top = (h - hRec) / 2;
+        //rect.bottom = h - rect.top;
     }
 
     @Override
@@ -96,16 +96,11 @@ public class ClockView extends View {
         super.onDraw(canvas);
 
         canvas.drawCircle(cx, cy, radius, paint);
-        //canvas.drawLine(0,0, cw, ch, paint);
-        //canvas.drawRect(rect, paint);
-//        canvas.save();
 //        invalidate();
-//        canvas.rotate(90, cx,cy);
-//        canvas.restore();
-//        canvas.save();
+
     }
 
-    @Override
+   /* @Override
     public boolean onTouchEvent(MotionEvent event) {
         switch (event.getAction()) {
             case MotionEvent.ACTION_DOWN: {
@@ -125,5 +120,5 @@ public class ClockView extends View {
             }
         }
         return true;
-    }
+    }*/
 }

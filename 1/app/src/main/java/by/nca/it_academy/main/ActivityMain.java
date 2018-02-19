@@ -14,6 +14,7 @@ import by.nca.it_academy.cw2.ActivityCW2;
 import by.nca.it_academy.cw3.ActivityCW3;
 import by.nca.it_academy.cw4.ActivityCW4;
 import by.nca.it_academy.cw4.CustomView;
+import by.nca.it_academy.cw5.ActivityCW5;
 import by.nca.it_academy.hw1.ActivityHW1;
 import by.nca.it_academy.hw2.ActivityHW2;
 import by.nca.it_academy.hw3.ActivityHW3;
@@ -28,6 +29,9 @@ public class ActivityMain extends Activity implements View.OnClickListener {
     private Button button6;
     private Button button7;
     private Button button8;
+    private Button button9;
+
+    /*использовать butter knife бибилиотеку*/
 
     @Override
     public void onClick(View view) {
@@ -56,6 +60,9 @@ public class ActivityMain extends Activity implements View.OnClickListener {
             case R.id.button8:
                 startActivity(new Intent(ActivityMain.this, ActivityHW4.class));
                 break;
+            case R.id.button9:
+                startActivity(new Intent(ActivityMain.this, ActivityCW5.class));
+                break;
         }
         ;
     };
@@ -80,5 +87,7 @@ public class ActivityMain extends Activity implements View.OnClickListener {
         button7.setOnClickListener(this);
         button8 = findViewById(R.id.button8);
         button8.setOnClickListener(this);
+        button9 = findViewById(R.id.button9);
+        button9.setOnClickListener(this);
     }
 }

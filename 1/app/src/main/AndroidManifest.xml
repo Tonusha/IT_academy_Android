@@ -31,6 +31,8 @@
             android:parentActivityName=".main.ActivityMain"></activity>
         <activity android:name=".cw4.ActivityCW4"
             android:parentActivityName=".main.ActivityMain"></activity>
+        <activity android:name=".cw5.ActivityCW5"
+            android:parentActivityName=".main.ActivityMain"></activity>
         <activity
             android:name=".hw4.ActivityHW4"
             android:theme="@style/AnimationActivity">
@@ -44,5 +46,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <receiver android:name=".cw5.MyReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.AIRPLANE_MODE"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <service android:name=".cw5.MyService"></service>
+        <service android:name=".cw5.MyIntentClass"></service>
     </application>
 </manifest>
