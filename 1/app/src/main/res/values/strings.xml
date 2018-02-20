@@ -3,4 +3,11 @@
     <string name="button_one">Button one</string>
     <string name="button_two">Button two</string>
     <string name="button_load">Load</string>
+    <string name="austrian">Austrian</string>
+    <string name="poland">Poland</string>
+    <string name="italy">Italy</string>
+    <string name="colombia">Сolombia</string>
+    <string name="thailand">Thailand</string>
+    <string name="denmark">Denmark</string>
+    <string name="madagascar">Madagascar</string>
 </resources>

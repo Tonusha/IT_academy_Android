@@ -2,4 +2,11 @@
     <string name="button_one">Кнопка один</string>
     <string name="button_two">Кнопка два</string>
     <string name="button_load">Загрузить</string>
+    <string name="austrian">Австрия</string>
+    <string name="poland">Польша</string>
+    <string name="italy">Италия</string>
+    <string name="colombia">Колумбия</string>
+    <string name="madagascar">Мадагаскар</string>
+    <string name="thailand">Таиланд</string>
+    <string name="denmark">Дания</string>
 </resources>
