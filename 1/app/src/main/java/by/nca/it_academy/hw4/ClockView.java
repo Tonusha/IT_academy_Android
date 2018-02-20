@@ -5,6 +5,7 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.RectF;
+import android.graphics.drawable.shapes.Shape;
 import android.os.Build;
 import android.support.annotation.Nullable;
 import android.support.annotation.RequiresApi;
@@ -23,8 +24,7 @@ public class ClockView extends View {
     private float cy;
     private float ch;
     private float cw;
-    // private Line
-    private RectF rect;
+    private Shape shape;
 
     public ClockView(Context context) {
         super(context);
@@ -63,8 +63,8 @@ public class ClockView extends View {
         cx = w / 5;
         cy = h / 5;
         radius = cx > cy ? cy : cx;
-        // line =
-        //circle = new RectF();
+        cx = w/2;
+        cy = h/4;
 
         //float wRec = h * 0.2f; // h/100% * 20%
         float hRec = w * 0.9f; // w/100% * 90%
@@ -77,48 +77,15 @@ public class ClockView extends View {
     }
 
     @Override
-    protected void onAttachedToWindow() {
-        super.onAttachedToWindow();
-    }
-
-    @Override
-    protected void onDetachedFromWindow() {
-        super.onDetachedFromWindow();
-    }
-
-    @Override
-    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
-        super.onMeasure(widthMeasureSpec, heightMeasureSpec);
-    }
-
-    @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
 
+
         canvas.drawCircle(cx, cy, radius, paint);
+        paint.setColor(Color.parseColor("#111111"));
+        canvas.drawCircle(cx, cy, 5, paint);
+        //canvas.drawLine(0, 0, 0, 0, paint);
 //        invalidate();
 
     }
-
-   /* @Override
-    public boolean onTouchEvent(MotionEvent event) {
-        switch (event.getAction()) {
-            case MotionEvent.ACTION_DOWN: {
-                rect.contains(event.getX(), event.getY());
-
-                break;
-            }
-            case MotionEvent.ACTION_UP: {
-                break;
-            }
-            case MotionEvent.ACTION_MOVE: {
-                cx = event.getX();
-                cy = event.getY();
-                invalidate();
-                return false;
-
-            }
-        }
-        return true;
-    }*/
 }
