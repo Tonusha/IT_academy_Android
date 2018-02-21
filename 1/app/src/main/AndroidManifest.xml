@@ -1,8 +1,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="by.nca.it_academy">
 
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <application
         android:allowBackup="true"
@@ -54,7 +57,8 @@
                 <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
             </intent-filter>
         </receiver>
-        <service android:name=".cw5.MyService"></service>
-        <service android:name=".cw5.MyIntentClass"></service>
+        <!--<service android:name=".cw5.MyService"></service>-->
+        <!--<service android:name=".cw5.MyIntentClass"></service>-->
+        <service android:name=".hw5.MyService"></service>
     </application>
 </manifest>
