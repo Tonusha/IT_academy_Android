@@ -2,7 +2,7 @@
     package="by.nca.it_academy">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
     <application
         android:allowBackup="true"
@@ -38,6 +38,8 @@
             android:theme="@style/AnimationActivity">
             android:parentActivityName=".main.ActivityMain">
         </activity>
+        <activity android:name=".hw5.ActivityHW5"
+            android:parentActivityName=".main.ActivityMain"></activity>
         <activity
             android:name=".main.ActivityMain"
             android:theme="@style/AnimationActivity">
