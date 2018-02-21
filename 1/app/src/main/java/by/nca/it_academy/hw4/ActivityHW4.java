@@ -27,13 +27,5 @@ public class ActivityHW4 extends Activity {
         sovaImage.setBackgroundResource(R.drawable.sova_animation);
         animationDrawable = (AnimationDrawable)sovaImage.getBackground();
         animationDrawable.start();
-
-
-
-
-
-
-
-
     }
 }

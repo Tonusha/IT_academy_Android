@@ -33,7 +33,6 @@ public class ClockView extends View {
     private final Integer HOUR = 12;
     private Calendar calendar;
     private Date date;
-    private Timer timer;
 
     public ClockView(Context context) {
         super(context);
@@ -65,8 +64,6 @@ public class ClockView extends View {
         date = new Date();
         calendar = GregorianCalendar.getInstance();
         calendar.setTime(date);
-        timer = new Timer();
-
     }
 
     @Override
@@ -94,8 +91,7 @@ public class ClockView extends View {
         for (int i = HOUR; i >= 1; i--) {
             canvas.drawLine(cx, cy + Math.round(radius * 0.9), cx, cy + radius, paint);
             canvas.rotate(rotateCanvas, cx, cy);
-        }
-        ;
+        };
         canvas.drawText("6", width / 2f, height / 4f+Math.round(radius * 0.8), paint);
         canvas.drawText("9", width / 2f+Math.round(radius * 0.8), height / 4f, paint);
         canvas.drawText("3", width / 2f-Math.round(radius * 0.8), height / 4f, paint);
@@ -112,12 +108,5 @@ public class ClockView extends View {
         canvas.rotate(hour * 30 - 180 + minute * 0.5f, cx, cy);
         canvas.drawLine(cx, cy, cx, cy + radius - cy * 0.2f, paint);
         canvas.restore();
-
-
     }
-
-
-//        invalidate();
-
-
 }
