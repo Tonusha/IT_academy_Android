@@ -13,6 +13,7 @@ import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -38,7 +39,7 @@ public class ActivityCW6 extends AppCompatActivity {
         recyclerView1 = (RecyclerView) findViewById(R.id.recyclerView1);
 
         List<User> userList = new ArrayList<>();
-        userList.add(new User ("",
+        userList.add(new User ("http://www.youloveit.ru/uploads/gallery/main/439/my_little_ponyes_rarity13.png",
                 "Ivan", "Ivanovich"));
         userList.add(new User ("",
                 "Slava", "User2"));
@@ -54,6 +55,16 @@ public class ActivityCW6 extends AppCompatActivity {
         recyclerView1.setAdapter(userAdapter);
         recyclerView1.setLayoutManager(new LinearLayoutManager(this));
         recyclerView1.setHasFixedSize(true);
+
+
+        /*использовать метод recyclerView1.addItemDecoration();*/
+        userAdapter.setListener(new UserAdapter.onUserClickListener() {
+                                    @Override
+                                    public void onClick(User user, int position) {
+                                        Toast.makeText(ActivityCW6.this, user.getName() + " " + position+1, Toast.LENGTH_SHORT).show();
+                                    }
+                                }
+        );
 
 
 
