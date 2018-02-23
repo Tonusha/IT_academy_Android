@@ -8,9 +8,14 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.content.LocalBroadcastManager;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import by.nca.it_academy.R;
 import by.nca.it_academy.cw5.MyIntentClass;
@@ -22,79 +27,39 @@ import by.nca.it_academy.cw5.MyService;
 
 public class ActivityCW6 extends AppCompatActivity {
 
-    private Button button1;
+    private RecyclerView recyclerView1;
     private static final String ACTION_MY_MESSAGE = "by.nca.it_academy.ACTION_MY_MESSAGE";
-    private LocalBroadcastManager localBroadcastManager;
+    private UserAdapter userAdapter;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_classwork5);
+        setContentView(R.layout.activity_classwork6);
+        recyclerView1 = (RecyclerView) findViewById(R.id.recyclerView1);
 
-        button1 = findViewById(R.id.button1);
-        localBroadcastManager = LocalBroadcastManager.getInstance(this);
+        List<User> userList = new ArrayList<>();
+        userList.add(new User ("",
+                "Ivan", "Ivanovich"));
+        userList.add(new User ("",
+                "Slava", "User2"));
+        userList.add(new User ("",
+                "Pasha", "User3"));
+        userList.add(new User ("https://www.google.by/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwin3POetbzZAhULLMAKHX5tAEYQjRx6BAgAEAY&url=https%3A%2F%2Fimagejournal.org%2F&psig=AOvVaw27xeicE9YWUipgPNbXxVnN&ust=1519488321210864",
+                "Kostia", "User4"));
+        userList.add(new User ("https://www.google.by/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwin3POetbzZAhULLMAKHX5tAEYQjRx6BAgAEAY&url=https%3A%2F%2Fimagejournal.org%2F&psig=AOvVaw27xeicE9YWUipgPNbXxVnN&ust=1519488321210864",
+                "Dima", "User5"));
 
-        button1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent();
-                intent.setAction(ACTION_MY_MESSAGE);
-
-                localBroadcastManager.sendBroadcast(intent);
-                //sendBroadcast(intent);
-            }
-        });
+        userAdapter = new UserAdapter();
+        userAdapter.setItemUser(userList);
+        recyclerView1.setAdapter(userAdapter);
+        recyclerView1.setLayoutManager(new LinearLayoutManager(this));
+        recyclerView1.setHasFixedSize(true);
 
 
-    }
 
-    private BroadcastReceiver myReciever = new BroadcastReceiver() {
-        @Override
-        public void onReceive(Context context, Intent intent) {
-            Log.e("aaaaaaaaaa", "MY_MESSAGE");
 
-            /*intent.getAction();
 
-            boolean isAirPlaneModeOn = intent.getBooleanExtra("state",
-                    false);
-            if (isAirPlaneModeOn) {
-                Log.e("aaaaaaaaaa", "MY_MESSAGE FROM ACTIVITY_ON");
-            } else {
-                Log.e("aaaaaaaaaa", "MESSAGE FROM ACTIVITY_OFF");
-            }
-            ;*/
-        }
 
-    };
-
-    @Override
-    protected void onStart() {
-        super.onStart();
-        IntentFilter intentFilter = new IntentFilter();
-        intentFilter.addAction(ACTION_MY_MESSAGE);
-        registerReceiver(myReciever, intentFilter);
-        //registerReceiver(myReciever, intentFilter);
-
-        Intent intent = new Intent(this, MyService.class);
-        startService(intent);
-
-        Intent intent2 = new Intent(this, MyIntentClass.class);
-        intent2.putExtra(MyIntentClass.KEY_LINK, "http://film1");
-        startService(intent2);
-
-        Intent intent3 = new Intent(this, MyIntentClass.class);
-        intent3.putExtra(MyIntentClass.KEY_LINK, "http://film2");
-        startService(intent3);
-
-        Intent intent4 = new Intent(this, MyIntentClass.class);
-        intent4.putExtra(MyIntentClass.KEY_LINK, "http://film3");
-        startService(intent4);
-    }
-
-    @Override
-    protected void onStop() {
-        super.onStop();
-//        unregisterReceiver(myReciever);
-        stopService(new Intent(this, MyService.class));
     }
 }
+
