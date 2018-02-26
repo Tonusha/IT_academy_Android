@@ -1,14 +1,15 @@
 package by.nca.it_academy.cw7;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.widget.Toast;
-
-import java.util.ArrayList;
-import java.util.List;
+import android.util.Log;
+import android.view.View;
 
 import by.nca.it_academy.R;
 
@@ -17,50 +18,78 @@ import by.nca.it_academy.R;
  */
 
 public class ActivityCW7 extends AppCompatActivity {
-
-    private RecyclerView recyclerView1;
-    private static final String ACTION_MY_MESSAGE = "by.nca.it_academy.ACTION_MY_MESSAGE";
-    private UserAdapter userAdapter;
+    private View buttonFragment1;
+    private boolean isOneVisible = true;
+    public static final String TAG = ActivityCW7.class.getSimpleName();
+    public static final String SHARED_PREF_NAME = "dfsg";
+    public static final String KEY_NAME = "name";
+    private SharedPreferences sharedPreferences;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_classwork7);
-        recyclerView1 = (RecyclerView) findViewById(R.id.recyclerView1);
 
-        List<User> userList = new ArrayList<>();
-        userList.add(new User("http://www.youloveit.ru/uploads/gallery/main/439/my_little_ponyes_rarity13.png",
-                "Ivan", "ttt"));
-        userList.add(new User("",
-                "Slava", "User2"));
-        userList.add(new User("",
-                "Pasha", "User3"));
-        userList.add(new User("https://www.google.by/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwin3POetbzZAhULLMAKHX5tAEYQjRx6BAgAEAY&url=https%3A%2F%2Fimagejournal.org%2F&psig=AOvVaw27xeicE9YWUipgPNbXxVnN&ust=1519488321210864",
-                "Kostia", "User4"));
-        userList.add(new User("https://www.google.by/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwin3POetbzZAhULLMAKHX5tAEYQjRx6BAgAEAY&url=https%3A%2F%2Fimagejournal.org%2F&psig=AOvVaw27xeicE9YWUipgPNbXxVnN&ust=1519488321210864",
-                "Dima", "User5"));
+        //shared preference
+        //для сохранения своих настроек
 
-        userAdapter = new UserAdapter();
-        userAdapter.setItemUser(userList);
-        recyclerView1.setAdapter(userAdapter);
-        recyclerView1.setLayoutManager(new LinearLayoutManager(this));
-        recyclerView1.setHasFixedSize(true);
+        sharedPreferences = getSharedPreferences(SHARED_PREF_NAME, Context.MODE_PRIVATE);
 
 
-        /*использовать метод recyclerView1.addItemDecoration();*/
-        userAdapter.setListener(new UserAdapter.onUserClickListener() {
-                                    @Override
-                                    public void onClick(User user, int position) {
-                                        Toast.makeText(ActivityCW7.this, user.getName() + " " + position+1, Toast.LENGTH_SHORT).show();
-                                    }
-                                }
-        );
+        findViewById(R.id.buttonFragment).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                changeFragment();
+            }
+        });
+
+        if (savedInstanceState==null) {
+            showFragment(OneFragment.getInstance(), false);
+        }
+
+    }
+
+    private void changeFragment() {
+        if (isOneVisible) {
+            showFragment(TwoFragment.getInstance(), true);
+            isOneVisible = false;
+        } else {
+            showFragment(OneFragment.getInstance(), true);
+            isOneVisible = true;
+        }
+    }
+
+    private void showFragment(Fragment fragment, Boolean addToBackStack) {
+        FragmentManager fragmentManager = getSupportFragmentManager();
 
 
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.replace(R.id.container,fragment, fragment.getClass().getSimpleName());
+        if (addToBackStack) fragmentTransaction.addToBackStack(fragment.getClass().getSimpleName());
 
-
+        fragmentTransaction.commit();
 
 
     }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        String text =  sharedPreferences.getString(KEY_NAME, "");
+        Log.e("AAA", "text=" + text);
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        sharedPreferences.edit().putString(KEY_NAME, "Hello").apply();
+    }
 }
 
+//где хранить файлы getFile
+//getExternalFilesDir для получения доступа к папке
+//getCasheFile сохранение кэшированныъ данных
+
+//библиотеки для бд realm, room (мало весит, но сложнее),
+
+//мукап приложения
