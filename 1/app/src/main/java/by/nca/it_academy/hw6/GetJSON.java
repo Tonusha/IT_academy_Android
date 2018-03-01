@@ -24,9 +24,7 @@ import java.util.List;
 /**
  * Created by miruk on 26.02.2018.
  */
-
 final class GetJSON {
-
     static String readJsonFileFromAssets(Context context, String filename) {
         BufferedReader reader = null;
         String rawJson = "";
@@ -59,10 +57,10 @@ final class GetJSON {
         GsonBuilder builder = new GsonBuilder();
         Gson gson = builder.create();
 
-        if (TextUtils.isEmpty(jsonText) && cls.equals(PeopleFile.class)) {
-            PeopleFile unParseJson = (PeopleFile) gson.fromJson(jsonText, cls);
+        if (TextUtils.isEmpty(jsonText) && cls.equals(TestFile.class)) {
+            TestFile unParseJson = (TestFile) gson.fromJson(jsonText, cls);
             result = unParseJson.getPeople();
         }
         return result;
     }
-}
+} 

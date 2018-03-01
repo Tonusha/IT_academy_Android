@@ -7,8 +7,7 @@ import java.util.List;
 /**
  * Created by miruk on 26.02.2018.
  */
-
-public class PeopleFile implements Serializable {
+public class TestFile implements Serializable {
 
     private String name;
     private int gender;
@@ -46,5 +45,4 @@ public class PeopleFile implements Serializable {
     public void setPeople(List<People> people) {
         this.people = people;
     }
-}
-
+} 

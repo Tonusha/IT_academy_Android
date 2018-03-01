@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <item name="button1" type="id" />
+    <item name="nameTextView" type="id" />
+    <item name="surnameTextView" type="id" />
+    <item name="ageTextView" type="id" />
+    <item name="progressBar1" type="id" />
 </resources>

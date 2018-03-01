@@ -17,8 +17,7 @@
         <activity
             android:name=".cw7.ActivityCW7"
             android:parentActivityName=".main.ActivityMain"></activity>
-        <activity
-            android:name=".hw6.ActivityHW6"
+        <activity android:name=".hw6.ActivityHW6"
             android:parentActivityName=".main.ActivityMain"></activity>
         <activity
             android:name=".cw6.ActivityCW6"

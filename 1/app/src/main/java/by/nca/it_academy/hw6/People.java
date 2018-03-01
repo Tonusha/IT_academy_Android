@@ -5,7 +5,6 @@ import java.io.Serializable;
 /**
  * Created by user on 23.02.2018.
  */
-
 public class People implements Serializable {
 
     private int id;
@@ -53,4 +52,4 @@ public class People implements Serializable {
     public void setDegree(boolean degree) {
         isDegree = degree;
     }
-}
+} 

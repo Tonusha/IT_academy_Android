@@ -4,41 +4,43 @@
     android:layout_width="match_parent"
     android:layout_height="60dp"
     android:layout_marginBottom="5dp"
-    android:background="@color/colorAccent"
-    android:orientation="horizontal"
+    android:background="#8956"
+    android:orientation="vertical"
     android:paddingEnd="10dp"
     android:paddingStart="10dp">
 
+    <ImageView
+        android:id="@id/imageView1"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        tools:src="@drawable/sova_anmation_1"/>
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@id/nameTextView"
+        android:layout_marginStart="60dp"
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:textSize="14sp"
-        android:layout_marginEnd="5dp"
-        tools:text = "Username"
-        android:layout_marginRight="5dp" />
+        tools:text="userName"
+        android:layout_marginLeft="60dp" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@id/surnameTextView"
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
-        android:layout_toEndOf="@+id/textView1"
-        android:layout_toRightOf="@+id/textView1"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:paddingTop="20dp"
         android:textSize="14sp"
-        tools:text="Surname" />
-
+        tools:text="peopleSurname"
+        android:layout_marginLeft="60dp" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@id/ageTextView"
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
-        android:layout_toEndOf="@+id/textView2"
-        android:layout_toRightOf="@+id/textView2"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="230dp"
         android:textSize="14sp"
-        tools:text="Name" />
-
-
+        tools:text="peopleAge"
+        android:layout_marginLeft="230dp" />
 </RelativeLayout>

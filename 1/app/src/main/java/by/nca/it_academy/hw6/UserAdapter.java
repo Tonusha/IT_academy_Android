@@ -5,6 +5,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -16,9 +17,7 @@ import by.nca.it_academy.R;
 /**
  * Created by user on 23.02.2018.
  */
-
 public class UserAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
-
     private List<People> itemList = new ArrayList<>();
     private List<People> itemOriginalList = new ArrayList<>();
     private List<People> itemListFiltred = new ArrayList<>();
@@ -29,8 +28,13 @@ public class UserAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     }
 
-    public void setUserList(List<People> itemList) {
+    public void setPeopleList(List<People> itemList) {
         this.itemList.clear();
+        if(itemList==null) {
+            return;
+        }
+        this.itemList = itemList;
+
         this.itemList.addAll(itemList);
         if (itemOriginalList.size() == 0) {
             itemOriginalList.addAll(itemList);
@@ -51,9 +55,10 @@ public class UserAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
                 }
             }
         }
-        setUserList(itemListFiltred);
+        setPeopleList(itemListFiltred);
     }
 
+    // зоздает холдер который содержит layout - xml, н кешируетс, т.е. для разных позиций может использоваться один и тот же холдер 
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
@@ -61,6 +66,7 @@ public class UserAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         return new Holder(view);
     }
 
+    // вызывается для каждого эелемента, используется для заполнения данных item - один элемент
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder holder, final int position) {
 
@@ -76,9 +82,16 @@ public class UserAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
             }
         });
 
-        myHolder.textView1.setText(people.getName());
-        myHolder.textView2.setText(people.getSurname());
-        myHolder.textView3.setText(people.getAge().toString());
+        //holder1.imageView.set //FIXME impliment Glide
+        if (people.isDegree()) {
+            myHolder.imageView.setImageResource(R.drawable.sova_anmation_1);
+        } else {
+            myHolder.imageView.setImageResource(R.drawable.sova_anmation_3);
+        }
+
+        myHolder.nameTextView.setText(people.getName());
+        myHolder.surnameTextView.setText(people.getSurname());
+        myHolder.ageTextView.setText(people.getAge().toString());
     }
 
     // возвращет размер
@@ -89,21 +102,22 @@ public class UserAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     // технический клас для хранаения item и ссылок на элменты
     private static class Holder extends RecyclerView.ViewHolder {
-
-        TextView textView1;
-        TextView textView2;
-        TextView textView3;
+        ImageView imageView;
+        TextView nameTextView;
+        TextView surnameTextView;
+        TextView ageTextView;
 
         public Holder(View itemView) {
             super(itemView);
             Log.e("UserAdapter", "Holder");
-            textView1 = itemView.findViewById(R.id.textView1);
-            textView2 = itemView.findViewById(R.id.textView2);
-            textView3 = itemView.findViewById(R.id.textView3);
+            imageView = itemView.findViewById(R.id.imageView1);
+            nameTextView = itemView.findViewById(R.id.nameTextView);
+            surnameTextView = itemView.findViewById(R.id.surnameTextView);
+            ageTextView = itemView.findViewById(R.id.ageTextView);
         }
     }
 
     interface OnUserClickListener {
         void onClick(People people, int position);
     }
-}
+} 
