@@ -14,8 +14,6 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
-import com.google.gson.JsonParser;
-
 import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
@@ -28,10 +26,13 @@ import by.nca.it_academy.R;
 
 public class ActivityHW6 extends AppCompatActivity {
 
+    private static final String TAG = ActivityHW6.class.getSimpleName();
+
     private RecyclerView recyclerView;
     private UserAdapter userAdapter;
     private List<People> peopleList;
     private EditText editText1;
+
     private ProgressBar progressBar;
     private Timer timer;
 
@@ -40,7 +41,6 @@ public class ActivityHW6 extends AppCompatActivity {
         public void afterTextChanged(Editable arg0) {
             timer = new Timer();
             timer.schedule(new TimerTask() {
-
                 @Override
                 public void run() {
                     ActivityHW6.this.runOnUiThread(new Runnable() {
@@ -51,11 +51,13 @@ public class ActivityHW6 extends AppCompatActivity {
                             ActivityHW6.this.userAdapter.filter(editText1.getText().toString());
                         }
                     });
+
                     try {
                         Thread.sleep(600);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
+
                     ActivityHW6.this.runOnUiThread(new Runnable() {
                         @Override
                         public void run() {
@@ -71,6 +73,7 @@ public class ActivityHW6 extends AppCompatActivity {
 
         @Override
         public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
         }
 
         @Override
@@ -85,26 +88,29 @@ public class ActivityHW6 extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_homework6);
+
         editText1 = findViewById(R.id.editText1);
         progressBar = findViewById(R.id.progressBar1);
-        peopleList = (List<People>) GetJSON.parseFromJson(GetJSON.readJsonFileFromAssets(this, "test.json"), TestFile.class);
+
+
+        peopleList = (List<People>) GetJSON.parseFromJson(GetJSON.readJsonFileFromAssets(this, "test.json"), PeopleClass.class) ;
+
         userAdapter = new UserAdapter();
-
-
-
         userAdapter.setPeopleList(peopleList);
 
         userAdapter.setListener(new UserAdapter.OnUserClickListener() {
-
             @Override
             public void onClick(People people, int position) {
-                Toast.makeText(ActivityHW6.this, people.getName()+position, Toast.LENGTH_SHORT).show();
+                Toast.makeText(ActivityHW6.this, people.getName() + position, Toast.LENGTH_SHORT).show();
             }
         });
+
         recyclerView = findViewById(R.id.recyclerView1);
         recyclerView.setAdapter(userAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setHasFixedSize(true);
+
         editText1.addTextChangedListener(searchTextWatcher);
+
     }
-} 
+}

@@ -30,11 +30,6 @@ public class UserAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     public void setPeopleList(List<People> itemList) {
         this.itemList.clear();
-        if(itemList==null) {
-            return;
-        }
-        this.itemList = itemList;
-
         this.itemList.addAll(itemList);
         if (itemOriginalList.size() == 0) {
             itemOriginalList.addAll(itemList);
@@ -84,9 +79,9 @@ public class UserAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
         //holder1.imageView.set //FIXME impliment Glide
         if (people.isDegree()) {
-            myHolder.imageView.setImageResource(R.drawable.sova_anmation_1);
+            myHolder.imageView.setImageResource(R.drawable.my_picture);
         } else {
-            myHolder.imageView.setImageResource(R.drawable.sova_anmation_3);
+            myHolder.imageView.setImageResource(R.drawable.sova_anmation_1);
         }
 
         myHolder.nameTextView.setText(people.getName());

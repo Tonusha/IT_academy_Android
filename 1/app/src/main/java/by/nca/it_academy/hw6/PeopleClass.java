@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * Created by miruk on 26.02.2018.
  */
-public class TestFile implements Serializable {
+public class PeopleClass implements Serializable {
 
     private String name;
     private int gender;
