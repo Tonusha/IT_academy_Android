@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
@@ -13,7 +12,6 @@ import by.nca.it_academy.cw1.ActivityCW1;
 import by.nca.it_academy.cw2.ActivityCW2;
 import by.nca.it_academy.cw3.ActivityCW3;
 import by.nca.it_academy.cw4.ActivityCW4;
-import by.nca.it_academy.cw4.CustomView;
 import by.nca.it_academy.cw5.ActivityCW5;
 import by.nca.it_academy.cw6.ActivityCW6;
 import by.nca.it_academy.cw7.ActivityCW7;

@@ -1,4 +1,4 @@
-package by.nca.it_academy.cw8;
+package by.nca.it_academy.hw7;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -8,40 +8,46 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
+import android.util.AttributeSet;
 import android.util.Log;
 import android.view.View;
+import android.widget.EditText;
+import android.widget.TextView;
 
 import by.nca.it_academy.R;
+import io.reactivex.Observable;
+import io.reactivex.subjects.BehaviorSubject;
+import io.reactivex.subjects.PublishSubject;
+import io.reactivex.subjects.ReplaySubject;
 
 /**
  * Created by user on 12.02.2018.
  */
 
-public class ActivityCW8 extends AppCompatActivity {
+public class ActivityHW7 extends AppCompatActivity implements PublishContract {
     private View buttonFragment1;
-    private boolean isOneVisible = true;
-    public static final String TAG = ActivityCW8.class.getSimpleName();
+    public static final String TAG = ActivityHW7.class.getSimpleName();
     public static final String SHARED_PREF_NAME = "dfsg";
     public static final String KEY_NAME = "name";
     private SharedPreferences sharedPreferences;
+    public ReplaySubject<Integer> publishSubject = ReplaySubject.create();
+    private int count = 0;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_classwork7);
-
-        //shared preference
-        //для сохранения своих настроек
-
+        setContentView(R.layout.activity_homework7);
         sharedPreferences = getSharedPreferences(SHARED_PREF_NAME, Context.MODE_PRIVATE);
-
+        changeFragment();
 
         findViewById(R.id.buttonFragment).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                changeFragment();
+                publishSubject.onNext(count);
+                count++;
             }
         });
+
 
         if (savedInstanceState==null) {
             showFragment(OneFragment.getInstance(), false);
@@ -50,13 +56,7 @@ public class ActivityCW8 extends AppCompatActivity {
     }
 
     private void changeFragment() {
-        if (isOneVisible) {
-            showFragment(TwoFragment.getInstance(), true);
-            isOneVisible = false;
-        } else {
             showFragment(OneFragment.getInstance(), true);
-            isOneVisible = true;
-        }
     }
 
     private void showFragment(Fragment fragment, Boolean addToBackStack) {
@@ -84,6 +84,18 @@ public class ActivityCW8 extends AppCompatActivity {
         super.onPause();
         sharedPreferences.edit().putString(KEY_NAME, "Hello").apply();
     }
+
+    @Override
+    public Observable<Integer> getObservable() {
+        return publishSubject;
+    }
+
+    @Override
+    public void onPointerCaptureChanged(boolean hasCapture) {
+
+    }
+
+
 }
 
 //где хранить файлы getFile
