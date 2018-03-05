@@ -11,9 +11,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-
-import com.squareup.picasso.Picasso;
-
 import by.nca.it_academy.R;
 import by.nca.it_academy.cw3.ActivityCW3;
 

@@ -10,7 +10,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.squareup.picasso.Picasso;
+//import com.squareup.picasso.Picasso;
 
 import by.nca.it_academy.R;
 import by.nca.it_academy.cw1.ActivityCW1;
@@ -44,7 +44,7 @@ public class ActivityCW3 extends AppCompatActivity {
                     @Override
                     public void onClick(View view) {
                         context = ActivityCW3.this;
-                        Picasso.with(context).load(/*editText1.getText().toString()*/"https://i.imgur.com/DvpvklR.jpg").into(imageView1);
+                       // Picasso.with(context).load(/*editText1.getText().toString()*/"https://i.imgur.com/DvpvklR.jpg").into(imageView1);
                     }
                 });
             }

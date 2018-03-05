@@ -23,6 +23,7 @@ import by.nca.it_academy.hw4.ActivityHW4;
 import by.nca.it_academy.hw5.ActivityHW5;
 import by.nca.it_academy.hw6.ActivityHW6;
 import by.nca.it_academy.hw7.ActivityHW7;
+import by.nca.it_academy.hw8.ActivityHW8;
 
 public class ActivityMain extends Activity implements View.OnClickListener {
     private Button button1;
@@ -40,6 +41,7 @@ public class ActivityMain extends Activity implements View.OnClickListener {
     private Button button13;
     private Button button14;
     private Button button15;
+    private Button button16;
 
     /*использовать butter knife бибилиотеку*/
 
@@ -91,6 +93,9 @@ public class ActivityMain extends Activity implements View.OnClickListener {
             case R.id.button15:
                 startActivity(new Intent(ActivityMain.this, ActivityCW8.class));
                 break;
+            case R.id.button16:
+                startActivity(new Intent(ActivityMain.this, ActivityHW8.class));
+                break;
         }
         ;
     };
@@ -129,5 +134,7 @@ public class ActivityMain extends Activity implements View.OnClickListener {
         button14.setOnClickListener(this);
         button15 = findViewById(R.id.button15);
         button15.setOnClickListener(this);
+        button16 = findViewById(R.id.button16);
+        button16.setOnClickListener(this);
     }
 }
