@@ -35,6 +35,10 @@ android {
             buildConfigField "String", "API_URL", "\"http://live\""
         }
     }
+
+    dataBinding {
+        enabled = true
+    }
 }
 
 dependencies {
@@ -42,6 +46,8 @@ dependencies {
     implementation dependency.supportAppcompat
     implementation dependency.supportV4
     implementation dependency.supportDesign
+
+    annotationProcessor dependency.androidBindingCompiler
 
     implementation dependency.rxjava2
     implementation dependency.rxAndroid

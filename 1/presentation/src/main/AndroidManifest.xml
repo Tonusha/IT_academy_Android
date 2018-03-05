@@ -15,10 +15,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".hw8.ActivityHW8"
+            android:name=".cw9.ActivityCW9"
             android:parentActivityName=".main.ActivityMain"></activity>
         <activity
-            android:name=".cw8.ActivityCW8"
+            android:name=".hw8.ActivityHW8"
             android:parentActivityName=".main.ActivityMain"></activity>
         <activity
             android:name=".hw7.ActivityHW7"

@@ -9,16 +9,16 @@
         android:orientation="vertical">
 
         <Button
+            android:id="@+id/button15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CW9" />
+
+        <Button
             android:id="@+id/button16"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="HW8" />
-
-        <Button
-            android:id="@+id/button15"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="CW8" />
 
         <Button
             android:id="@+id/button14"

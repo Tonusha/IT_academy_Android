@@ -15,7 +15,7 @@ import by.nca.it_academy.cw4.ActivityCW4;
 import by.nca.it_academy.cw5.ActivityCW5;
 import by.nca.it_academy.cw6.ActivityCW6;
 import by.nca.it_academy.cw7.ActivityCW7;
-import by.nca.it_academy.cw8.ActivityCW8;
+import by.nca.it_academy.cw9.ActivityCW9;
 import by.nca.it_academy.hw1.ActivityHW1;
 import by.nca.it_academy.hw2.ActivityHW2;
 import by.nca.it_academy.hw3.ActivityHW3;
@@ -91,7 +91,7 @@ public class ActivityMain extends Activity implements View.OnClickListener {
                 startActivity(new Intent(ActivityMain.this, ActivityHW7.class));
                 break;
             case R.id.button15:
-                startActivity(new Intent(ActivityMain.this, ActivityCW8.class));
+                startActivity(new Intent(ActivityMain.this, ActivityCW9.class));
                 break;
             case R.id.button16:
                 startActivity(new Intent(ActivityMain.this, ActivityHW8.class));

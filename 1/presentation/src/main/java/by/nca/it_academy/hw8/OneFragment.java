@@ -83,6 +83,7 @@ public class OneFragment extends Fragment {
     private void subscribe() {
 
         disposable = publishContract.getObservable()
+              //  .filter(item -> item)
              //   .timeout(5000, TimeUnit.MILLISECONDS)
 
                 .subscribe(new Consumer<Integer>() {
