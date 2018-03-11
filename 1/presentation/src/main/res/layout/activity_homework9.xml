@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <import type="android.view.View"/>
+        <variable
+            name="myEntity"
+            type="by.nca.it_academy.cw9.MyEntity">
+        </variable>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#8694"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:background="#77bf40ed"
+            android:clickable="true"
+            android:text="@{myEntity.text}"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textSize="24dp" />
+
+        <Button
+            android:id="@+id/button1"
+            style="@android:style/Widget.DeviceDefault.Light.Button.Borderless.Small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#4503"
+            android:onClick="@{myEntity::buttonClick}"
+            android:visibility="@{myEntity.buttonVisible ? View.VISIBLE : View.GONE}"
+            android:text="@{myEntity.textButton}" />
+
+
+    </LinearLayout>
+</layout>
