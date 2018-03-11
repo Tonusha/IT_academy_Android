@@ -1,4 +1,4 @@
-package by.nca.it_academy.cw10;
+package by.nca.it_academy.cw9;
 
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
@@ -7,16 +7,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.Button;
 
 import by.nca.it_academy.R;
-import by.nca.it_academy.cw9.MyEntity;
 import by.nca.it_academy.databinding.ActivityClasswork9Binding;
 
 /**
  * Created by miruk on 12.02.2018.
  */
 
-public class ActivityCW10 extends AppCompatActivity {
+public class ActivityCW9 extends AppCompatActivity {
 
-    private static final String TAG = ActivityCW10.class.getSimpleName();
+    private static final String TAG = ActivityCW9.class.getSimpleName();
 
     private Button button15;
 
