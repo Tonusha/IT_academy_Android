@@ -53,6 +53,4 @@ dependencies {
     implementation dependency.rxAndroid
 
     implementation dependency.gson
-
-    api project(path:":data")
 }

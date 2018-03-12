@@ -10,7 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
-import com.squareup.picasso.Picasso;
+//import com.squareup.picasso.Picasso;
 
 /**
  * Created by user on 05.03.2018.
@@ -34,6 +34,6 @@ public class MyUser {
 
     @BindingAdapter({"bind:imageUrl"})
     public static void loadImage(ImageView view, String url) {
-        Picasso.with(view.getContext()).load(url).into(view);
+       // Picasso.with(view.getContext()).load(url).into(view);
     }
 }

@@ -9,6 +9,7 @@ import android.widget.Button;
 
 import by.nca.it_academy.R;
 import by.nca.it_academy.cw1.ActivityCW1;
+import by.nca.it_academy.cw10.ActivityCW10;
 import by.nca.it_academy.cw2.ActivityCW2;
 import by.nca.it_academy.cw3.ActivityCW3;
 import by.nca.it_academy.cw4.ActivityCW4;
@@ -42,6 +43,7 @@ public class ActivityMain extends Activity implements View.OnClickListener {
     private Button button14;
     private Button button15;
     private Button button16;
+    private Button button17;
 
     /*использовать butter knife бибилиотеку*/
 
@@ -96,6 +98,9 @@ public class ActivityMain extends Activity implements View.OnClickListener {
             case R.id.button16:
                 startActivity(new Intent(ActivityMain.this, ActivityHW8.class));
                 break;
+            case R.id.button17:
+                startActivity(new Intent(ActivityMain.this, ActivityCW10.class));
+                break;
         }
         ;
     };
@@ -136,5 +141,7 @@ public class ActivityMain extends Activity implements View.OnClickListener {
         button15.setOnClickListener(this);
         button16 = findViewById(R.id.button16);
         button16.setOnClickListener(this);
+        button17 = findViewById(R.id.button17);
+        button17.setOnClickListener(this);
     }
 }

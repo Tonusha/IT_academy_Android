@@ -1,33 +1,23 @@
 package by.nca.it_academy.cw10;
 
-import android.databinding.DataBindingUtil;
-import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
-import android.widget.Button;
-
 import by.nca.it_academy.R;
-import by.nca.it_academy.cw9.MyEntity;
-import by.nca.it_academy.databinding.ActivityClasswork9Binding;
+import by.nca.it_academy.databinding.ActivityClasswork10Binding;
+import by.nca.presentation.base.BaseMvvmActivity;
 
-/**
- * Created by miruk on 12.02.2018.
- */
 
-public class ActivityCW10 extends AppCompatActivity {
+
+public class ActivityCW10 extends BaseMvvmActivity<ActivityClasswork10Binding , MyEntity> {
 
     private static final String TAG = ActivityCW10.class.getSimpleName();
 
-    private Button button15;
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-
-        MyEntity myEntity = new MyEntity("Ура работает", "супер кнопка");
-
-        ActivityClasswork9Binding binding =  DataBindingUtil.setContentView(this, R.layout.activity_classwork9);
-        binding.setMyEntity(myEntity);
+    public int provideLayoutId() {
+        return R.layout.activity_classwork10;
     }
 
+    @Override
+    public UserViewModel provideViewModel() {
+        return new UserViewModel();
+    }
 }

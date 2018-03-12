@@ -5,49 +5,69 @@ import android.databinding.ObservableField;
 import android.util.Log;
 import android.view.View;
 
+import by.nca.domain.UserEntity;
 import by.nca.presentation.base.BaseViewModel;
+import io.reactivex.Observable;
+import io.reactivex.ObservableEmitter;
+import io.reactivex.ObservableOnSubscribe;
+import io.reactivex.Observer;
+import io.reactivex.android.schedulers.AndroidSchedulers;
+import io.reactivex.disposables.Disposable;
+import io.reactivex.schedulers.Schedulers;
 
 /**
  * Created by user on 12.03.2018.
  */
 
-public class MyEntity extends BaseViewModel {
-    private String text;
-    private String textButton;
-    private boolean buttonVisible;
-
-    public MyEntity(String text, String textButton, boolean buttonVisible) {
-        this.text = text;
-        this.textButton = textButton;
-        this.buttonVisible = buttonVisible;
-    }
-
-    public MyEntity() {
-
-    }
+public class UserViewModel extends BaseViewModel {
+    public ObservableField<String> username = new ObservableField(null);
+    public ObservableField<String> profileUrl = new ObservableField(null);
+    public ObservableField<Integer> age = new ObservableField(null);
+    public ObservableBoolean progressVisible = new ObservableBoolean(true);
 
 
-    public String getText() {
-        return text;
-    }
+    @Override
+    public void onResume() {
+        super.onResume();
 
-    public String getTextButton() {
-        return textButton;
-    }
+        progressVisible.set(true);
 
-    public boolean isButtonVisible() {
-        return buttonVisible;
-    }
+        Observable.create(new ObservableOnSubscribe<UserEntity>() {
+            @Override
+            public void subscribe(ObservableEmitter<UserEntity> emitter) throws Exception {
+                Thread.sleep(5000);
+                UserEntity entity = new UserEntity("Tonya", 20, "vxc");
+                emitter.onNext(entity);
+                emitter.onComplete();}
+            }).subscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe(new Observer<UserEntity>() {
 
-    public void setText(String text) {
-        this.text = text;
-    }
+                    @Override
+                    public void onSubscribe(Disposable d) {
+                        Log.e("df", "fd");
+                    }
 
-    public void setTextButton(String textButton) {
-        this.textButton = textButton;
-    }
+                    @Override
+                    public void onNext(UserEntity userEntity) {
+                        Log.e("df", "fd");
+                        username.set(userEntity.getUsername());
+                        age.set(userEntity.getAge());
+                        profileUrl.set(userEntity.getProfileUrl());
+                    }
 
-    public void setButtonVisible(boolean buttonVisible) {
-        this.buttonVisible = buttonVisible;
-    }
+                    @Override
+                    public void onError(Throwable e) {
+                        Log.e("df", "fd");
+                    }
+
+                    @Override
+                    public void onComplete() {
+                        Log.e("df", "fd");
+                    }
+                });
+        progressVisible.set(false);
+    };
+
+
 }

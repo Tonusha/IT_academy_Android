@@ -5,4 +5,19 @@ package by.nca.presentation.base;
  */
 
 public class BaseViewModel {
+
+    public void onResume(){
+
+    };
+
+    public void onPause(){
+
+    };
+
+    public void onStart(){
+
+    };
+
+    public void onStop() {
+    }
 }

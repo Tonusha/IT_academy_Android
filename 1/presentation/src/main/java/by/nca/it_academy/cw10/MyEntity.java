@@ -11,18 +11,18 @@ import by.nca.presentation.base.BaseViewModel;
  * Created by user on 12.03.2018.
  */
 
-public class UserViewModel extends BaseViewModel {
+public class MyEntity extends BaseViewModel {
     private String text;
     private String textButton;
     private boolean buttonVisible;
 
-    public UserViewModel(String text, String textButton, boolean buttonVisible) {
+    public MyEntity(String text, String textButton, boolean buttonVisible) {
         this.text = text;
         this.textButton = textButton;
         this.buttonVisible = buttonVisible;
     }
 
-    public UserViewModel() {
+    public MyEntity() {
 
     }
 
