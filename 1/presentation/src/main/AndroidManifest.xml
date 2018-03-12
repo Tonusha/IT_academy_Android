@@ -15,7 +15,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".cw9.ActivityCW9"
+            android:name=".cw9.ActivityCW9 "
             android:parentActivityName=".main.ActivityMain"></activity>
         <activity
             android:name=".hw8.ActivityHW8"
