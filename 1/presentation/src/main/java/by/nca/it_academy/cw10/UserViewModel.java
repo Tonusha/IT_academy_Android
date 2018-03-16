@@ -3,7 +3,6 @@ package by.nca.it_academy.cw10;
 import android.databinding.ObservableBoolean;
 import android.databinding.ObservableField;
 import android.util.Log;
-import android.view.View;
 
 import by.nca.domain.UserEntity;
 import by.nca.presentation.base.BaseViewModel;

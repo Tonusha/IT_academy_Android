@@ -6,7 +6,7 @@ import by.nca.presentation.base.BaseMvvmActivity;
 
 
 
-public class ActivityCW10 extends BaseMvvmActivity<ActivityClasswork10Binding , MyEntity> {
+public class ActivityCW10 extends BaseMvvmActivity<ActivityClasswork10Binding , UserViewModel> {
 
     private static final String TAG = ActivityCW10.class.getSimpleName();
 

@@ -53,4 +53,5 @@ dependencies {
     implementation dependency.rxAndroid
 
     implementation dependency.gson
+    compile project(path: ':domain')
 }
