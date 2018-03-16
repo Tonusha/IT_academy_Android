@@ -4,8 +4,8 @@ import android.databinding.ObservableBoolean;
 import android.databinding.ObservableField;
 import android.util.Log;
 
-import by.nca.domain.UserEntity;
-import by.nca.presentation.base.BaseViewModel;
+import by.nca.domain.entity.UserEntity;
+import by.nca.it_academy.presentation.base.BaseViewModel;
 import io.reactivex.Observable;
 import io.reactivex.ObservableEmitter;
 import io.reactivex.ObservableOnSubscribe;

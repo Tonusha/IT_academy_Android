@@ -1,4 +1,4 @@
-package by.nca.it_academy.cw10;
+package by.nca.it_academy.cw11;
 
 import by.nca.it_academy.presentation.base.BaseViewModel;
 

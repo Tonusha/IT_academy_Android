@@ -2,7 +2,7 @@ package by.nca.it_academy.cw10;
 
 import by.nca.it_academy.R;
 import by.nca.it_academy.databinding.ActivityClasswork10Binding;
-import by.nca.presentation.base.BaseMvvmActivity;
+import by.nca.it_academy.presentation.base.BaseMvvmActivity;
 
 
 

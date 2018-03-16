@@ -49,9 +49,14 @@ dependencies {
 
     annotationProcessor dependency.androidBindingCompiler
 
+    implementation dependency.archComponentsExtention
+    annotationProcessor dependency.archComponentsCompiler
+
+
     implementation dependency.rxjava2
     implementation dependency.rxAndroid
 
     implementation dependency.gson
     compile project(path: ':domain')
+    compile project(path: ':data')
 }

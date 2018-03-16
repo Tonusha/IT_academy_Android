@@ -1,4 +1,4 @@
-package by.nca.presentation.base;
+package by.nca.it_academy.presentation.base;
 
 import android.databinding.DataBindingUtil;
 import android.databinding.ViewDataBinding;
