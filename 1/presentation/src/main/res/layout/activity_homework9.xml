@@ -6,7 +6,7 @@
 
         <variable
             name="user"
-            type="by.nca.it_academy.hw9.MyUser" />
+            type="by.nca.it_academy.work.hw9.MyUser" />
     </data>
 
     <LinearLayout

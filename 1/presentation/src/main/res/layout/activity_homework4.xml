@@ -34,7 +34,7 @@
         android:visibility="visible"
         android:weightSum="100">
 
-        <by.nca.it_academy.hw4.ClockView
+        <by.nca.it_academy.work.hw4.ClockView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center" />

@@ -5,7 +5,7 @@
         <import type="android.view.View"/>
         <variable
             name="myEntity"
-            type="by.nca.it_academy.cw9.MyEntity">
+            type="by.nca.it_academy.work.cw9.MyEntity">
         </variable>
     </data>
 

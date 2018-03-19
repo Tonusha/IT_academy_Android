@@ -7,7 +7,7 @@
 
         <variable
             name="viewModel"
-            type="by.nca.it_academy.cw10.UserViewModel"></variable>
+            type="by.nca.it_academy.work.cw10.UserViewModel"></variable>
     </data>
 
     <LinearLayout

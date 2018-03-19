@@ -10,6 +10,14 @@ import io.reactivex.disposables.CompositeDisposable;
 
 public class BaseViewModel extends ViewModel {
 
+    public BaseViewModel() {
+
+    }
+
+    public BaseViewModel(CompositeDisposable compositeDisposable) {
+        this.compositeDisposable = compositeDisposable;
+    }
+
     protected CompositeDisposable compositeDisposable = new CompositeDisposable();
 
     public void onResume(){

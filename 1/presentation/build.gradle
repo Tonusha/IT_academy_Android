@@ -52,6 +52,8 @@ dependencies {
     implementation dependency.archComponentsExtention
     annotationProcessor dependency.archComponentsCompiler
 
+    implementation dependency.dagger
+    annotationProcessor dependency.daggerCompiler
 
     implementation dependency.rxjava2
     implementation dependency.rxAndroid

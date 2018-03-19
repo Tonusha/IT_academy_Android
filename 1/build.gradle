@@ -26,9 +26,17 @@ ext {
     rxjavaVersion = "2.1.10"
     rxandroidVersion = "2.0.2"
     gsonVersion = "2.8.2"
+    daggerVersion = "2.15"
+    javaInjectVersion = "1"
+    retrofitVersion = "2.4.0"
+
 
 
     dependencies = [
+            retrofit: "com.squareup.retrofit2:retrofit:$retrofitVersion",
+            dagger: "com.google.dagger:dagger:$daggerVersion",
+            daggerCompiler: "com.google.dagger:dagger-compiler:$daggerVersion",
+            javaInject: "javax.inject:javax.inject:$javaInjectVersion",
             supportAppcompat: "com.android.support:appcompat-v7:$buildToolsSdkVersion",
             supportV4: "com.android.support:support-v4:$buildToolsSdkVersion",
             supportDesign: "com.android.support:design:$buildToolsSdkVersion",

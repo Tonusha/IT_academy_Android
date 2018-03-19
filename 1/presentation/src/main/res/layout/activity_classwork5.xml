@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <!--<by.nca.it_academy.cw4.CustomView-->
+    <!--<CustomViewView&ndash;&gt;-->
         <!--android:layout_width="wrap_content"-->
         <!--android:layout_height="wrap_content"-->
        <!--/>-->
