@@ -9,7 +9,6 @@ import javax.inject.Singleton;
 
 import by.nca.data.repository.UserRepositoryImpl;
 import by.nca.domain.executor.PostExecutionThread;
-import by.nca.domain.repository.UserRepository;
 import by.nca.it_academy.executor.UIThread;
 import by.nca.it_academy.net.RestApi;
 import dagger.Module;
@@ -43,7 +42,7 @@ public class AppModule {
 
     @Provides
     @Singleton
-    public UserRepository getUserRepository(){
+    public UserRepositoryImpl getUserRepository(){
         return new UserRepositoryImpl();
     }
 
@@ -52,6 +51,7 @@ public class AppModule {
     public RestApi getRestApi(Gson gson){
 
 }
+
 
     @Provides
     @Singleton

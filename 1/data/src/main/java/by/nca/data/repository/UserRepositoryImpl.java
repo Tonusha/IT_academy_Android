@@ -28,6 +28,10 @@ public class UserRepositoryImpl implements UserRepository {
         this.restService = restService;
     }
 
+    public UserRepositoryImpl() {
+
+    }
+
     @Override
     public Observable<UserEntity> get(String id) {
         return /*Observable.create(new ObservableOnSubscribe<UserEntity>() {
