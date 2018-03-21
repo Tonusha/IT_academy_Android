@@ -8,37 +8,37 @@ import io.reactivex.disposables.CompositeDisposable;
  * Created by user on 12.03.2018.
  */
 
-public class BaseViewModel extends ViewModel {
+public abstract class BaseViewModel extends ViewModel {
 
     public BaseViewModel() {
-
+        super();
+        createInject();
     }
 
-    public BaseViewModel(CompositeDisposable compositeDisposable) {
-        this.compositeDisposable = compositeDisposable;
-    }
+    public abstract void createInject();
 
     protected CompositeDisposable compositeDisposable = new CompositeDisposable();
 
-    public void onResume(){
+    public void onStart() {
 
-    };
+    }
 
-    public void onPause(){
+    public void onResume() {
 
-    };
+    }
 
-    public void onStart(){
+    public void onPause() {
 
-    };
+    }
 
     public void onStop() {
+
     }
 
     @Override
     protected void onCleared() {
         super.onCleared();
-        if(!compositeDisposable.isDisposed()) {
+        if (!compositeDisposable.isDisposed()) {
             compositeDisposable.dispose();
         }
     }

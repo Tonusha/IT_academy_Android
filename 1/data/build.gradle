@@ -3,12 +3,12 @@ apply plugin: 'com.android.library'
 android {
     compileSdkVersion rootProject.compileSdkVersion
 
-
-
-
     defaultConfig {
         minSdkVersion rootProject.minSdkVersion
         targetSdkVersion rootProject.targetSdkVersion
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
     }
 
     buildTypes {
@@ -23,9 +23,7 @@ android {
 dependencies {
     def dependency = rootProject.ext.dependencies
     implementation dependency.gson
-
+    implementation dependency.javaxInject
     api dependency.retrofit
-    implementation dependency.javaInject
-
-    api project(path:":domain")
+    api project(path: ':domain')
 }

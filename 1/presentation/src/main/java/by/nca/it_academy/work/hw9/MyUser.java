@@ -1,13 +1,9 @@
 package by.nca.it_academy.work.hw9;
 
 import android.databinding.BindingAdapter;
-import android.databinding.Observable;
 import android.databinding.ObservableBoolean;
 import android.databinding.ObservableField;
 import android.databinding.ObservableInt;
-import android.util.Log;
-import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
 
 //import com.squareup.picasso.Picasso;
@@ -34,6 +30,6 @@ public class MyUser {
 
     @BindingAdapter({"bind:imageUrl"})
     public static void loadImage(ImageView view, String url) {
-       // Picasso.with(view.getContext()).load(url).into(view);
+        CircleImage.showImage(view.getContext(), url, view);
     }
 }

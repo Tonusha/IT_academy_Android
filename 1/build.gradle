@@ -6,51 +6,64 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.0.1'
+
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
     }
 }
+
+ext {
+    minSdkVersion = 18
+    targetSdkVersion = 27
+    compileSdkVersion = 27
+    buildToolsSdkVersion = "27.0.2"
+    rxjavaVersion = "2.1.10"
+    rxandroidVersion = "2.0.2"
+    gsonVersion = "2.8.2"
+    androidBuildingCompiler = '3.0.0'
+    daggerVer = "2.15"
+    javaInjectVersion = "1"
+    retrofitVersion = "2.4.0"
+
+    archComponentVersion = '1.0.0'
+
+
+
+    dependencies = [
+            supportAppcompat:  "com.android.support:appcompat-v7:$buildToolsSdkVersion",
+            supportV4: "com.android.support:support-v4:$buildToolsSdkVersion",
+            supportDesign: "com.android.support:design:$buildToolsSdkVersion",
+
+            androidBuildingCompiler: "com.android.databinding:compiler:$androidBuildingCompiler",
+
+            archComponentsExtension: "android.arch.lifecycle:extensions:$archComponentVersion",
+            archComponentsCompiler: "android.arch.lifecycle:compiler:$archComponentVersion",
+
+            rx2android: "io.reactivex.rxjava2:rxandroid:$rxandroidVersion",
+            rx2java: "io.reactivex.rxjava2:rxjava:$rxjavaVersion",
+
+            dagger1: "com.google.dagger:dagger:$daggerVer",
+            dagger2: "com.google.dagger:dagger-android-support:$daggerVer",
+            daggerCompiler1: "com.google.dagger:dagger-android-processor:$daggerVer",
+            daggerCompiler2: "com.google.dagger:dagger-compiler:$daggerVer",
+
+            javaxInject: "javax.inject:javax.inject:$javaInjectVersion",
+
+            retrofit: "com.squareup.retrofit2:retrofit:$retrofitVersion",
+
+
+            gson: "com.google.code.gson:gson:$gsonVersion"
+
+    ]
+}
+
 
 allprojects {
     repositories {
         google()
         jcenter()
     }
-}
-
-ext {
-    compileSdkVersion = 27
-    buildToolsSdkVersion = "27.0.2"
-    minSdkVersion = 18
-    targetSdkVersion = 27
-    androidBindingVersion = '3.0.0'
-    archComponentVersion = "1.0.0"
-    rxjavaVersion = "2.1.10"
-    rxandroidVersion = "2.0.2"
-    gsonVersion = "2.8.2"
-    daggerVersion = "2.15"
-    javaInjectVersion = "1"
-    retrofitVersion = "2.4.0"
-
-
-
-    dependencies = [
-            retrofit: "com.squareup.retrofit2:retrofit:$retrofitVersion",
-            dagger: "com.google.dagger:dagger:$daggerVersion",
-            daggerCompiler: "com.google.dagger:dagger-compiler:$daggerVersion",
-            javaInject: "javax.inject:javax.inject:$javaInjectVersion",
-            supportAppcompat: "com.android.support:appcompat-v7:$buildToolsSdkVersion",
-            supportV4: "com.android.support:support-v4:$buildToolsSdkVersion",
-            supportDesign: "com.android.support:design:$buildToolsSdkVersion",
-
-            androidBindingCompiler: "com.android.databinding:compiler:$androidBindingVersion",
-
-            archComponentsExtention :"android.arch.lifecycle:extensions:$archComponentVersion",
-            archComponentsCompiler :"android.arch.lifecycle:compiler:$archComponentVersion",
-
-            rxjava2: "io.reactivex.rxjava2:rxjava:$rxjavaVersion",
-            rxAndroid: "io.reactivex.rxjava2:rxandroid:$rxandroidVersion",
-
-            gson: "com.google.code.gson:gson:$gsonVersion"
-    ]
 }
 
 task clean(type: Delete) {

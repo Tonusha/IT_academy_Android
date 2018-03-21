@@ -7,10 +7,10 @@ import com.google.gson.GsonBuilder;
 
 import javax.inject.Singleton;
 
+import by.nca.data.net.RestApi;
 import by.nca.data.repository.UserRepositoryImpl;
 import by.nca.domain.executor.PostExecutionThread;
 import by.nca.it_academy.executor.UIThread;
-import by.nca.it_academy.net.RestApi;
 import dagger.Module;
 import dagger.Provides;
 import retrofit2.Retrofit;
@@ -26,13 +26,13 @@ public class AppModule {
 
     @Provides
     @Singleton
-    public Context getContext(){
+    public Context getContext() {
         return context;
     }
 
     @Provides
     @Singleton
-    public PostExecutionThread getUIThread(){
+    public PostExecutionThread getUIThread() {
         return new UIThread();
     }
 
@@ -42,26 +42,26 @@ public class AppModule {
 
     @Provides
     @Singleton
-    public UserRepositoryImpl getUserRepository(){
+    public UserRepositoryImpl getUserRepository() {
         return new UserRepositoryImpl();
     }
 
-@Provides
+    @Provides
     @Singleton
-    public RestApi getRestApi(Gson gson){
+    public void getRestApi(Gson gson) {
 
-}
+    }
 
 
     @Provides
     @Singleton
-    public RestApi getRestService(Retrofit retrofit){
+    public RestApi getRestService(Retrofit retrofit) {
         return retrofit.create(RestApi.class);
     }
 
     @Provides
     @Singleton
-    public Gson getGson(){
+    public Gson getGson() {
         return new GsonBuilder().create();
     }
 

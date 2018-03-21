@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android">
-
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
     <data>
-
-        <import type="android.view.View" />
-
         <variable
             name="viewModel"
             type="by.nca.it_academy.work.cw12.UserViewModel"></variable>
@@ -26,13 +24,6 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="@{String.valueOf(viewModel.age)}" />
-
-        <ProgressBar
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:visibility="@{viewModel.progressVisible? View.VISIBLE : View.GONE}" />
-
 
     </LinearLayout>
 </layout>

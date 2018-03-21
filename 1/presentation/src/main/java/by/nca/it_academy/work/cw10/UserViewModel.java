@@ -2,24 +2,12 @@ package by.nca.it_academy.work.cw10;
 
 import android.databinding.ObservableBoolean;
 import android.databinding.ObservableField;
-import android.util.Log;
-
-import by.nca.domain.entity.UserEntity;
-import by.nca.it_academy.app.App;
-import by.nca.it_academy.presentation.base.BaseViewModel;
-import io.reactivex.Observable;
-import io.reactivex.ObservableEmitter;
-import io.reactivex.ObservableOnSubscribe;
-import io.reactivex.Observer;
-import io.reactivex.android.schedulers.AndroidSchedulers;
-import io.reactivex.disposables.Disposable;
-import io.reactivex.schedulers.Schedulers;
 
 /**
  * Created by user on 12.03.2018.
  */
 
-public class UserViewModel extends BaseViewModel {
+public class UserViewModel /*extends BaseViewModel*/ {
 
     public ObservableField<String> username = new ObservableField(null);
     public ObservableField<String> profileUrl = new ObservableField(null);
@@ -27,7 +15,7 @@ public class UserViewModel extends BaseViewModel {
     public ObservableBoolean progressVisible = new ObservableBoolean(true);
 
 
-    @Override
+  /*  @Override
     public void onResume() {
         super.onResume();
 
@@ -37,7 +25,7 @@ public class UserViewModel extends BaseViewModel {
             @Override
             public void subscribe(ObservableEmitter<UserEntity> emitter) throws Exception {
                 Thread.sleep(5000);
-                UserEntity entity = new UserEntity("Tonya", 20, "vxc");
+                UserEntity entity = new UserEntity("Tonya", "vxc", "fds", 20, false,"sfdasf");
                 emitter.onNext(entity);
                 emitter.onComplete();}
             }).subscribeOn(Schedulers.io())
@@ -52,9 +40,9 @@ public class UserViewModel extends BaseViewModel {
                     @Override
                     public void onNext(UserEntity userEntity) {
                         Log.e("df", "fd");
-                        username.set(userEntity.getUsername());
+                        username.set(userEntity.getFirstName());
                         age.set(userEntity.getAge());
-                        profileUrl.set(userEntity.getProfileUrl());
+                        profileUrl.set(userEntity.getImageUrl());
                     }
 
                     @Override
@@ -68,7 +56,7 @@ public class UserViewModel extends BaseViewModel {
                     }
                 });
         progressVisible.set(false);
-    };
+    };*/
 
 
 }

@@ -1,12 +1,10 @@
 package by.nca.it_academy.work.cw10;
 
-import by.nca.it_academy.presentation.base.BaseViewModel;
-
 /**
  * Created by user on 12.03.2018.
  */
 
-public class MyEntity extends BaseViewModel {
+public class MyEntity /*extends BaseViewModel*/ {
     private String text;
     private String textButton;
     private boolean buttonVisible;
