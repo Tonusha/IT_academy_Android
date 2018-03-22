@@ -1,4 +1,4 @@
-package by.nca.it_academy.net;
+package by.nca.data.net;
 
 import java.util.List;
 
@@ -15,14 +15,16 @@ public class RestService {
 
     @Inject
     public RestService(RestApi restApi) {
-        return this.restApi = restApi;
+        this.restApi = restApi;
     }
 
-    Observable<List<User>> loadUser(){
-        return restApi.LoadUsers();
+    //    @Override
+    public Observable<List<User>> loadUsers() {
+        return restApi.loadUsers();
     }
 
-    Observable<User> loadUserById(){
-        return restApi.LoadUserById("id");
+    //    @Override
+    public Observable<User> loadUserById(String id) {
+        return restApi.loadUserById(id);
     }
 }
