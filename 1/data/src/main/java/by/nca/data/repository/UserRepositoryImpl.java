@@ -13,16 +13,37 @@ import io.reactivex.Completable;
 import io.reactivex.Observable;
 import io.reactivex.functions.Function;
 
+/**
+ * Created by user on 16.03.2018.
+ */
+
 public class UserRepositoryImpl implements UserRepository {
 
 
     private Context context;
     private RestService restService;
 
-    public UserRepositoryImpl() {
+    public UserRepositoryImpl(Context context, RestService restService) {
         this.context = context;
         this.restService = restService;
     }
+//    public UserRepositoryImpl(Context context) {
+//        this.context = context;
+//    }
+//
+//    @Override
+//    public Observable<UserEntity> get(String id) {
+//        return Observable.create(new ObservableOnSubscribe<UserEntity>() {
+//            @Override
+//            public void subscribe(ObservableEmitter<UserEntity> emitter) throws Exception {
+//                Thread.sleep(5000);
+//                UserEntity userEntity = new UserEntity("Никита", "Кожемяка", "из богатырей", 33, true, "http://oldtale.ru/images/nikita-kojemyaka.jpg");
+//
+//                emitter.onNext(userEntity);
+//                emitter.onComplete();
+//            }
+//        });
+//    }
 
     @Override
     public Observable<UserEntity> get(String id) {

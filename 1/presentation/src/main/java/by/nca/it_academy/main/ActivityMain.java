@@ -9,9 +9,6 @@ import android.widget.Button;
 
 import by.nca.it_academy.R;
 import by.nca.it_academy.work.cw1.ActivityCW1;
-import by.nca.it_academy.work.cw10.ActivityCW10;
-import by.nca.it_academy.work.cw11.ActivityCW11;
-import by.nca.it_academy.work.cw12.ActivityCW12;
 import by.nca.it_academy.work.cw2.ActivityCW2;
 import by.nca.it_academy.work.cw3.ActivityCW3;
 import by.nca.it_academy.work.cw4.ActivityCW4;
@@ -19,7 +16,6 @@ import by.nca.it_academy.work.cw5.ActivityCW5;
 import by.nca.it_academy.work.cw6.ActivityCW6;
 import by.nca.it_academy.work.cw7.ActivityCW7;
 import by.nca.it_academy.work.cw9.ActivityCW9;
-import by.nca.it_academy.work.hw1.ActivityHW1;
 import by.nca.it_academy.work.hw2.ActivityHW2;
 import by.nca.it_academy.work.hw3.ActivityHW3;
 import by.nca.it_academy.work.hw4.ActivityHW4;
@@ -27,6 +23,8 @@ import by.nca.it_academy.work.hw5.ActivityHW5;
 import by.nca.it_academy.work.hw6.ActivityHW6;
 import by.nca.it_academy.work.hw7.ActivityHW7;
 import by.nca.it_academy.work.hw8.ActivityHW8;
+import by.nca.it_academy.work.hw9.ActivityHW9;
+import by.nca.it_academy.work_mvvm.hw1.ActivityHW1;
 
 public class ActivityMain extends Activity implements View.OnClickListener {
     private Button button1;
@@ -46,8 +44,8 @@ public class ActivityMain extends Activity implements View.OnClickListener {
     private Button button15;
     private Button button16;
     private Button button17;
-    private Button button18;
-    private Button button19;
+    /*private Button button18;
+    private Button button19;*/
 
     /*использовать butter knife бибилиотеку*/
 
@@ -103,14 +101,17 @@ public class ActivityMain extends Activity implements View.OnClickListener {
                 startActivity(new Intent(ActivityMain.this, ActivityHW8.class));
                 break;
             case R.id.button17:
+                startActivity(new Intent(ActivityMain.this, ActivityHW9.class));
+                break;
+            /*case R.id.button17:
                 startActivity(new Intent(ActivityMain.this, ActivityCW10.class));
-                break;
-            case R.id.button18:
+                break;*/
+            /*case R.id.button18:
                 startActivity(new Intent(ActivityMain.this, ActivityCW11.class));
-                break;
-            case R.id.button19:
+                break;*/
+            /*case R.id.button19:
                 startActivity(new Intent(ActivityMain.this, ActivityCW12.class));
-                break;
+                break;*/
         }
         ;
     };
@@ -153,9 +154,11 @@ public class ActivityMain extends Activity implements View.OnClickListener {
         button16.setOnClickListener(this);
         button17 = findViewById(R.id.button17);
         button17.setOnClickListener(this);
+        /*button17 = findViewById(R.id.button17);
+        button17.setOnClickListener(this);
         button18 = findViewById(R.id.button18);
         button18.setOnClickListener(this);
         button19 = findViewById(R.id.button19);
-        button19.setOnClickListener(this);
+        button19.setOnClickListener(this);*/
     }
 }

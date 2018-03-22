@@ -5,7 +5,7 @@ package by.nca.it_academy.work.cw11;
  */
 
 public class MyEntity /*extends BaseViewModel */{
-    private String text;
+   /* private String text;
     private String textButton;
     private boolean buttonVisible;
 
@@ -42,5 +42,5 @@ public class MyEntity /*extends BaseViewModel */{
 
     public void setButtonVisible(boolean buttonVisible) {
         this.buttonVisible = buttonVisible;
-    }
+    }*/
 }

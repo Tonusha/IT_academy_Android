@@ -1,17 +1,7 @@
 package by.nca.it_academy.work.cw12;
 
-import android.databinding.ObservableBoolean;
-import android.databinding.ObservableField;
-import android.util.Log;
-
-import javax.inject.Inject;
-
-import by.nca.domain.entity.UserEntity;
-import by.nca.domain.interactor.GetUserByIdUseCase;
 import by.nca.it_academy.app.App;
 import by.nca.it_academy.presentation.base.BaseViewModel;
-import io.reactivex.Observer;
-import io.reactivex.disposables.Disposable;
 
 /**
  * Created by miruk on 21.03.2018.
@@ -20,7 +10,7 @@ import io.reactivex.disposables.Disposable;
 public class UserViewModel extends BaseViewModel
 {
 
-   /* @Override
+    @Override
     public void createInject() {
         App.getAppComponent().inject(this);
     }
@@ -85,57 +75,6 @@ public class UserViewModel extends BaseViewModel
         }));
     }
 
-}*/
-
-    @Override
-    public void createInject() {
-        App.getAppComponent().inject(this);
-    }
-    public ObservableField<String> username = new ObservableField(null);
-    public ObservableField<String> profileUrl = new ObservableField(null);
-    public ObservableField<Integer> age = new ObservableField(null);
-    public ObservableBoolean progressVisible = new ObservableBoolean(true);
-
-    @Inject
-    public GetUserByIdUseCase getUserByIdUseCase;
-    //= new GetUserByIdUseCase(new UIThread(), new UserRepositoryImpl());
-
-    public UserViewModel() {
-
-        progressVisible.set(true);
-
-        getUserByIdUseCase.get("1").subscribe(new Observer<UserEntity>() {
-
-            @Override
-            public void onSubscribe(Disposable d) {
-                Log.e("df", "fd");
-                compositeDisposable.add(d);
-            }
-
-            @Override
-            public void onNext(UserEntity userEntity) {
-                Log.e("df", "fd");
-                username.set(userEntity.getFirstName());
-                age.set(userEntity.getAge());
-                profileUrl.set(userEntity.getImageUrl());
-            }
-
-            @Override
-            public void onError(Throwable e) {
-                Log.e("df", "fd");
-            }
-
-            @Override
-            public void onComplete() {
-                Log.e("df", "fd");
-            }
-        });
-        progressVisible.set(false);
-    }
-
-    ;
-
 }
-
 
 

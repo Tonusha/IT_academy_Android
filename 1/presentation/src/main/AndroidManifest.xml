@@ -8,21 +8,23 @@
     <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <application
-        android:name=".app.App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <!--<activity-->
+            <!--android:name=".work.cw12.ActivityCW12"-->
+            <!--android:parentActivityName=".main.ActivityMain"></activity>-->
+        <!--<activity-->
+            <!--android:name=".work.cw11.ActivityCW11"-->
+            <!--android:parentActivityName=".main.ActivityMain"></activity>-->
+        <!--<activity-->
+            <!--android:name=".work.cw10.ActivityCW10"-->
+            <!--android:parentActivityName=".main.ActivityMain"></activity>-->
         <activity
-            android:name=".work.cw12.ActivityCW12"
-            android:parentActivityName=".main.ActivityMain"></activity>
-        <activity
-            android:name=".work.cw11.ActivityCW11"
-            android:parentActivityName=".main.ActivityMain"></activity>
-        <activity
-            android:name=".work.cw10.ActivityCW10"
+            android:name=".work.hw9.ActivityHW9"
             android:parentActivityName=".main.ActivityMain"></activity>
         <activity
             android:name=".work.cw9.ActivityCW9"
@@ -45,7 +47,7 @@
             android:name=".work.cw1.ActivityCW1"
             android:parentActivityName=".main.ActivityMain"></activity>
         <activity
-            android:name=".work.hw1.ActivityHW1"
+            android:name=".work_mvvm.hw1.ActivityHW1"
             android:parentActivityName=".main.ActivityMain"></activity>
         <activity
             android:name=".work.cw2.ActivityCW2"
@@ -89,3 +91,4 @@
         <service android:name=".work.hw5.MyService"></service>
     </application>
 </manifest>
+    <!--android:name=".app.App"-->

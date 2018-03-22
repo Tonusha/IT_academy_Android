@@ -1,22 +1,15 @@
 package by.nca.it_academy.work.cw11;
 
-import android.databinding.ObservableBoolean;
-import android.databinding.ObservableField;
-
-import by.nca.data.repository.UserRepositoryImpl;
-import by.nca.domain.interactor.GetUserByIdUseCaseCW11;
-import by.nca.it_academy.executor.UIThread;
-
 /**
  * Created by user on 12.03.2018.
  */
 
 public class UserViewModel /*extends BaseViewModel*/ {
-    public ObservableField<String> username = new ObservableField(null);
+ /*   public ObservableField<String> username = new ObservableField(null);
     public ObservableField<String> profileUrl = new ObservableField(null);
     public ObservableField<Integer> age = new ObservableField(null);
     public ObservableBoolean progressVisible = new ObservableBoolean(true);
-    public GetUserByIdUseCaseCW11 getUserByIdUseCase = new GetUserByIdUseCaseCW11(new UIThread(), new UserRepositoryImpl());
+    public GetUserByIdUseCaseCW11 getUserByIdUseCase = new GetUserByIdUseCaseCW11(new UIThread(), new UserRepositoryImpl());*/
 
    /* public UserViewModel() {
         progressVisible.set(true);
