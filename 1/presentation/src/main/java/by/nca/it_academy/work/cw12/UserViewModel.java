@@ -1,11 +1,25 @@
 package by.nca.it_academy.work.cw12;
 
+import android.databinding.BindingAdapter;
+import android.databinding.ObservableBoolean;
+import android.databinding.ObservableField;
+import android.databinding.ObservableInt;
+import android.graphics.Color;
+import android.util.Log;
+import android.widget.ImageView;
+
+import java.util.ArrayList;
+
+import javax.inject.Inject;
+
+import by.nca.domain.entity.UserEntity;
+import by.nca.domain.interactor.GetUserByIdUseCase;
 import by.nca.it_academy.app.App;
 import by.nca.it_academy.presentation.base.BaseViewModel;
-
-/**
- * Created by miruk on 21.03.2018.
- */
+import by.nca.it_academy.work.hw9.CircleImage;
+import io.reactivex.Observer;
+import io.reactivex.disposables.CompositeDisposable;
+import io.reactivex.disposables.Disposable;
 
 public class UserViewModel extends BaseViewModel
 {

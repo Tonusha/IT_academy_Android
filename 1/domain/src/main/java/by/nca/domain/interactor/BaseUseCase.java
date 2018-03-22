@@ -10,20 +10,21 @@ import io.reactivex.schedulers.Schedulers;
  */
 
 public abstract class BaseUseCase {
-    // поток в котором будем получать результаты в presentation слое
+
+    // поток в котором будем получать резуцльтаты в presentation слое
     protected Scheduler postExecutionThread;
 
-    // поток в котором будем выполнять все сложные запросы
+    // поток в котором будем выполнять все сложные запросы (дургой поток не UI)
     protected Scheduler threadExecution;
+
 
     public BaseUseCase(PostExecutionThread postExecutionThread) {
         this.postExecutionThread = postExecutionThread.getScheduler();
         this.threadExecution = Schedulers.io();
     }
 
-    public BaseUseCase(ThreadExecutor threadExecution, PostExecutionThread postExecutionThread) {
-        this.threadExecution = Schedulers.from(threadExecution);
+    public BaseUseCase(PostExecutionThread postExecutionThread, ThreadExecutor threadExecution) {
         this.postExecutionThread = postExecutionThread.getScheduler();
+        this.threadExecution = Schedulers.from(threadExecution);
     }
-
 }

@@ -2,13 +2,8 @@ package by.nca.data.entity;
 
 import com.google.gson.annotations.SerializedName;
 
-/**
- * Created by user on 19.03.2018.
- */
-
 public class User {
 
-    //    @SerializedName("object_id")
     @SerializedName("objectId")
     private String objectId;
 

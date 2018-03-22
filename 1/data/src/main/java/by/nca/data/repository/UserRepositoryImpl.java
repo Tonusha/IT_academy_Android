@@ -1,5 +1,6 @@
 package by.nca.data.repository;
 
+
 import android.content.Context;
 
 import java.util.ArrayList;
@@ -13,10 +14,6 @@ import io.reactivex.Completable;
 import io.reactivex.Observable;
 import io.reactivex.functions.Function;
 
-/**
- * Created by user on 16.03.2018.
- */
-
 public class UserRepositoryImpl implements UserRepository {
 
 
@@ -27,23 +24,6 @@ public class UserRepositoryImpl implements UserRepository {
         this.context = context;
         this.restService = restService;
     }
-//    public UserRepositoryImpl(Context context) {
-//        this.context = context;
-//    }
-//
-//    @Override
-//    public Observable<UserEntity> get(String id) {
-//        return Observable.create(new ObservableOnSubscribe<UserEntity>() {
-//            @Override
-//            public void subscribe(ObservableEmitter<UserEntity> emitter) throws Exception {
-//                Thread.sleep(5000);
-//                UserEntity userEntity = new UserEntity("Никита", "Кожемяка", "из богатырей", 33, true, "http://oldtale.ru/images/nikita-kojemyaka.jpg");
-//
-//                emitter.onNext(userEntity);
-//                emitter.onComplete();
-//            }
-//        });
-//    }
 
     @Override
     public Observable<UserEntity> get(String id) {
@@ -52,7 +32,7 @@ public class UserRepositoryImpl implements UserRepository {
                 .map(new Function<User, UserEntity>() {
                     @Override
                     public UserEntity apply(User user) throws Exception {
-                        return new UserEntity(user.getUsername(), user.getUsername(), user.getUsername(), user.getAge(), true,  user.getProfileUrl());
+                        return new UserEntity(user.getUsername(), user.getUsername(), user.getUsername(), user.getAge(), true, user.getProfileUrl());
                     }
                 });
 
@@ -67,8 +47,8 @@ public class UserRepositoryImpl implements UserRepository {
                     public List<UserEntity> apply(List<User> users) throws Exception {
                         List<UserEntity> userEntities = new ArrayList<>();
 
-                        for (User user: users) {
-                            userEntities.add(new UserEntity(user.getUsername(), user.getUsername(), user.getUsername(), user.getAge(), true,  user.getProfileUrl()));
+                        for (User user : users) {
+                            userEntities.add(new UserEntity(user.getUsername(), user.getUsername(), user.getUsername(), user.getAge(), true, user.getProfileUrl()));
                         }
                         return userEntities;
                     }

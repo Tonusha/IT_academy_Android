@@ -5,7 +5,7 @@ android {
     buildToolsVersion rootProject.buildToolsSdkVersion
 
     defaultConfig {
-        applicationId "com.nca.testandroid"
+        applicationId "by.nca.it_academy"
 
         minSdkVersion rootProject.minSdkVersion
         targetSdkVersion rootProject.targetSdkVersion

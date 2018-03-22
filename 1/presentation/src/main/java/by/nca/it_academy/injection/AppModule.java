@@ -90,7 +90,7 @@ public class AppModule {
     public Gson getGson() {
 
         return new GsonBuilder()
-                // тут можно добавить настройки для прасинга даты например
+                // туту можно добавить настройки для прасинга даты например
                 .create();
 
     }

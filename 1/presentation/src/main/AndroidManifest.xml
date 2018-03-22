@@ -3,11 +3,12 @@
 
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <application
+        android:name=".app.App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -15,14 +16,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <!--<activity-->
-            <!--android:name=".work.cw12.ActivityCW12"-->
-            <!--android:parentActivityName=".main.ActivityMain"></activity>-->
+        <!--android:name=".work.cw12.ActivityCW12"-->
+        <!--android:parentActivityName=".main.ActivityMain"></activity>-->
         <!--<activity-->
-            <!--android:name=".work.cw11.ActivityCW11"-->
-            <!--android:parentActivityName=".main.ActivityMain"></activity>-->
+        <!--android:name=".work.cw11.ActivityCW11"-->
+        <!--android:parentActivityName=".main.ActivityMain"></activity>-->
         <!--<activity-->
-            <!--android:name=".work.cw10.ActivityCW10"-->
-            <!--android:parentActivityName=".main.ActivityMain"></activity>-->
+        <!--android:name=".work.cw10.ActivityCW10"-->
+        <!--android:parentActivityName=".main.ActivityMain"></activity>-->
         <activity
             android:name=".work.hw9.ActivityHW9"
             android:parentActivityName=".main.ActivityMain"></activity>
@@ -38,7 +39,8 @@
         <activity
             android:name=".work.cw7.ActivityCW7"
             android:parentActivityName=".main.ActivityMain"></activity>
-        <activity android:name=".work.hw6.ActivityHW6"
+        <activity
+            android:name=".work.hw6.ActivityHW6"
             android:parentActivityName=".main.ActivityMain"></activity>
         <activity
             android:name=".work.cw6.ActivityCW6"
@@ -61,16 +63,19 @@
         <activity
             android:name=".work.hw3.ActivityHW3"
             android:parentActivityName=".main.ActivityMain"></activity>
-        <activity android:name=".work.cw4.ActivityCW4"
+        <activity
+            android:name=".work.cw4.ActivityCW4"
             android:parentActivityName=".main.ActivityMain"></activity>
-        <activity android:name=".work.cw5.ActivityCW5"
+        <activity
+            android:name=".work.cw5.ActivityCW5"
             android:parentActivityName=".main.ActivityMain"></activity>
         <activity
             android:name=".work.hw4.ActivityHW4"
             android:theme="@style/AnimationActivity">
             android:parentActivityName=".main.ActivityMain">
         </activity>
-        <activity android:name=".work.hw5.ActivityHW5"
+        <activity
+            android:name=".work.hw5.ActivityHW5"
             android:parentActivityName=".main.ActivityMain"></activity>
         <activity
             android:name=".main.ActivityMain"
@@ -80,10 +85,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <receiver android:name=".work.cw5.MyReceiver">
             <intent-filter>
-                <action android:name="android.intent.action.AIRPLANE_MODE"/>
-                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+                <action android:name="android.intent.action.AIRPLANE_MODE" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
             </intent-filter>
         </receiver>
         <!--<service android:name=".cw5.MyService"></service>-->
@@ -91,4 +97,4 @@
         <service android:name=".work.hw5.MyService"></service>
     </application>
 </manifest>
-    <!--android:name=".app.App"-->
+
