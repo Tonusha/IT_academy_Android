@@ -14,7 +14,7 @@ public class App extends Application {
 
     private static AppComponent appComponent;
 
-    public static AppComponent getAppComponent(){
+    public static AppComponent getAppComponent() {
         return appComponent;
     }
 
@@ -23,9 +23,8 @@ public class App extends Application {
         super.onCreate();
 
         appComponent = DaggerAppComponent.builder()
-        .appModule(new AppModule(this))
+                .appModule(new AppModule(this))
                 .build();
-
     }
 
 }

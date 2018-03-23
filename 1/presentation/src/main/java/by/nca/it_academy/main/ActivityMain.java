@@ -9,8 +9,6 @@ import android.widget.Button;
 
 import by.nca.it_academy.R;
 import by.nca.it_academy.work.cw1.ActivityCW1;
-import by.nca.it_academy.work.cw10.ActivityCW10;
-import by.nca.it_academy.work.cw11.ActivityCW11;
 import by.nca.it_academy.work.cw12.ActivityCW12;
 import by.nca.it_academy.work.cw2.ActivityCW2;
 import by.nca.it_academy.work.cw3.ActivityCW3;
@@ -101,12 +99,6 @@ public class ActivityMain extends Activity implements View.OnClickListener {
                 break;
             case R.id.button16:
                 startActivity(new Intent(ActivityMain.this, ActivityHW8.class));
-                break;
-            case R.id.button17:
-                startActivity(new Intent(ActivityMain.this, ActivityCW10.class));
-                break;
-            case R.id.button18:
-                startActivity(new Intent(ActivityMain.this, ActivityCW11.class));
                 break;
             case R.id.button19:
                 startActivity(new Intent(ActivityMain.this, ActivityCW12.class));

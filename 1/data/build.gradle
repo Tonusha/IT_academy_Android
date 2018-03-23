@@ -26,6 +26,10 @@ dependencies {
 
     api dependency.retrofit
     implementation dependency.javaInject
+    api dependency.retrofitGson
+    api dependency.retrofitRx2java
+    api dependency.okhttp
+    api dependency.okhttpLogging
 
-    api project(path:":domain")
+    api project(path: ":domain")
 }

@@ -14,43 +14,41 @@ import by.nca.it_academy.BR;
  */
 
 public abstract class BaseMvvmActivityCW12<Binding extends ViewDataBinding, ViewModel extends BaseViewModelCW12> extends AppCompatActivity {
-    protected Binding binding;
-    protected ViewModel viewModel;
 
-    public abstract int provideLayoutId();
+        protected Binding binding;
+        protected ViewModel viewModel;
 
-    public abstract ViewModel provideViewModel();
+        public abstract int provideLayoutId();
+        public abstract ViewModel provideViewModel();
 
-    @Override
-    public void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+        @Override
+        public void onCreate(@Nullable Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
 
-        viewModel = provideViewModel();
-        binding = DataBindingUtil.setContentView(this, provideLayoutId());
-        binding.setVariable(BR.viewModel, viewModel);
+            viewModel = provideViewModel();
+            binding = DataBindingUtil.setContentView(this, provideLayoutId());
+            binding.setVariable(BR.viewModel, viewModel);
+        }
+
+        @Override
+        protected void onResume() {
+            super.onResume();
+            viewModel.onResume();
+        }
+
+        @Override
+        protected void onPause() {
+            super.onPause();
+            viewModel.onPause();
+        }
+        @Override
+        protected void onStart() {
+            super.onStart();
+            viewModel.onStart();
+        }
+        @Override
+        protected void onStop() {
+            super.onStop();
+            viewModel.onStop();
+        }
     }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-        viewModel.onResume();
-    }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-        viewModel.onPause();
-    }
-
-    @Override
-    protected void onStart() {
-        super.onStart();
-        viewModel.onStart();
-    }
-
-    @Override
-    protected void onStop() {
-        super.onStop();
-        viewModel.onStop();
-    }
-}

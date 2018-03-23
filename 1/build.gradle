@@ -29,6 +29,7 @@ ext {
     daggerVersion = "2.15"
     javaInjectVersion = "1"
     retrofitVersion = "2.4.0"
+    okhttpVersion = '3.10.0'
 
 
 
@@ -40,6 +41,12 @@ ext {
             supportAppcompat: "com.android.support:appcompat-v7:$buildToolsSdkVersion",
             supportV4: "com.android.support:support-v4:$buildToolsSdkVersion",
             supportDesign: "com.android.support:design:$buildToolsSdkVersion",
+
+            retrofit: "com.squareup.retrofit2:retrofit:$retrofitVersion",
+            retrofitGson: "com.squareup.retrofit2:converter-gson:$retrofitVersion",
+            retrofitRx2java: "com.squareup.retrofit2:adapter-rxjava2:$retrofitVersion",
+            okhttp:"com.squareup.okhttp3:okhttp:$okhttpVersion",
+            okhttpLogging:"com.squareup.okhttp3:logging-interceptor:$okhttpVersion" ,
 
             androidBindingCompiler: "com.android.databinding:compiler:$androidBindingVersion",
 

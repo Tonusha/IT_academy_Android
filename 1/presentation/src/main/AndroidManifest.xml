@@ -17,13 +17,19 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".work.cw12.ActivityCW12"
-            android:parentActivityName=".main.ActivityMain"></activity>
-        <activity
-            android:name=".work.cw11.ActivityCW11"
-            android:parentActivityName=".main.ActivityMain"></activity>
-        <activity
-            android:name=".work.cw10.ActivityCW10"
-            android:parentActivityName=".main.ActivityMain"></activity>
+            android:parentActivityName=".main.ActivityMain">
+            <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--<activity-->
+            <!--android:name=".work.cw11.ActivityCW11"-->
+            <!--android:parentActivityName=".main.ActivityMain"></activity>-->
+        <!--<activity-->
+            <!--android:name=".work.cw10.ActivityCW10"-->
+            <!--android:parentActivityName=".main.ActivityMain"></activity>-->
         <activity
             android:name=".work.cw9.ActivityCW9"
             android:parentActivityName=".main.ActivityMain"></activity>

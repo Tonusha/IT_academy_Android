@@ -1,5 +1,6 @@
 package by.nca.it_academy.presentation.base;
 
+
 import android.arch.lifecycle.ViewModel;
 
 import io.reactivex.disposables.CompositeDisposable;
@@ -17,31 +18,28 @@ public abstract class BaseViewModelCW12 extends ViewModel {
 
     public abstract void createInject();
 
-    public BaseViewModelCW12(CompositeDisposable compositeDisposable) {
-        this.compositeDisposable = compositeDisposable;
-    }
-
     protected CompositeDisposable compositeDisposable = new CompositeDisposable();
 
-    public void onResume(){
+    public void onStart() {
 
-    };
+    }
 
-    public void onPause(){
+    public void onResume() {
 
-    };
+    }
 
-    public void onStart(){
+    public void onPause() {
 
-    };
+    }
 
     public void onStop() {
+
     }
 
     @Override
     protected void onCleared() {
         super.onCleared();
-        if(!compositeDisposable.isDisposed()) {
+        if (!compositeDisposable.isDisposed()) {
             compositeDisposable.dispose();
         }
     }
