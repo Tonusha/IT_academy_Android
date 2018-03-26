@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                         
+    
+                                          
+                                         
+                 
+                            
+                                                                        
+           
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:tag="layout/activity_classwork12_0" 
+        android:orientation="vertical"  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:bind="http://schemas.android.com/apk/res-auto">
+
+        <TextView android:layout_width="wrap_content"
+            android:id="@+id/firstName"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:tag="binding_1"                       />
+
+        <TextView android:layout_width="wrap_content"
+            android:id="@+id/lastName"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:tag="binding_2"                      />
+
+        <TextView android:layout_width="wrap_content"
+            android:id="@+id/fatherName"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:tag="binding_3"                        />
+
+        <TextView android:layout_width="wrap_content"
+            android:id="@+id/age"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:tag="binding_4"                                      />
+
+        <TextView android:layout_width="wrap_content"
+            android:id="@+id/isMan"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:tag="binding_5"                                         />
+
+        <ImageView
+            android:id="@+id/imageUrl"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:tag="binding_6"              />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="visible"/>
+
+    </LinearLayout>
+
+         

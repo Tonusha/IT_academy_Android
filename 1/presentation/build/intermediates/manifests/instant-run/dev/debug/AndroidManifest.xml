@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="by.nca.it_academy"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="27" />
+
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:name="by.nca.it_academy.app.App"
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="by.nca.it_academy.work.cw12.ActivityCW12"
+            android:parentActivityName="by.nca.it_academy.main.ActivityMain" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- <activity -->
+        <!-- android:name=".work.cw11.ActivityCW11" -->
+        <!-- android:parentActivityName=".main.ActivityMain"></activity> -->
+        <!-- <activity -->
+        <!-- android:name=".work.cw10.ActivityCW10" -->
+        <!-- android:parentActivityName=".main.ActivityMain"></activity> -->
+        <activity
+            android:name="by.nca.it_academy.work.cw9.ActivityCW9"
+            android:parentActivityName="by.nca.it_academy.main.ActivityMain" />
+        <activity
+            android:name="by.nca.it_academy.work.hw8.ActivityHW8"
+            android:parentActivityName="by.nca.it_academy.main.ActivityMain" />
+        <activity
+            android:name="by.nca.it_academy.work.hw7.ActivityHW7"
+            android:parentActivityName="by.nca.it_academy.main.ActivityMain" />
+        <activity
+            android:name="by.nca.it_academy.work.cw7.ActivityCW7"
+            android:parentActivityName="by.nca.it_academy.main.ActivityMain" />
+        <activity
+            android:name="by.nca.it_academy.work.hw6.ActivityHW6"
+            android:parentActivityName="by.nca.it_academy.main.ActivityMain" />
+        <activity
+            android:name="by.nca.it_academy.work.cw6.ActivityCW6"
+            android:parentActivityName="by.nca.it_academy.main.ActivityMain" />
+        <activity
+            android:name="by.nca.it_academy.work.cw1.ActivityCW1"
+            android:parentActivityName="by.nca.it_academy.main.ActivityMain" />
+        <activity
+            android:name="by.nca.it_academy.work.hw1.ActivityHW1"
+            android:parentActivityName="by.nca.it_academy.main.ActivityMain" />
+        <activity
+            android:name="by.nca.it_academy.work.cw2.ActivityCW2"
+            android:parentActivityName="by.nca.it_academy.main.ActivityMain" />
+        <activity
+            android:name="by.nca.it_academy.work.hw2.ActivityHW2"
+            android:parentActivityName="by.nca.it_academy.main.ActivityMain" />
+        <activity
+            android:name="by.nca.it_academy.work.cw3.ActivityCW3"
+            android:parentActivityName="by.nca.it_academy.main.ActivityMain" />
+        <activity
+            android:name="by.nca.it_academy.work.hw3.ActivityHW3"
+            android:parentActivityName="by.nca.it_academy.main.ActivityMain" />
+        <activity
+            android:name="by.nca.it_academy.work.cw4.ActivityCW4"
+            android:parentActivityName="by.nca.it_academy.main.ActivityMain" />
+        <activity
+            android:name="by.nca.it_academy.work.cw5.ActivityCW5"
+            android:parentActivityName="by.nca.it_academy.main.ActivityMain" />
+        <activity
+            android:name="by.nca.it_academy.work.hw4.ActivityHW4"
+            android:theme="@style/AnimationActivity" >
+            android:parentActivityName=".main.ActivityMain">
+        </activity>
+        <activity
+            android:name="by.nca.it_academy.work.hw5.ActivityHW5"
+            android:parentActivityName="by.nca.it_academy.main.ActivityMain" />
+        <activity
+            android:name="by.nca.it_academy.main.ActivityMain"
+            android:theme="@style/AnimationActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name="by.nca.it_academy.work.cw5.MyReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.AIRPLANE_MODE" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+        <!-- <service android:name=".cw5.MyService"></service> -->
+        <!-- <service android:name=".cw5.MyIntentClass"></service> -->
+        <service android:name="by.nca.it_academy.work.hw5.MyService" />
+
+        <provider
+            android:name="android.arch.lifecycle.ProcessLifecycleOwnerInitializer"
+            android:authorities="by.nca.it_academy.lifecycle-trojan"
+            android:exported="false"
+            android:multiprocess="true" />
+        <provider
+            android:name="com.android.tools.ir.server.InstantRunContentProvider"
+            android:authorities="by.nca.it_academy.com.android.tools.ir.server.InstantRunContentProvider"
+            android:multiprocess="true" />
+    </application>
+
+</manifest>
