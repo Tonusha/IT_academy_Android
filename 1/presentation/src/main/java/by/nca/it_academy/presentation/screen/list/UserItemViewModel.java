@@ -2,12 +2,8 @@ package by.nca.it_academy.presentation.screen.list;
 
 import android.databinding.ObservableField;
 
-import com.nca.data.entity.User;
-import com.nca.presentation.base.BaseItemViewModel;
-
-/**
- * Created by user on 02.04.2018.
- */
+import by.nca.data.entity.User;
+import by.nca.it_academy.presentation.base.BaseItemViewModel;
 
 public class UserItemViewModel extends BaseItemViewModel<User> {
 

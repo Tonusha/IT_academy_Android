@@ -3,13 +3,10 @@ package by.nca.it_academy.presentation.screen.list;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
-import com.nca.domain.entity.UserEntity;
-import com.nca.presentation.base.BaseItemViewHolder;
-import com.nca.testandroid.databinding.ItemUserBinding;
+import by.nca.domain.entity.UserEntity;
+import by.nca.it_academy.databinding.ItemUserBinding;
+import by.nca.it_academy.presentation.base.BaseItemViewHolder;
 
-/**
- * Created by user on 02.04.2018.
- */
 
 public class UserItemViewHolder extends BaseItemViewHolder<UserEntity,
         UserItemViewModel,

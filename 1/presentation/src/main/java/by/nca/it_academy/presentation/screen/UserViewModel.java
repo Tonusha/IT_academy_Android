@@ -13,8 +13,13 @@ import java.util.List;
 
 import javax.inject.Inject;
 
+import by.nca.data.entity.Error;
+import by.nca.data.entity.ErrorType;
+import by.nca.domain.entity.UserEntity;
+import by.nca.domain.interactor.GetUserByIdUseCase;
 import by.nca.it_academy.app.App;
 import by.nca.it_academy.presentation.base.BaseViewModel;
+import by.nca.it_academy.presentation.screen.list.UserAdapter;
 import io.reactivex.Observable;
 import io.reactivex.ObservableEmitter;
 import io.reactivex.ObservableOnSubscribe;
@@ -80,7 +85,18 @@ public class UserViewModel extends BaseViewModel {
 
             @Override
             public void onError(Throwable e) {
-                Log.e("AAA", "onError");
+                if(e instanceof Error) {
+                    Error myError = (Error) e;
+                    if (myError.getFriendlyError() == ErrorType.NO_INTERNET) {
+
+
+                    }
+                    else if (myError.getFriendlyError() == ErrorType.SERVER_NOT_AVAILABLE){
+
+                    }
+                } else{
+
+                }
             }
 
             @Override

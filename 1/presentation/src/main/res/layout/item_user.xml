@@ -1,42 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="60dp"
-    android:layout_marginBottom="5dp"
-    android:background="@color/colorAccent"
-    android:orientation="horizontal"
-    android:paddingEnd="10dp"
-    android:paddingStart="10dp">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
 
+    <data>
 
-    <ImageView
-        android:id="@+id/imageView1"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        tools:src="@drawable/my_picture" />
+        <import type="android.view.View" />
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:textSize="14sp"
-        android:layout_marginEnd="5dp"
-        tools:text = "Username"
-        android:layout_marginRight="5dp" />
+        <import type="java.lang.String" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
-        android:layout_toEndOf="@+id/textView1"
-        android:layout_toRightOf="@+id/textView1"
-        android:textSize="14sp"
-        tools:text="Surname" />
+        <variable
+            name="viewModel"
+            type="by.nca.it_academy.presentation.screen.list.UserItemViewModel" />
+    </data>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/green"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp">
 
-</RelativeLayout>
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/nameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:text="@{viewModel.username}"
+            android:textSize="14sp" />
+        tools:text="username" />
+
+        <TextView
+            android:id="@+id/surnameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:paddingTop="20dp"
+            android:text="@{viewModel.age}"
+            android:textSize="14sp" />
+        tools:text="age" />
+        />
+
+    </LinearLayout>
+</layout>

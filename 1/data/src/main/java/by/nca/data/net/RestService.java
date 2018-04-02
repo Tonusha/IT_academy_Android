@@ -20,7 +20,9 @@ public class RestService {
 
     //    @Override
     public Observable<List<User>> loadUsers() {
-        return restApi.loadUsers();
+        return restApi.loadUsers()
+               // .compose()
+                ;
     }
 
     //    @Override
