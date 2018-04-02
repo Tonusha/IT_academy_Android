@@ -7,7 +7,6 @@ import io.reactivex.android.schedulers.AndroidSchedulers;
 /**
  * Created by user on 16.03.2018.
  */
-
 public class UIThread implements PostExecutionThread {
     @Override
     public Scheduler getScheduler() {

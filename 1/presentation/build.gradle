@@ -42,23 +42,34 @@ android {
 }
 
 dependencies {
+
     def dependency = rootProject.ext.dependencies
+
     implementation dependency.supportAppcompat
     implementation dependency.supportV4
     implementation dependency.supportDesign
 
-    annotationProcessor dependency.androidBindingCompiler
+    implementation dependency.rx2android
 
-    implementation dependency.archComponentsExtention
+    annotationProcessor dependency.androidBuildingCompiler
+
+    implementation dependency.archComponentsExtension
     annotationProcessor dependency.archComponentsCompiler
+
+    implementation dependency.room
+    annotationProcessor dependency.roomCompiler
+    annotationProcessor dependency.roomCompilerRx
 
     implementation dependency.dagger
     annotationProcessor dependency.daggerCompiler
 
-    implementation dependency.rxjava2
-    implementation dependency.rxAndroid
+    api project(path: ':data')
 
-    implementation dependency.gson
-    compile project(path: ':domain')
-    compile project(path: ':data')
+    implementation 'com.github.bumptech.glide:glide:4.6.1'
+
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.5.4'
+    releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.4'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.6.1'
+
+    implementation 'com.google.code.gson:gson:2.8.2'
 }

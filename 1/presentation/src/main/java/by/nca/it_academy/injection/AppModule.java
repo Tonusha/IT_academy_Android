@@ -1,5 +1,6 @@
 package by.nca.it_academy.injection;
 
+import android.arch.persistence.room.Room;
 import android.content.Context;
 
 import com.google.gson.Gson;
@@ -10,6 +11,7 @@ import java.util.concurrent.TimeUnit;
 import javax.inject.Named;
 import javax.inject.Singleton;
 
+import by.nca.data.db.AppDatabase;
 import by.nca.data.net.RestService;
 import by.nca.data.repository.UserRepositoryImpl;
 import by.nca.domain.executor.PostExecutionThread;
@@ -54,6 +56,14 @@ public class AppModule {
         return new UIThread();
     }
 
+    public AppDatabase getAppDatabase(Context context) {
+        AppDatabase appDatabase = Room
+                .databaseBuilder(context, AppDatabase.class, "database")
+                .fallbackToDestructiveMigration()
+                .build();
+        return appDatabase;
+    }
+
 //    @Binds
 //    public abstract  PostExecutionThread getUiThread(UIThread uiThread);
 
@@ -61,14 +71,14 @@ public class AppModule {
     @Singleton
     @Named("rep1")
     public UserRepository getUserRepository(Context context) {
-        return new UserRepositoryImpl(context, getRestService());
+        return new UserRepositoryImpl(context, getRestService(), getAppDatabase(context));
     }
 
     @Provides
     @Singleton
     @Named("rep2")
     public UserRepository getUserRepository2(Context context) {
-        return new UserRepositoryImpl(context, restService);
+        return new UserRepositoryImpl(context, restService, getAppDatabase(context));
     }
 
     @Provides
@@ -80,7 +90,7 @@ public class AppModule {
 //                .addConverterFactory()
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                 .addConverterFactory(GsonConverterFactory.create(gson))
-                .baseUrl("https://api.backendless.com/FD247E47-9C63-BE0D-FF02-EE6FC26EE800/57954579-3843-763B-FF76-3458E1999F00/")
+                .baseUrl("https://api.backendless.com/4C4D4A50-F9B6-65EB-FFFB-76F895429C00/0A8AF370-113D-95F0-FF4F-AA5DE2EDD500/")
                 .client(okHttpClient())
                 .build();
 //                .baseUrl(BuildConfig.APPLICATION_ID).build();
@@ -89,6 +99,7 @@ public class AppModule {
         // https://api.backendless.com/FD247E47-9C63-BE0D-FF02-EE6FC26EE800/57954579-3843-763B-FF76-3458E1999F00
         // gson подлючит на сайте retrofita
     }
+
 
     @Provides
     @Singleton
@@ -107,7 +118,7 @@ public class AppModule {
     public Gson getGson() {
 
         return new GsonBuilder()
-                // туту можно добавить настройки для прасинга даты например
+                // тут можно добавить настройки для прасинга даты например
                 .create();
 
     }
@@ -121,7 +132,7 @@ public class AppModule {
                 .writeTimeout(10, TimeUnit.SECONDS)
                 .connectTimeout(10, TimeUnit.SECONDS);
 
-        if(BuildConfig.DEBUG) {
+        if (BuildConfig.DEBUG) {
             HttpLoggingInterceptor httpLogging = new HttpLoggingInterceptor();
             httpLogging.setLevel(HttpLoggingInterceptor.Level.BODY);
             builder.addInterceptor(httpLogging);

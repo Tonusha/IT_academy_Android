@@ -1,9 +1,5 @@
 package by.nca.domain.entity;
 
-/**
- * Created by user on 12.03.2018.
- */
-
 public class UserEntity {
 
     private String firstName;
@@ -20,9 +16,6 @@ public class UserEntity {
         this.age = age;
         this.isMan = isMan;
         this.imageUrl = imageURL;
-    }
-
-    public UserEntity() {
     }
 
     public String getFirstName() {

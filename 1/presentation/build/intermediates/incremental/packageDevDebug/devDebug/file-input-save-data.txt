@@ -1,10 +1,10 @@
 #Internal package file, do not edit.
-#Fri Mar 23 19:57:24 MSK 2018
-2.base=C\:\\Users\\user\\AndroidStudioProjects\\IT_academy_Android\\1\\presentation\\build\\intermediates\\transforms\\dexMerger\\dev\\debug\\16
+#Mon Apr 02 20:31:57 MSK 2018
+2.base=C\:\\Users\\user\\AndroidStudioProjects\\IT_academy_Android\\1\\presentation\\build\\intermediates\\transforms\\dexMerger\\dev\\debug\\13
 5.set=ASSET
 0.path=classes.dex
 2.baseType=DIRECTORY
-3.base=C\:\\Users\\user\\AndroidStudioProjects\\IT_academy_Android\\1\\presentation\\build\\intermediates\\transforms\\dexMerger\\dev\\debug\\11
+3.base=C\:\\Users\\user\\AndroidStudioProjects\\IT_academy_Android\\1\\presentation\\build\\intermediates\\transforms\\dexMerger\\dev\\debug\\16
 2.set=DEX
 1.path=classes.dex
 4.base=C\:\\Users\\user\\AndroidStudioProjects\\IT_academy_Android\\1\\presentation\\build\\intermediates\\transforms\\dexMerger\\dev\\debug\\14
@@ -22,10 +22,10 @@ count=7
 1.baseType=DIRECTORY
 6.baseType=DIRECTORY
 5.path=test.json
-0.base=C\:\\Users\\user\\AndroidStudioProjects\\IT_academy_Android\\1\\presentation\\build\\intermediates\\transforms\\dexMerger\\dev\\debug\\15
+0.base=C\:\\Users\\user\\AndroidStudioProjects\\IT_academy_Android\\1\\presentation\\build\\intermediates\\transforms\\dexMerger\\dev\\debug\\17
 0.baseType=DIRECTORY
 3.set=DEX
 6.path=classes.dex
-1.base=C\:\\Users\\user\\AndroidStudioProjects\\IT_academy_Android\\1\\presentation\\build\\intermediates\\transforms\\dexMerger\\dev\\debug\\13
+1.base=C\:\\Users\\user\\AndroidStudioProjects\\IT_academy_Android\\1\\presentation\\build\\intermediates\\transforms\\dexMerger\\dev\\debug\\15
 4.baseType=DIRECTORY
 0.set=DEX

@@ -17,46 +17,54 @@ allprojects {
 }
 
 ext {
-    compileSdkVersion = 27
-    buildToolsSdkVersion = "27.0.2"
     minSdkVersion = 18
     targetSdkVersion = 27
-    androidBindingVersion = '3.0.0'
-    archComponentVersion = "1.0.0"
+    compileSdkVersion = 27
+    buildToolsSdkVersion = "27.0.2"
     rxjavaVersion = "2.1.10"
     rxandroidVersion = "2.0.2"
     gsonVersion = "2.8.2"
+    androidBuildingCompiler = '3.0.0'
     daggerVersion = "2.15"
     javaInjectVersion = "1"
     retrofitVersion = "2.4.0"
+
+    archComponentVersion = '1.0.0'
     okhttpVersion = '3.10.0'
+    roomVersion = '1.0.0'
 
 
 
     dependencies = [
-            retrofit: "com.squareup.retrofit2:retrofit:$retrofitVersion",
-            dagger: "com.google.dagger:dagger:$daggerVersion",
-            daggerCompiler: "com.google.dagger:dagger-compiler:$daggerVersion",
-            javaInject: "javax.inject:javax.inject:$javaInjectVersion",
-            supportAppcompat: "com.android.support:appcompat-v7:$buildToolsSdkVersion",
+            supportAppcompat:  "com.android.support:appcompat-v7:$buildToolsSdkVersion",
             supportV4: "com.android.support:support-v4:$buildToolsSdkVersion",
             supportDesign: "com.android.support:design:$buildToolsSdkVersion",
+
+            androidBuildingCompiler: "com.android.databinding:compiler:$androidBuildingCompiler",
+
+            archComponentsExtension: "android.arch.lifecycle:extensions:$archComponentVersion",
+            archComponentsCompiler: "android.arch.lifecycle:compiler:$archComponentVersion",
+
+            rx2android: "io.reactivex.rxjava2:rxandroid:$rxandroidVersion",
+            rx2java: "io.reactivex.rxjava2:rxjava:$rxjavaVersion",
+
+            dagger: "com.google.dagger:dagger:$daggerVersion",
+            daggerCompiler: "com.google.dagger:dagger-compiler:$daggerVersion",
+
+            javaxInject: "javax.inject:javax.inject:$javaInjectVersion",
 
             retrofit: "com.squareup.retrofit2:retrofit:$retrofitVersion",
             retrofitGson: "com.squareup.retrofit2:converter-gson:$retrofitVersion",
             retrofitRx2java: "com.squareup.retrofit2:adapter-rxjava2:$retrofitVersion",
+
+            room: "android.arch.persistence.room:runtime:$archComponentVersion",
+            roomCompiler: "android.arch.persistence.room:compiler:$archComponentVersion",
+            roomCompilerRx: "android.arch.persistence.room:rxjava2:$archComponentVersion",
+
+            gson: "com.google.code.gson:gson:$gsonVersion",
             okhttp:"com.squareup.okhttp3:okhttp:$okhttpVersion",
-            okhttpLogging:"com.squareup.okhttp3:logging-interceptor:$okhttpVersion" ,
+            okhttpLogging:"com.squareup.okhttp3:logging-interceptor:$okhttpVersion"
 
-            androidBindingCompiler: "com.android.databinding:compiler:$androidBindingVersion",
-
-            archComponentsExtention :"android.arch.lifecycle:extensions:$archComponentVersion",
-            archComponentsCompiler :"android.arch.lifecycle:compiler:$archComponentVersion",
-
-            rxjava2: "io.reactivex.rxjava2:rxjava:$rxjavaVersion",
-            rxAndroid: "io.reactivex.rxjava2:rxandroid:$rxandroidVersion",
-
-            gson: "com.google.code.gson:gson:$gsonVersion"
     ]
 }
 

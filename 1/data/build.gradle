@@ -22,14 +22,19 @@ android {
 
 dependencies {
     def dependency = rootProject.ext.dependencies
+
     implementation dependency.gson
 
+    implementation dependency.javaxInject
+
     api dependency.retrofit
-    implementation dependency.javaInject
     api dependency.retrofitGson
     api dependency.retrofitRx2java
     api dependency.okhttp
     api dependency.okhttpLogging
+    api dependency.room
+    annotationProcessor dependency.roomCompiler
+    api dependency.roomCompilerRx
 
-    api project(path: ":domain")
+    api project(path: ':domain')
 }
