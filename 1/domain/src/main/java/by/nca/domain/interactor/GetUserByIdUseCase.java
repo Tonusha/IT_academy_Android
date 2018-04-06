@@ -16,22 +16,15 @@ public class GetUserByIdUseCase extends BaseUseCase {
 
     @Inject
     public GetUserByIdUseCase(PostExecutionThread postExecutionThread,
-
-                              @Named("rep1") UserRepository userRepository) {
+                              UserRepository userRepository) {
         super(postExecutionThread);
         this.userRepository = userRepository;
     }
 
     public Observable<UserEntity> get(String id) {
-        return userRepository.get(id)
-                .subscribeOn(threadExecution)
-                .observeOn(postExecutionThread);
-    }
-
-    public Observable<List<UserEntity>> get() {
-        return userRepository.get()
+        return userRepository
+                .get(id)
                 .subscribeOn(threadExecution)
                 .observeOn(postExecutionThread);
     }
 }
-

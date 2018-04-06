@@ -8,19 +8,21 @@ import by.nca.it_academy.databinding.ItemUserBinding;
 import by.nca.it_academy.presentation.base.BaseItemViewHolder;
 
 
-public class UserItemViewHolder extends BaseItemViewHolder<UserEntity,
-        UserItemViewModel,
-        ItemUserBinding> {
+public class UserItemViewHolder
+        extends BaseItemViewHolder<UserEntity,
+        UserItemViewModel, ItemUserBinding> {
 
-    public UserItemViewHolder(ItemUserBinding buinding, UserItemViewModel viewModel) {
-        super(buinding, viewModel);
+    public UserItemViewHolder(ItemUserBinding binding, UserItemViewModel viewModel) {
+        super(binding, viewModel);
     }
 
-    public static UserItemViewHolder create(ViewGroup parent, UserItemViewModel viewModel){
-        ItemUserBinding binding = ItemUserBinding.inflate(
-                LayoutInflater.from(parent.getContext()),parent,false);
-        new UserItemViewModel();
+    public static UserItemViewHolder create(ViewGroup parent, UserItemViewModel viewModel) {
 
-        return new UserItemViewHolder(binding, viewModel);
+        ItemUserBinding bindind
+                = ItemUserBinding.inflate(
+                LayoutInflater.from(parent.getContext()), parent, false
+        );
+
+        return new UserItemViewHolder(bindind, viewModel);
     }
 }

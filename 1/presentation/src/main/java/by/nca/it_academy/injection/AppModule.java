@@ -28,25 +28,17 @@ import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 @Module
-public class AppModule {
+public  class AppModule {
 
     Context context;
-    RestService restService;
 
     public AppModule(Context context) {
         this.context = context;
     }
 
-
     @Provides
     @Singleton
-    public RestService getRestService() {
-        return new RestService(getRestApi(getRetrofit(getGson())));
-    }
-
-    @Provides
-    @Singleton
-    public Context getContext() {
+    public Context getContext(){
         return context;
     }
 
@@ -56,50 +48,60 @@ public class AppModule {
         return new UIThread();
     }
 
+    @Provides
+    @Singleton
     public AppDatabase getAppDatabase(Context context) {
-        AppDatabase appDatabase = Room
-                .databaseBuilder(context, AppDatabase.class, "database")
+
+        AppDatabase appDatabase = Room.databaseBuilder(context,
+                AppDatabase.class,
+                "database")
                 .fallbackToDestructiveMigration()
                 .build();
+
         return appDatabase;
     }
 
-//    @Binds
-//    public abstract  PostExecutionThread getUiThread(UIThread uiThread);
-
     @Provides
     @Singleton
-    @Named("rep1")
-    public UserRepository getUserRepository(Context context) {
-        return new UserRepositoryImpl(context, getRestService(), getAppDatabase(context));
+    public UserRepository getUserRepository(Context context,
+                                            RestService restService,
+                                            AppDatabase appDatabase) {
+        return new UserRepositoryImpl(context, restService, appDatabase);
     }
 
     @Provides
     @Singleton
-    @Named("rep2")
-    public UserRepository getUserRepository2(Context context) {
-        return new UserRepositoryImpl(context, restService, getAppDatabase(context));
-    }
+    public Retrofit getRetrofit(OkHttpClient okHttpClient, Gson gson){
 
-    @Provides
-    @Singleton
-    public Retrofit getRetrofit(Gson gson) {
-        return new Retrofit
-                .Builder()
-//                .addCallAdapterFactory( /*Rx in Gson*/)
-//                .addConverterFactory()
+        return new  Retrofit.Builder()
+                .baseUrl("https://api.backendless.com/70E26EEB-3ACD-601D-FF12-541F239F8800/FDBEBFDC-2C3B-E045-FF00-D718E4134700/")
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                 .addConverterFactory(GsonConverterFactory.create(gson))
-                .baseUrl("https://api.backendless.com/4C4D4A50-F9B6-65EB-FFFB-76F895429C00/0A8AF370-113D-95F0-FF4F-AA5DE2EDD500/")
-                .client(okHttpClient())
+                .client(okHttpClient)
                 .build();
-//                .baseUrl(BuildConfig.APPLICATION_ID).build();
-
-        // в градле
-        // https://api.backendless.com/FD247E47-9C63-BE0D-FF02-EE6FC26EE800/57954579-3843-763B-FF76-3458E1999F00
-        // gson подлючит на сайте retrofita
     }
 
+    @Provides
+    @Singleton
+    public OkHttpClient getOkHttp(){
+
+        OkHttpClient.Builder builder = new OkHttpClient.Builder();
+
+        builder
+                .readTimeout(10, TimeUnit.SECONDS)
+                .writeTimeout(10, TimeUnit.SECONDS)
+                .connectTimeout(10, TimeUnit.SECONDS);
+
+        if(BuildConfig.DEBUG) {
+            HttpLoggingInterceptor httpLogging =
+                    new HttpLoggingInterceptor();
+            httpLogging.setLevel(HttpLoggingInterceptor.Level.BODY);
+
+            builder.addInterceptor(httpLogging);
+        }
+
+        return builder.build();
+    }
 
     @Provides
     @Singleton
@@ -107,37 +109,10 @@ public class AppModule {
         return retrofit.create(RestApi.class);
     }
 
-//    @Provides
-//    @Singleton
-//    public RestService getRestServiсe() {
-//
-//    }
-
     @Provides
     @Singleton
     public Gson getGson() {
-
         return new GsonBuilder()
-                // тут можно добавить настройки для прасинга даты например
                 .create();
-
     }
-
-    @Provides
-    @Singleton
-    public OkHttpClient okHttpClient() {
-
-        OkHttpClient.Builder builder = new OkHttpClient.Builder();
-        builder.readTimeout(10, TimeUnit.SECONDS)
-                .writeTimeout(10, TimeUnit.SECONDS)
-                .connectTimeout(10, TimeUnit.SECONDS);
-
-        if (BuildConfig.DEBUG) {
-            HttpLoggingInterceptor httpLogging = new HttpLoggingInterceptor();
-            httpLogging.setLevel(HttpLoggingInterceptor.Level.BODY);
-            builder.addInterceptor(httpLogging);
-        }
-        return builder.build();
-    }
-
 }

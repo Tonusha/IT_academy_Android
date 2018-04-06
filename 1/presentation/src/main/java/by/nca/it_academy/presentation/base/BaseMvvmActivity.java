@@ -9,16 +9,14 @@ import android.support.v7.app.AppCompatActivity;
 import by.nca.it_academy.BR;
 
 
-/**
- * Created by user on 12.03.2018.
- */
+public abstract class BaseMvvmActivity<Binding extends ViewDataBinding,
+        ViewModel extends BaseViewModel>
+        extends AppCompatActivity {
 
-public abstract class BaseMvvmActivity<Binding extends ViewDataBinding, ViewModel extends BaseViewModel> extends AppCompatActivity {
     protected Binding binding;
     protected ViewModel viewModel;
 
     public abstract int provideLayoutId();
-
     public abstract ViewModel provideViewModel();
 
     @Override
@@ -31,6 +29,12 @@ public abstract class BaseMvvmActivity<Binding extends ViewDataBinding, ViewMode
     }
 
     @Override
+    protected void onStart() {
+        super.onStart();
+        viewModel.onStart();
+    }
+
+    @Override
     protected void onResume() {
         super.onResume();
         viewModel.onResume();
@@ -40,12 +44,6 @@ public abstract class BaseMvvmActivity<Binding extends ViewDataBinding, ViewMode
     protected void onPause() {
         super.onPause();
         viewModel.onPause();
-    }
-
-    @Override
-    protected void onStart() {
-        super.onStart();
-        viewModel.onStart();
     }
 
     @Override

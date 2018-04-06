@@ -7,105 +7,112 @@ import android.databinding.ObservableInt;
 import android.graphics.Color;
 import android.util.Log;
 import android.widget.ImageView;
-
-import java.util.ArrayList;
-import java.util.List;
-
 import javax.inject.Inject;
 
+import by.nca.it_academy.app.App;
+import io.reactivex.Observer;
+import io.reactivex.disposables.CompositeDisposable;
+import io.reactivex.disposables.Disposable;
 import by.nca.data.entity.Error;
 import by.nca.data.entity.ErrorType;
 import by.nca.domain.entity.UserEntity;
 import by.nca.domain.interactor.GetUserByIdUseCase;
-import by.nca.it_academy.app.App;
+import by.nca.it_academy.executor.UIThread;
+import by.nca.it_academy.presentation.base.BaseAdapter;
 import by.nca.it_academy.presentation.base.BaseViewModel;
 import by.nca.it_academy.presentation.screen.list.UserAdapter;
-import io.reactivex.Observable;
-import io.reactivex.ObservableEmitter;
-import io.reactivex.ObservableOnSubscribe;
-import io.reactivex.Observer;
-import io.reactivex.android.schedulers.AndroidSchedulers;
-import io.reactivex.disposables.CompositeDisposable;
-import io.reactivex.disposables.Disposable;
-import io.reactivex.schedulers.Schedulers;
 
-public class UserViewModel extends BaseViewModel {
+
+
+
+public class UserViewModel extends BaseViewModel{
+
+    @Inject
+    public GetUserByIdUseCase getUserByIdUseCase;
+
+    public UserAdapter userAdapter = new UserAdapter();
+
+    public ObservableField<String> username = new ObservableField<String>("");
+    public ObservableField<String> profileUrl = new ObservableField<String>("");
+    public ObservableInt age = new ObservableInt();
+    public ObservableBoolean progressVisible = new ObservableBoolean(false);
 
     @Override
     public void createInject() {
         App.getAppComponent().inject(this);
     }
 
-    @Inject
-    public GetUserByIdUseCase getUserByIdUseCase;
-    public UserAdapter userAdapter = new UserAdapter();
-
-
-    //GetUserByIdUseCase getUserByIdUseCase = new GetUserByIdUseCase(new UIThread(), new UserRepositoryImpl());
-
-    public ObservableInt background = new ObservableInt(Color.WHITE);
-
-    public ObservableField<String> firstName = new ObservableField<>("");
-    public ObservableField<String> lastName = new ObservableField<>("");
-    public ObservableField<String> fatherName = new ObservableField<>("");
-    public ObservableInt age = new ObservableInt();
-    public ObservableBoolean isMan = new ObservableBoolean();
-    public ObservableField<String> imageUrl = new ObservableField<>("");
-    public ObservableBoolean progressVisible = new ObservableBoolean(false);
-
-//    private ArrayList<UserEntity> users = new ArrayList<>();
-
-    public CompositeDisposable compositeDisposable = new CompositeDisposable();
-
-    @BindingAdapter({"bind:imageUrl"})
-    public static void loadImage(ImageView view, String url) {
-        MyAppGlideModule.showImage(view.getContext(), url, view);
-    }
-
     public UserViewModel() {
+        super();
 
-        getUserByIdUseCase.get("F2DEB8C5-C0FE-30C1-FF5E-F52C286FFF00").subscribe(new Observer<UserEntity>() {
-            @Override
-            public void onSubscribe(Disposable d) {
-                Log.e("AAA", "onSubscribe");
-                compositeDisposable.add(d);
-            }
+        userAdapter
+                .observeClick()
+                .subscribe(new Observer<BaseAdapter.ItemEntity>() {
+                    @Override
+                    public void onSubscribe(Disposable d) {
 
-            @Override
-            public void onNext(UserEntity userEntity) {
-                Log.e("AAA", "onNext");
-                firstName.set(userEntity.getFirstName());
-                lastName.set(userEntity.getLastName());
-                fatherName.set(userEntity.getFatherName());
-                age.set(userEntity.getAge());
-//                isMan.set(userEntity.get(3).isMan());
-//                imageUrl.set(userEntity.getImageUrl());
-                imageUrl.set(userEntity.getImageUrl());
-            }
+                    }
 
-            @Override
-            public void onError(Throwable e) {
-                if(e instanceof Error) {
-                    Error myError = (Error) e;
-                    if (myError.getFriendlyError() == ErrorType.NO_INTERNET) {
+                    @Override
+                    public void onNext(BaseAdapter.ItemEntity itemEntity) {
+
 
 
                     }
-                    else if (myError.getFriendlyError() == ErrorType.SERVER_NOT_AVAILABLE){
+
+                    @Override
+                    public void onError(Throwable e) {
+
+                        if(e instanceof Error) {
+                            Error myError = (Error) e;
+
+                            if(myError.getFriendlyError() == ErrorType.NO_INTERNET) {
+
+                            } else if(myError.getFriendlyError() == ErrorType.SERVER_NOT_AVAILABLE) {
+
+                            }
+
+                        } else {
+
+                        }
+                    }
+
+                    @Override
+                    public void onComplete() {
 
                     }
-                } else{
+                });
 
-                }
-            }
+        progressVisible.set(true);
 
-            @Override
-            public void onComplete() {
-                Log.e("AAA", "onComplete");
-                progressVisible.set(false);
-            }
+        getUserByIdUseCase
+                .get("id")
+                .subscribe(new Observer<UserEntity>() {
+                    @Override
+                    public void onSubscribe(Disposable d) {
+                        Log.e("AAA", "onSubscribe");
+                        compositeDisposable.add(d);
+                    }
 
-        });
+                    @Override
+                    public void onNext(UserEntity userEntity) {
+                        Log.e("AAA", "onNext");
+
+                        username.set(userEntity.getUsername());
+                        profileUrl.set(userEntity.getProfileUrl());
+                        age.set(userEntity.getAge());
+                    }
+
+                    @Override
+                    public void onError(Throwable e) {
+                        Log.e("AAA", "onError");
+                    }
+
+                    @Override
+                    public void onComplete() {
+                        Log.e("AAA", "onComplete");
+                        progressVisible.set(false);
+                    }
+                });
     }
-
 }

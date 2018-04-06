@@ -18,10 +18,6 @@
         <activity
             android:name=".work.cw12.ActivityCW12"
             android:parentActivityName=".main.ActivityMain">
-            <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-            <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 
         <!--<activity-->

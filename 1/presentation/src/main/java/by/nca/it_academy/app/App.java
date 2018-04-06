@@ -6,11 +6,7 @@ import by.nca.it_academy.injection.AppComponent;
 import by.nca.it_academy.injection.AppModule;
 import by.nca.it_academy.injection.DaggerAppComponent;
 
-/**
- * Created by user on 19.03.2018.
- */
-
-public class App extends Application {
+public class App extends Application{
 
     private static AppComponent appComponent;
 
@@ -26,6 +22,4 @@ public class App extends Application {
                 .appModule(new AppModule(this))
                 .build();
     }
-
 }
-

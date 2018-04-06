@@ -1,7 +1,7 @@
 #Internal package file, do not edit.
-#Mon Apr 02 20:31:21 MSK 2018
+#Fri Apr 06 16:15:18 GMT+03:00 2018
 0.baseType=DIRECTORY
-0.base=C\:\\Users\\user\\AndroidStudioProjects\\IT_academy_Android\\1\\presentation\\build\\intermediates\\assets\\dev\\debug
+0.base=C\:\\Users\\miruk\\StudioProjects\\IT_academy_Android\\1\\presentation\\build\\intermediates\\assets\\dev\\debug
 0.path=test.json
 0.set=ASSET
 count=1

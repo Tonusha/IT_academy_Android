@@ -2,43 +2,29 @@ package by.nca.domain.entity;
 
 public class UserEntity {
 
-    private String firstName;
-    private String lastName;
-    private String fatherName;
-    private Integer age;
-    private boolean isMan;
-    private String imageUrl;
+    private String username;
+    private int age;
+    private String profileUrl;
 
-    public UserEntity(String firstName, String lastName, String fatherName, Integer age, boolean isMan, String imageURL) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.fatherName = fatherName;
+    public UserEntity() {
+    }
+
+    public UserEntity(String username, int age, String profileUrl) {
+        this.username = username;
         this.age = age;
-        this.isMan = isMan;
-        this.imageUrl = imageURL;
+        this.profileUrl = profileUrl;
     }
 
-    public String getFirstName() {
-        return firstName;
+    public String getUsername() {
+        return username;
     }
 
-    public String getLastName() {
-        return lastName;
-    }
-
-    public String getFatherName() {
-        return fatherName;
-    }
-
-    public Integer getAge() {
+    public int getAge() {
         return age;
     }
 
-    public boolean isMan() {
-        return isMan;
-    }
-
-    public String getImageUrl() {
-        return imageUrl;
+    public String getProfileUrl() {
+        return profileUrl;
     }
 }
+

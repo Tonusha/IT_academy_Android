@@ -24,8 +24,7 @@ import io.reactivex.ObservableSource;
 import io.reactivex.functions.Consumer;
 import io.reactivex.functions.Function;
 
-public class UserRepositoryImpl implements UserRepository {
-
+public class UserRepositoryImpl implements UserRepository{
 
     private Context context;
     private RestService restService;
@@ -44,57 +43,46 @@ public class UserRepositoryImpl implements UserRepository {
                 .map(new Function<User, UserEntity>() {
                     @Override
                     public UserEntity apply(User user) throws Exception {
-                        return new UserEntity(user.getUsername(), user.getUsername(), user.getUsername(), user.getAge(), true,  user.getProfileUrl());
+                        return new UserEntity(user.getUsername(),
+                                user.getAge(),
+                                user.getProfileUrl());
                     }
                 });
-
     }
 
     @Override
     public Observable<List<UserEntity>> get() {
-        return
 
-                /*userDao.getAll()
-                .flatMap(new Function<List<User>, ObservableSource<?>>() {
+        return restService
+                .loadUsers()
+                .doOnNext(new Consumer<List<User>>() {
                     @Override
-                    public ObservableSource<?> apply(List<User> users) throws Exception {
-                        if(users.size() > 0){
-                        return Observable.just(users);
+                    public void accept(List<User> users) throws Exception {
+                        userDao.deleteAll();
+                        userDao.insert(users);
+                    }
+                })
+                .onErrorResumeNext(new Function<Throwable, ObservableSource<? extends List<User>>>() {
+                    @Override
+                    public ObservableSource<? extends List<User>> apply(Throwable throwable) throws Exception {
+                        return userDao.getAll().toObservable().take(1);
+                    }
+                })
+                .map(new Function<List<User>, List<UserEntity>>() {
+                    @Override
+                    public List<UserEntity> apply(List<User> users) throws Exception {
+
+                        List<UserEntity> list = new ArrayList<>();
+
+                        for(User user: users ) {
+                            list.add(new UserEntity(user.getUsername(),
+                                    user.getAge(),
+                                    user.getProfileUrl()));
                         }
 
+                        return list;
                     }
-                })*/
-
-                restService
-                        .loadUsers()
-//                        .toFlowable(BackpressureStrategy.DROP)
-                        .doOnNext(new Consumer<List<User>>() {
-                            @Override
-                            public void accept(List<User> users) throws Exception {
-                                userDao.deleteAll();
-                                userDao.insert(users);
-                            }
-                        })
-                        .onErrorResumeNext(new Function<Throwable, ObservableSource<? extends List<User>>>() {
-                            @Override
-                            public ObservableSource<? extends List<User>> apply(Throwable throwable) throws Exception {
-                                //обработка ошибок, если проблема в интернете, то возвращает юзеров из локальной БД, ошибка другая, надо обрабатывать*/
-                                return userDao.getAll().toObservable().take(1); //получение данных 1 раз
-                            }
-                        })
-                        .map(new Function<List<User>, List<UserEntity>>() {
-                            @Override
-                            public List<UserEntity> apply(List<User> users) throws Exception {
-                                List<UserEntity> userEntities = new ArrayList<>();
-
-                                for (User user: users) {
-                                    userEntities.add(new UserEntity(user.getUsername(), user.getUsername(), user.getUsername(), user.getAge(), true,  user.getProfileUrl()));
-                                }
-                                return userEntities;
-                            }
-                        })
-
-                ;
+                });
     }
 
     @Override

@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-
-        <import type="android.view.View" />
-
-        <import type="java.lang.String" />
 
         <variable
             name="viewModel"
@@ -17,7 +15,8 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginBottom="5dp"
-        android:background="@color/green"
+        android:background="#098dec"
+        android:orientation="horizontal"
         android:paddingEnd="10dp"
         android:paddingStart="10dp">
 
@@ -30,21 +29,17 @@
             android:id="@+id/nameTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="60dp"
-            android:text="@{viewModel.username}"
-            android:textSize="14sp" />
-        tools:text="username" />
+            android:textSize="14sp"
+            android:text="@{viewModel.name}"
+            tools:text="Username" />
 
         <TextView
             android:id="@+id/surnameTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="60dp"
-            android:paddingTop="20dp"
+            android:textSize="14sp"
             android:text="@{viewModel.age}"
-            android:textSize="14sp" />
-        tools:text="age" />
-        />
-
+            tools:text="Surname" />
     </LinearLayout>
+
 </layout>

@@ -7,6 +7,8 @@ class DataBinderMapper  {
     }
     public android.databinding.ViewDataBinding getDataBinder(android.databinding.DataBindingComponent bindingComponent, android.view.View view, int layoutId) {
         switch(layoutId) {
+                case by.nca.it_academy.R.layout.item_user:
+                    return by.nca.it_academy.databinding.ItemUserBinding.bind(view, bindingComponent);
                 case by.nca.it_academy.R.layout.activity_classwork9:
                     return by.nca.it_academy.databinding.ActivityClasswork9Binding.bind(view, bindingComponent);
                 case by.nca.it_academy.R.layout.activity_homework9:
@@ -27,6 +29,12 @@ class DataBinderMapper  {
         }
         final int code = tag.hashCode();
         switch(code) {
+            case -1243181053: {
+                if(tag.equals("layout/item_user_0")) {
+                    return by.nca.it_academy.R.layout.item_user;
+                }
+                break;
+            }
             case -776929652: {
                 if(tag.equals("layout/activity_classwork9_0")) {
                     return by.nca.it_academy.R.layout.activity_classwork9;

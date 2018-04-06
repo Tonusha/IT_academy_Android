@@ -2,19 +2,38 @@
 package by.nca.it_academy.injection;
 
 import android.content.Context;
+import by.nca.data.db.AppDatabase;
+import by.nca.data.net.RestApi;
+import by.nca.data.net.RestService;
+import by.nca.data.net.RestService_Factory;
 import by.nca.domain.executor.PostExecutionThread;
 import by.nca.domain.interactor.GetUserByIdUseCase;
 import by.nca.domain.repository.UserRepository;
 import by.nca.it_academy.presentation.screen.UserViewModel;
 import by.nca.it_academy.presentation.screen.UserViewModel_MembersInjector;
+import com.google.gson.Gson;
 import dagger.internal.DoubleCheck;
 import dagger.internal.Preconditions;
 import javax.inject.Provider;
+import okhttp3.OkHttpClient;
+import retrofit2.Retrofit;
 
 public final class DaggerAppComponent implements AppComponent {
   private Provider<PostExecutionThread> getUiThreadProvider;
 
   private Provider<Context> getContextProvider;
+
+  private Provider<OkHttpClient> getOkHttpProvider;
+
+  private Provider<Gson> getGsonProvider;
+
+  private Provider<Retrofit> getRetrofitProvider;
+
+  private Provider<RestApi> getRestApiProvider;
+
+  private Provider<RestService> restServiceProvider;
+
+  private Provider<AppDatabase> getAppDatabaseProvider;
 
   private Provider<UserRepository> getUserRepositoryProvider;
 
@@ -36,9 +55,27 @@ public final class DaggerAppComponent implements AppComponent {
         DoubleCheck.provider(AppModule_GetUiThreadFactory.create(builder.appModule));
     this.getContextProvider =
         DoubleCheck.provider(AppModule_GetContextFactory.create(builder.appModule));
+    this.getOkHttpProvider =
+        DoubleCheck.provider(AppModule_GetOkHttpFactory.create(builder.appModule));
+    this.getGsonProvider = DoubleCheck.provider(AppModule_GetGsonFactory.create(builder.appModule));
+    this.getRetrofitProvider =
+        DoubleCheck.provider(
+            AppModule_GetRetrofitFactory.create(
+                builder.appModule, getOkHttpProvider, getGsonProvider));
+    this.getRestApiProvider =
+        DoubleCheck.provider(
+            AppModule_GetRestApiFactory.create(builder.appModule, getRetrofitProvider));
+    this.restServiceProvider = DoubleCheck.provider(RestService_Factory.create(getRestApiProvider));
+    this.getAppDatabaseProvider =
+        DoubleCheck.provider(
+            AppModule_GetAppDatabaseFactory.create(builder.appModule, getContextProvider));
     this.getUserRepositoryProvider =
         DoubleCheck.provider(
-            AppModule_GetUserRepositoryFactory.create(builder.appModule, getContextProvider));
+            AppModule_GetUserRepositoryFactory.create(
+                builder.appModule,
+                getContextProvider,
+                restServiceProvider,
+                getAppDatabaseProvider));
   }
 
   @Override

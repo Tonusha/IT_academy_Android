@@ -7,23 +7,25 @@ import dagger.internal.Factory;
 import javax.inject.Provider;
 
 public final class GetUserByIdUseCase_Factory implements Factory<GetUserByIdUseCase> {
-  private final Provider<PostExecutionThread> arg0Provider;
+  private final Provider<PostExecutionThread> postExecutionThreadProvider;
 
-  private final Provider<UserRepository> arg1Provider;
+  private final Provider<UserRepository> userRepositoryProvider;
 
   public GetUserByIdUseCase_Factory(
-      Provider<PostExecutionThread> arg0Provider, Provider<UserRepository> arg1Provider) {
-    this.arg0Provider = arg0Provider;
-    this.arg1Provider = arg1Provider;
+      Provider<PostExecutionThread> postExecutionThreadProvider,
+      Provider<UserRepository> userRepositoryProvider) {
+    this.postExecutionThreadProvider = postExecutionThreadProvider;
+    this.userRepositoryProvider = userRepositoryProvider;
   }
 
   @Override
   public GetUserByIdUseCase get() {
-    return new GetUserByIdUseCase(arg0Provider.get(), arg1Provider.get());
+    return new GetUserByIdUseCase(postExecutionThreadProvider.get(), userRepositoryProvider.get());
   }
 
   public static GetUserByIdUseCase_Factory create(
-      Provider<PostExecutionThread> arg0Provider, Provider<UserRepository> arg1Provider) {
-    return new GetUserByIdUseCase_Factory(arg0Provider, arg1Provider);
+      Provider<PostExecutionThread> postExecutionThreadProvider,
+      Provider<UserRepository> userRepositoryProvider) {
+    return new GetUserByIdUseCase_Factory(postExecutionThreadProvider, userRepositoryProvider);
   }
 }

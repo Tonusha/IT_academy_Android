@@ -31,11 +31,6 @@
         <activity
             android:name="by.nca.it_academy.work.cw12.ActivityCW12"
             android:parentActivityName="by.nca.it_academy.main.ActivityMain" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 
         <!-- <activity -->

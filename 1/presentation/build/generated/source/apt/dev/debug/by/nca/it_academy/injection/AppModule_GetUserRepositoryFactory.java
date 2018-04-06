@@ -2,6 +2,8 @@
 package by.nca.it_academy.injection;
 
 import android.content.Context;
+import by.nca.data.db.AppDatabase;
+import by.nca.data.net.RestService;
 import by.nca.domain.repository.UserRepository;
 import dagger.internal.Factory;
 import dagger.internal.Preconditions;
@@ -12,26 +14,42 @@ public final class AppModule_GetUserRepositoryFactory implements Factory<UserRep
 
   private final Provider<Context> contextProvider;
 
-  public AppModule_GetUserRepositoryFactory(AppModule module, Provider<Context> contextProvider) {
+  private final Provider<RestService> restServiceProvider;
+
+  private final Provider<AppDatabase> appDatabaseProvider;
+
+  public AppModule_GetUserRepositoryFactory(
+      AppModule module,
+      Provider<Context> contextProvider,
+      Provider<RestService> restServiceProvider,
+      Provider<AppDatabase> appDatabaseProvider) {
     this.module = module;
     this.contextProvider = contextProvider;
+    this.restServiceProvider = restServiceProvider;
+    this.appDatabaseProvider = appDatabaseProvider;
   }
 
   @Override
   public UserRepository get() {
     return Preconditions.checkNotNull(
-        module.getUserRepository(contextProvider.get()),
+        module.getUserRepository(
+            contextProvider.get(), restServiceProvider.get(), appDatabaseProvider.get()),
         "Cannot return null from a non-@Nullable @Provides method");
   }
 
   public static AppModule_GetUserRepositoryFactory create(
-      AppModule module, Provider<Context> contextProvider) {
-    return new AppModule_GetUserRepositoryFactory(module, contextProvider);
+      AppModule module,
+      Provider<Context> contextProvider,
+      Provider<RestService> restServiceProvider,
+      Provider<AppDatabase> appDatabaseProvider) {
+    return new AppModule_GetUserRepositoryFactory(
+        module, contextProvider, restServiceProvider, appDatabaseProvider);
   }
 
-  public static UserRepository proxyGetUserRepository(AppModule instance, Context context) {
+  public static UserRepository proxyGetUserRepository(
+      AppModule instance, Context context, RestService restService, AppDatabase appDatabase) {
     return Preconditions.checkNotNull(
-        instance.getUserRepository(context),
+        instance.getUserRepository(context, restService, appDatabase),
         "Cannot return null from a non-@Nullable @Provides method");
   }
 }
