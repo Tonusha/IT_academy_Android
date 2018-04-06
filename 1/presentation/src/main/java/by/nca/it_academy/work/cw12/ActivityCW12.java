@@ -10,10 +10,11 @@ import android.support.v7.widget.LinearLayoutManager;
 import by.nca.it_academy.R;
 import by.nca.it_academy.databinding.ActivityClasswork12Binding;
 import by.nca.it_academy.presentation.base.BaseMvvmActivity;
+import by.nca.it_academy.presentation.screen.UserRouter;
 import by.nca.it_academy.presentation.screen.UserViewModel;
 import io.reactivex.annotations.Nullable;
 
-public class ActivityCW12 extends BaseMvvmActivity<ActivityClasswork12Binding, UserViewModel> {
+public class ActivityCW12 extends BaseMvvmActivity<ActivityClasswork12Binding, UserViewModel, UserRouter> {
 
     private static final String KET_USER_ID = "KET_USER_ID";
 
@@ -21,6 +22,11 @@ public class ActivityCW12 extends BaseMvvmActivity<ActivityClasswork12Binding, U
         Intent intent = new Intent(activity, ActivityCW12.class);
         intent.putExtra(KET_USER_ID, id);
         activity.startActivity(intent);
+    }
+
+    @Override
+    public UserRouter provadeRouter() {
+        return new UserRouter(this);
     }
 
     @Override

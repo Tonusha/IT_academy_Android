@@ -3,6 +3,8 @@ package by.nca.it_academy.injection;
 
 import android.content.Context;
 import by.nca.data.db.AppDatabase;
+import by.nca.data.net.ErrorTransformers;
+import by.nca.data.net.ErrorTransformers_Factory;
 import by.nca.data.net.RestApi;
 import by.nca.data.net.RestService;
 import by.nca.data.net.RestService_Factory;
@@ -30,6 +32,8 @@ public final class DaggerAppComponent implements AppComponent {
   private Provider<Retrofit> getRetrofitProvider;
 
   private Provider<RestApi> getRestApiProvider;
+
+  private Provider<ErrorTransformers> errorTransformersProvider;
 
   private Provider<RestService> restServiceProvider;
 
@@ -65,7 +69,11 @@ public final class DaggerAppComponent implements AppComponent {
     this.getRestApiProvider =
         DoubleCheck.provider(
             AppModule_GetRestApiFactory.create(builder.appModule, getRetrofitProvider));
-    this.restServiceProvider = DoubleCheck.provider(RestService_Factory.create(getRestApiProvider));
+    this.errorTransformersProvider =
+        DoubleCheck.provider(ErrorTransformers_Factory.create(getGsonProvider));
+    this.restServiceProvider =
+        DoubleCheck.provider(
+            RestService_Factory.create(getRestApiProvider, errorTransformersProvider));
     this.getAppDatabaseProvider =
         DoubleCheck.provider(
             AppModule_GetAppDatabaseFactory.create(builder.appModule, getContextProvider));

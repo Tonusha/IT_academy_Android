@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\miruk\\StudioProjects\\IT_academy_Android\\1\\presentation\\build\\intermediates\\incremental\\mergeDevDebugAndroidTestResources\\merged.dir\\values-v26\\values-v26.xml",
+            "outputFile": "C:\\Users\\user\\AndroidStudioProjects\\IT_academy_Android\\1\\presentation\\build\\intermediates\\incremental\\mergeDevDebugAndroidTestResources\\merged.dir\\values-v26\\values-v26.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\miruk\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\0cef95da9dc9f407ae54797bf2867a5f\\res\\values-v26\\values-v26.xml",
+                    "source": "C:\\Users\\user\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\f1f47096e3343b7fbe85ed5e59e2f727\\res\\values-v26\\values-v26.xml",
                     "from": {
                         "startLines": "2,3,4,8,12,16",
                         "startColumns": "4,4,4,4,4,4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\miruk\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.0.2.aar\\d029a969b244ed9590fd199fbf178218\\res\\values-v26\\values-v26.xml",
+                    "source": "C:\\Users\\user\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.0.2.aar\\4ddf5957ae54ace68cf31afbe6b0162e\\res\\values-v26\\values-v26.xml",
                     "from": {
                         "startLines": "2,6",
                         "startColumns": "4,4",

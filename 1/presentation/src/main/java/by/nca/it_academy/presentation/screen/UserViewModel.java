@@ -7,25 +7,22 @@ import android.databinding.ObservableInt;
 import android.graphics.Color;
 import android.util.Log;
 import android.widget.ImageView;
+
 import javax.inject.Inject;
 
 import by.nca.it_academy.app.App;
 import io.reactivex.Observer;
-import io.reactivex.disposables.CompositeDisposable;
 import io.reactivex.disposables.Disposable;
 import by.nca.data.entity.Error;
 import by.nca.data.entity.ErrorType;
 import by.nca.domain.entity.UserEntity;
 import by.nca.domain.interactor.GetUserByIdUseCase;
-import by.nca.it_academy.executor.UIThread;
 import by.nca.it_academy.presentation.base.BaseAdapter;
 import by.nca.it_academy.presentation.base.BaseViewModel;
 import by.nca.it_academy.presentation.screen.list.UserAdapter;
 
 
-
-
-public class UserViewModel extends BaseViewModel{
+public class UserViewModel extends BaseViewModel<UserRouter> {
 
     @Inject
     public GetUserByIdUseCase getUserByIdUseCase;
@@ -45,11 +42,14 @@ public class UserViewModel extends BaseViewModel{
     public UserViewModel() {
         super();
 
+        if (router != null) router.navigateToUser("dfs");
+
         userAdapter
                 .observeClick()
                 .subscribe(new Observer<BaseAdapter.ItemEntity>() {
                     @Override
                     public void onSubscribe(Disposable d) {
+
 
                     }
 
@@ -57,18 +57,17 @@ public class UserViewModel extends BaseViewModel{
                     public void onNext(BaseAdapter.ItemEntity itemEntity) {
 
 
-
                     }
 
                     @Override
                     public void onError(Throwable e) {
 
-                        if(e instanceof Error) {
+                        if (e instanceof Error) {
                             Error myError = (Error) e;
 
-                            if(myError.getFriendlyError() == ErrorType.NO_INTERNET) {
+                            if (myError.getFriendlyError() == ErrorType.NO_INTERNET) {
 
-                            } else if(myError.getFriendlyError() == ErrorType.SERVER_NOT_AVAILABLE) {
+                            } else if (myError.getFriendlyError() == ErrorType.SERVER_NOT_AVAILABLE) {
 
                             }
 

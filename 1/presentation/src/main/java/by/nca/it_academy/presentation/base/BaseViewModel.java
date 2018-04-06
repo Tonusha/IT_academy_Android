@@ -4,7 +4,8 @@ import android.arch.lifecycle.ViewModel;
 
 import io.reactivex.disposables.CompositeDisposable;
 
-public abstract class BaseViewModel extends ViewModel{
+public abstract class BaseViewModel <R extends Router> extends ViewModel{
+    protected R router;
 
     protected CompositeDisposable compositeDisposable = new CompositeDisposable();
 
@@ -29,6 +30,14 @@ public abstract class BaseViewModel extends ViewModel{
 
     public void onStop(){
 
+    }
+
+    public void attachRouter(R router){
+        this.router = router;
+    }
+
+    public void detachRouter(){
+        router = null;
     }
 
     @Override

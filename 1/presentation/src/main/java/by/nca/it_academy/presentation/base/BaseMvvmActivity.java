@@ -10,13 +10,20 @@ import by.nca.it_academy.BR;
 
 
 public abstract class BaseMvvmActivity<Binding extends ViewDataBinding,
-        ViewModel extends BaseViewModel>
+        ViewModel extends BaseViewModel, R extends Router>
         extends AppCompatActivity {
+
+    @Nullable
+    protected R router;
 
     protected Binding binding;
     protected ViewModel viewModel;
 
+    public abstract R provadeRouter();
+
+
     public abstract int provideLayoutId();
+
     public abstract ViewModel provideViewModel();
 
     @Override
@@ -26,6 +33,8 @@ public abstract class BaseMvvmActivity<Binding extends ViewDataBinding,
         viewModel = provideViewModel();
         binding = DataBindingUtil.setContentView(this, provideLayoutId());
         binding.setVariable(BR.viewModel, viewModel);
+        router = provadeRouter();
+        viewModel.attachRouter(router);
     }
 
     @Override
@@ -50,5 +59,12 @@ public abstract class BaseMvvmActivity<Binding extends ViewDataBinding,
     protected void onStop() {
         super.onStop();
         viewModel.onStop();
+    }
+
+    @Override
+    protected void onDestroy() {
+        router = null;
+        viewModel.detachRouter();
+        super.onDestroy();
     }
 }

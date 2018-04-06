@@ -6,7 +6,6 @@ import by.nca.domain.entity.UserEntity;
 import by.nca.it_academy.presentation.base.BaseAdapter;
 import by.nca.it_academy.presentation.base.BaseItemViewHolder;
 
-
 public class UserAdapter extends BaseAdapter<UserEntity, UserItemViewModel> {
 
     @Override
