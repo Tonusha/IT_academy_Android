@@ -30,7 +30,7 @@ public class ActivityCW12 extends BaseMvpActivity<UserPresenter,UserRouter> impl
 
     @Override
     public int provideLayoutId() {
-        return R.layout.activity_classwork12;
+        return R.layout.activity_classwork18;
     }
 
     @Override

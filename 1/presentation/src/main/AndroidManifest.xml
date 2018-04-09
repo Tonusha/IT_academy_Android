@@ -16,7 +16,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".work.cw12.ActivityCW12"
+            android:name=".presentation.screen.usermvp.ActivityCW12"
             android:parentActivityName=".main.ActivityMain">
         </activity>
 

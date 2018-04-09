@@ -8,8 +8,8 @@ import android.view.View;
 import android.widget.Button;
 
 import by.nca.it_academy.R;
+import by.nca.it_academy.presentation.screen.usermvp.ActivityCW12;
 import by.nca.it_academy.work.cw1.ActivityCW1;
-import by.nca.it_academy.work.cw12.ActivityCW12;
 import by.nca.it_academy.work.cw2.ActivityCW2;
 import by.nca.it_academy.work.cw3.ActivityCW3;
 import by.nca.it_academy.work.cw4.ActivityCW4;

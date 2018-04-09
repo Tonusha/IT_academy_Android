@@ -29,7 +29,7 @@
         android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="by.nca.it_academy.work.cw12.ActivityCW12"
+            android:name="by.nca.it_academy.presentation.screen.usermvp.ActivityCW12"
             android:parentActivityName="by.nca.it_academy.main.ActivityMain" >
         </activity>
 

@@ -13,6 +13,8 @@ import by.nca.domain.interactor.GetUserByIdUseCase;
 import by.nca.domain.repository.UserRepository;
 import by.nca.it_academy.presentation.screen.UserViewModel;
 import by.nca.it_academy.presentation.screen.UserViewModel_MembersInjector;
+import by.nca.it_academy.presentation.screen.usermvp.SigninUserPresenter;
+import by.nca.it_academy.presentation.screen.usermvp.SigninUserPresenter_MembersInjector;
 import com.google.gson.Gson;
 import dagger.internal.DoubleCheck;
 import dagger.internal.Preconditions;
@@ -91,8 +93,18 @@ public final class DaggerAppComponent implements AppComponent {
     injectUserViewModel(userViewModel);
   }
 
+  @Override
+  public void inject(SigninUserPresenter userPresenter) {
+    injectSigninUserPresenter(userPresenter);
+  }
+
   private UserViewModel injectUserViewModel(UserViewModel instance) {
     UserViewModel_MembersInjector.injectGetUserByIdUseCase(instance, getGetUserByIdUseCase());
+    return instance;
+  }
+
+  private SigninUserPresenter injectSigninUserPresenter(SigninUserPresenter instance) {
+    SigninUserPresenter_MembersInjector.injectGetUserByIdUseCase(instance, getGetUserByIdUseCase());
     return instance;
   }
 

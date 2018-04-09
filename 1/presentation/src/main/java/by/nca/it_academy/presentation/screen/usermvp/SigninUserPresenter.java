@@ -61,8 +61,10 @@ public class SigninUserPresenter extends UserPresenter {
     }
 
     @Override
-    public by.nca.it_academy.work.cw6.UserAdapter getUserAdapter() {
+    public UserAdapter getUserAdapter() {
         return null;
     }
+
+    /*архитектурный гитхаб, где смотреть примеры*/
 }
 

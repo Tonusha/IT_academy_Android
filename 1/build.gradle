@@ -32,7 +32,7 @@ ext {
     archComponentVersion = '1.0.0'
     okhttpVersion = '3.10.0'
     roomVersion = '1.0.0'
-
+    constraintLayoutVersion = '1.0.2'
 
 
     dependencies = [
@@ -63,7 +63,9 @@ ext {
 
             gson: "com.google.code.gson:gson:$gsonVersion",
             okhttp:"com.squareup.okhttp3:okhttp:$okhttpVersion",
-            okhttpLogging:"com.squareup.okhttp3:logging-interceptor:$okhttpVersion"
+            okhttpLogging:"com.squareup.okhttp3:logging-interceptor:$okhttpVersion",
+            constraintLayout: "com.android.support.constraint:constraint-layout:$constraintLayoutVersion"
+
 
     ]
 }

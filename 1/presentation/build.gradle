@@ -44,6 +44,7 @@ android {
 dependencies {
 
     def dependency = rootProject.ext.dependencies
+    implementation dependency.constraintLayout
 
     implementation dependency.supportAppcompat
     implementation dependency.supportV4
