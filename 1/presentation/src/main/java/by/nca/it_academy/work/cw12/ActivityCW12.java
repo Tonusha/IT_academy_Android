@@ -6,6 +6,7 @@ import android.arch.lifecycle.ViewModelProviders;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.Toolbar;
 
 import by.nca.it_academy.R;
 import by.nca.it_academy.databinding.ActivityClasswork12Binding;
@@ -46,6 +47,7 @@ public class ActivityCW12 extends BaseMvvmActivity<ActivityClasswork12Binding, U
         binding.recyclerView.setLayoutManager(new LinearLayoutManager(this));
         binding.recyclerView.setHasFixedSize(true);
         binding.recyclerView.setAdapter(viewModel.userAdapter);
+
     }
 }
 

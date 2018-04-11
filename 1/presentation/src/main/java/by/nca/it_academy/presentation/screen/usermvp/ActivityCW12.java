@@ -6,6 +6,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
 
 import by.nca.domain.entity.UserEntity;
 import by.nca.it_academy.R;
@@ -44,11 +48,38 @@ public class ActivityCW12 extends BaseMvpActivity<UserPresenter,UserRouter> impl
 
         RecyclerView recyclerView = findViewById(R.id.recyclerView);
 
-
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setHasFixedSize(true);
         recyclerView.setAdapter(presenter.getUserAdapter());
         presenter.onUserClic();
+        Toolbar toolBar = findViewById(R.id.toolBar);
+        setSupportActionBar(toolBar);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
+        toolBar.setNavigationIcon(R.drawable.ic_toc_black_24dp);
+
+        toolBar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.optional_menu,menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        /*switch (item.getItemId()){
+            case (R.id.actionSearch) {
+
+                break;
+            }
+        }*/
+        return super.onOptionsItemSelected(item);
     }
 
     @Override

@@ -26,7 +26,7 @@ public class SigninUserPresenter extends UserPresenter {
 
     public SigninUserPresenter() {
 
-        view.showProgress();
+//        view.showProgress();
 
         getUserByIdUseCase
                 .get("id")
@@ -40,7 +40,7 @@ public class SigninUserPresenter extends UserPresenter {
                     @Override
                     public void onNext(UserEntity userEntity) {
                         Log.e("AAA", "onNext");
-                        view.showUser(userEntity);
+                      //  view.showUser(userEntity);
                     }
 
                     @Override
