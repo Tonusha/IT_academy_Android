@@ -8,6 +8,8 @@ import android.graphics.Color;
 import android.util.Log;
 import android.widget.ImageView;
 
+import com.crashlytics.android.Crashlytics;
+
 import javax.inject.Inject;
 
 import by.nca.it_academy.app.App;
@@ -102,8 +104,11 @@ public class UserViewModel extends BaseViewModel<UserRouter> {
                         age.set(userEntity.getAge());
                     }
 
+
+
                     @Override
                     public void onError(Throwable e) {
+                        Crashlytics.logException(e);
                         Log.e("AAA", "onError");
                     }
 

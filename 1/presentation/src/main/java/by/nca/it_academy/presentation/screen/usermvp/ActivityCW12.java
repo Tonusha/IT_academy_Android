@@ -11,6 +11,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import javax.inject.Inject;
+
+import by.nca.data.SharedPreference.AppSharedPreference;
 import by.nca.domain.entity.UserEntity;
 import by.nca.it_academy.R;
 import by.nca.it_academy.presentation.base.BaseMvpActivity;
@@ -20,6 +23,9 @@ import io.reactivex.annotations.Nullable;
 public class ActivityCW12 extends BaseMvpActivity<UserPresenter,UserRouter> implements UserView{
 
     private static final String KET_USER_ID = "KET_USER_ID";
+
+    /*@Inject
+    public AppSharedPreference appSharedPreference;*/
 
     public static void show(Activity activity, String id) {
         Intent intent = new Intent(activity, ActivityCW12.class);
@@ -56,6 +62,7 @@ public class ActivityCW12 extends BaseMvpActivity<UserPresenter,UserRouter> impl
         setSupportActionBar(toolBar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
         toolBar.setNavigationIcon(R.drawable.ic_toc_black_24dp);
+        // int a = 5/0;
 
         toolBar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
@@ -63,6 +70,7 @@ public class ActivityCW12 extends BaseMvpActivity<UserPresenter,UserRouter> impl
 
             }
         });
+        //boolean swown = appSharedPreference.getTopsShown();
     }
 
     @Override

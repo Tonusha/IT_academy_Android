@@ -16,6 +16,17 @@ allprojects {
     }
 }
 
+task gaToFabric(dependsOn: "assembleRelease") {
+    def groupName = "qatestapp"
+    def releaseNotes = ""
+
+    def task = tasks.getByName("crashlyticsUploadDistributionDevRelease")
+    task.ext.betaDistributionReleaseNotes = releaseNotes
+    task.ext.betaDistributionGroupAliases = groupName
+    task.execute()
+}
+
+
 ext {
     minSdkVersion = 18
     targetSdkVersion = 27

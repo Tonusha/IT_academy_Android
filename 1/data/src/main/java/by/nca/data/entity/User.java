@@ -13,8 +13,9 @@ public class User {
 
     @PrimaryKey
     @NonNull
+    @ColumnInfo(name = "id")
     @SerializedName("objectId")
-    private String id;
+    private String objectId;
 
     @SerializedName("username")
     private String username;
@@ -26,12 +27,12 @@ public class User {
     private String profileUrl;
 
     @NonNull
-    public String getId() {
-        return id;
+    public String getObjectId() {
+        return objectId;
     }
 
-    public void setId(@NonNull String id) {
-        this.id = id;
+    public void setObjectId(@NonNull String objectId) {
+        this.objectId = objectId;
     }
 
     public String getUsername() {

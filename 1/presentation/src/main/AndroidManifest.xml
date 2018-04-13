@@ -89,5 +89,8 @@
         <!--<service android:name=".cw5.MyService"></service>-->
         <!--<service android:name=".cw5.MyIntentClass"></service>-->
         <service android:name=".work.hw5.MyService"></service>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="28c45dc645da31eecd40ded34b39c73e38c90f97" />
     </application>
 </manifest>

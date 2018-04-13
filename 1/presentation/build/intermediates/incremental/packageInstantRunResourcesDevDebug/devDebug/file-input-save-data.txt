@@ -1,7 +1,11 @@
 #Internal package file, do not edit.
-#Mon Apr 09 21:02:18 MSK 2018
+#Fri Apr 13 19:36:28 MSK 2018
+1.base=C\:\\Users\\user\\AndroidStudioProjects\\IT_academy_Android\\1\\presentation\\build\\intermediates\\assets\\dev\\debug
 0.baseType=DIRECTORY
-0.base=C\:\\Users\\user\\AndroidStudioProjects\\IT_academy_Android\\1\\presentation\\build\\intermediates\\assets\\dev\\debug
-0.path=test.json
+1.baseType=DIRECTORY
+count=2
+1.set=ASSET
+0.path=crashlytics-build.properties
 0.set=ASSET
-count=1
+0.base=C\:\\Users\\user\\AndroidStudioProjects\\IT_academy_Android\\1\\presentation\\build\\intermediates\\assets\\dev\\debug
+1.path=test.json

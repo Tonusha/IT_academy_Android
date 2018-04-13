@@ -108,6 +108,17 @@
         <!-- <service android:name=".cw5.MyService"></service> -->
         <!-- <service android:name=".cw5.MyIntentClass"></service> -->
         <service android:name="by.nca.it_academy.work.hw5.MyService" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="28c45dc645da31eecd40ded34b39c73e38c90f97" />
+
+        <provider
+            android:name="com.crashlytics.android.CrashlyticsInitProvider"
+            android:authorities="by.nca.it_academy.crashlyticsinitprovider"
+            android:exported="false"
+            android:initOrder="100" />
+
         <service
             android:name="com.squareup.leakcanary.internal.HeapAnalyzerService"
             android:enabled="false"
