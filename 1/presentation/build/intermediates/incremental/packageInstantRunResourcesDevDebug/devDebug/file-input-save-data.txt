@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Fri Apr 13 21:08:01 MSK 2018
+#Wed Apr 18 21:15:41 MSK 2018
 1.base=C\:\\Users\\user\\AndroidStudioProjects\\IT_academy_Android\\1\\presentation\\build\\intermediates\\assets\\dev\\debug
 0.baseType=DIRECTORY
 1.baseType=DIRECTORY

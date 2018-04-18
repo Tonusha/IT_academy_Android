@@ -29,8 +29,8 @@ android {
 
     }
 
-    signingConfigs{
-        debug{
+    signingConfigs {
+        debug {
             storeFile file('../dev.jks')
             storePassword '12345678'
             keyAlias 'TestAlias'
@@ -40,7 +40,7 @@ android {
 
 
     buildTypes {
-        debug{
+        debug {
             signingConfig signingConfigs.debug
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'

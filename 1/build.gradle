@@ -16,14 +16,17 @@ allprojects {
     }
 }
 
-task gaToFabric(dependsOn: "assembleRelease") {
+
+task gaToFabric() << {
+    dependsOn "assembleDevDebugRelease"
     def groupName = "qatestapp"
     def releaseNotes = ""
 
-   // def task = tasks.getByName("crashlyticsUploadDistributionDevRelease")
-   /* task.ext.betaDistributionReleaseNotes = releaseNotes
+    def task = tasks.getByName("crashlyticsUploadDistributionDevDebugRelease")
+
+    task.ext.betaDistributionReleaseNotes = releaseNotes
     task.ext.betaDistributionGroupAliases = groupName
-    task.execute()*/
+    task.execute()
 }
 
 

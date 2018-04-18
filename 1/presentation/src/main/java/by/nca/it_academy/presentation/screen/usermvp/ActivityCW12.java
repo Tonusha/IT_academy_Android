@@ -2,6 +2,7 @@ package by.nca.it_academy.presentation.screen.usermvp;
 
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -11,13 +12,17 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import java.io.File;
+
 import javax.inject.Inject;
 
 import by.nca.data.SharedPreference.AppSharedPreference;
 import by.nca.domain.entity.UserEntity;
 import by.nca.it_academy.R;
 import by.nca.it_academy.presentation.base.BaseMvpActivity;
+import by.nca.it_academy.presentation.notification.NewMessageNotification;
 import by.nca.it_academy.presentation.screen.UserRouter;
+import by.nca.it_academy.presentation.utils.ImageChooser;
 import io.reactivex.annotations.Nullable;
 
 public class ActivityCW12 extends BaseMvpActivity<UserPresenter,UserRouter> implements UserView{
@@ -49,6 +54,11 @@ public class ActivityCW12 extends BaseMvpActivity<UserPresenter,UserRouter> impl
     }
 
     @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        File file = ImageChooser.getImageFromResult(this, requestCode, resultCode, data);
+    }
+
+    @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
@@ -67,10 +77,12 @@ public class ActivityCW12 extends BaseMvpActivity<UserPresenter,UserRouter> impl
         toolBar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                ImageChooser.StartCamera(ActivityCW12.this);
 
             }
         });
         //boolean swown = appSharedPreference.getTopsShown();
+        NewMessageNotification.notify(this,"fdfsd", 5);
     }
 
     @Override

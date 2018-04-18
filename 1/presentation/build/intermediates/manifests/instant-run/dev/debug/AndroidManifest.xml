@@ -10,13 +10,12 @@
 
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
-    <!-- To store the heap dumps and leak analysis results. -->
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:name="by.nca.it_academy.app.App"
@@ -30,8 +29,7 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name="by.nca.it_academy.presentation.screen.usermvp.ActivityCW12"
-            android:parentActivityName="by.nca.it_academy.main.ActivityMain" >
-        </activity>
+            android:parentActivityName="by.nca.it_academy.main.ActivityMain" />
 
         <!-- <activity -->
         <!-- android:name=".work.cw11.ActivityCW11" -->
@@ -113,6 +111,15 @@
             android:name="io.fabric.ApiKey"
             android:value="28c45dc645da31eecd40ded34b39c73e38c90f97" />
 
+        <provider
+            android:name="by.nca.it_academy.presentation.utils.MyFileProvider"
+            android:authorities="by.nca.it_academy.presentation.utils.MyFileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_path" />
+        </provider>
         <provider
             android:name="com.crashlytics.android.CrashlyticsInitProvider"
             android:authorities="by.nca.it_academy.crashlyticsinitprovider"

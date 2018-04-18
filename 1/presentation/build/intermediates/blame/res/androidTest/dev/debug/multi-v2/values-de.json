@@ -4,23 +4,6 @@
             "outputFile": "C:\\Users\\user\\AndroidStudioProjects\\IT_academy_Android\\1\\presentation\\build\\intermediates\\incremental\\mergeDevDebugAndroidTestResources\\merged.dir\\values-de\\values-de.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\user\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.2.aar\\9c9d506b8646d14324217bb7fe7369ac\\res\\values-de\\values-de.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "44",
-                        "startColumns": "4",
-                        "startOffsets": "4062",
-                        "endColumns": "100",
-                        "endOffsets": "4158"
-                    }
-                },
-                {
                     "source": "C:\\Users\\user\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\f1f47096e3343b7fbe85ed5e59e2f727\\res\\values-de\\values-de.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
@@ -52,6 +35,23 @@
                         "startOffsets": "1852,1936,2016,2136,2230,2285,2349,2455,2524,2597,2721,2815,2883,2956,3029,3101,3192,3342,3471,3577,3650,3713,3776,3871",
                         "endColumns": "83,79,119,93,54,63,105,68,72,123,93,67,72,72,71,90,149,128,105,72,62,62,94,108",
                         "endOffsets": "1931,2011,2131,2225,2280,2344,2450,2519,2592,2716,2810,2878,2951,3024,3096,3187,3337,3466,3572,3645,3708,3771,3866,3975"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\user\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\8a147789100eac1565955ecf23b5faf8\\res\\values-de\\values-de.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "44",
+                        "startColumns": "4",
+                        "startOffsets": "4062",
+                        "endColumns": "100",
+                        "endOffsets": "4158"
                     }
                 }
             ]
