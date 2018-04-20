@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:2:1-118:12
-INJECTED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:2:1-118:12
-INJECTED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:2:1-118:12
-INJECTED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:2:1-118:12
+ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:2:1-139:12
+INJECTED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:2:1-139:12
+INJECTED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:2:1-139:12
+INJECTED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:2:1-139:12
 MERGED from [:data] C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\data\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-10:12
 MERGED from [com.android.databinding:adapters:1.3.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\adapters-1.3.1.aar\6dbb33df1d122748da4a7d4be95317ca\AndroidManifest.xml:17:1-26:12
 MERGED from [com.android.databinding:library:1.3.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\library-1.3.1.aar\6856971b7e033552724041cbcce20fb1\AndroidManifest.xml:17:1-26:12
@@ -11,12 +11,17 @@ MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.1] C:\Users\user\.gradl
 MERGED from [com.squareup.leakcanary:leakcanary-android:1.5.4] C:\Users\user\.gradle\caches\transforms-1\files-1.1\leakcanary-android-1.5.4.aar\bd04fbf7d5af89f6189c49043120ef3a\AndroidManifest.xml:17:1-61:12
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\fb98efbfd659f3dd4b0a560c5deb8305\AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:design:27.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\design-27.0.2.aar\4ddf5957ae54ace68cf31afbe6b0162e\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:appcompat-v7:27.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.0.2.aar\f1f47096e3343b7fbe85ed5e59e2f727\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\574d457962cb24bb42e8b004a0e7abfe\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-maps:15.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-maps-15.0.0.aar\ae71d5b72ce6dbba54fa89dc9e6c205e\AndroidManifest.xml:17:1-32:12
+MERGED from [com.google.android.gms:play-services-base:15.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-base-15.0.0.aar\782d86861d9bf659748fdbb421d1b6bc\AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-tasks:15.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-tasks-15.0.0.aar\d1d9a65d062b029266e4d8f96df9f679\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:15.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-basement-15.0.0.aar\640f128d0a3749da9d05f44d1af4f75f\AndroidManifest.xml:17:1-28:12
 MERGED from [com.android.support:support-v4:27.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-v4-27.0.2.aar\dc7be0bb3fbff453574619c823d31c5a\AndroidManifest.xml:17:1-22:12
 MERGED from [io.reactivex.rxjava2:rxandroid:2.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\rxandroid-2.0.2.aar\cb80705ab37a9c601428f4dc0e929f4d\AndroidManifest.xml:15:1-21:12
 MERGED from [android.arch.lifecycle:extensions:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\extensions-1.0.0.aar\e6f29fa34125881b83563a527bf0b627\AndroidManifest.xml:17:1-32:12
 MERGED from [android.arch.persistence.room:rxjava2:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\rxjava2-1.0.0.aar\91e18be4d56106e4b3e37177ab58fbc1\AndroidManifest.xml:17:1-24:12
 MERGED from [android.arch.persistence.room:runtime:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\04688882da26d1e00a1b4a9bc0c9119c\AndroidManifest.xml:17:1-24:12
+MERGED from [com.tbruyelle.rxpermissions2:rxpermissions:0.9.5] C:\Users\user\.gradle\caches\transforms-1\files-1.1\rxpermissions-0.9.5.aar\5702c8066229b8705a94d2727164859f\AndroidManifest.xml:2:1-13:12
 MERGED from [com.github.bumptech.glide:glide:4.6.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\glide-4.6.1.aar\f8048484d18552dd7b6aaa3abf5c7138\AndroidManifest.xml:2:1-13:12
 MERGED from [:domain] C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\domain\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-10:12
 MERGED from [com.crashlytics.sdk.android:beta:1.2.7] C:\Users\user\.gradle\caches\transforms-1\files-1.1\beta-1.2.7.aar\027d1eeb84fb5cb8ecd073bcb12eb190\AndroidManifest.xml:2:1-13:12
@@ -24,34 +29,36 @@ MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.1] C:\Users\user\.
 MERGED from [com.crashlytics.sdk.android:answers:1.4.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\answers-1.4.1.aar\e057dc57ed78747c058ee5db2cf4b68e\AndroidManifest.xml:2:1-13:12
 MERGED from [io.fabric.sdk.android:fabric:1.4.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\fabric-1.4.2.aar\55fd83503da9020cf1d40641b0712f26\AndroidManifest.xml:22:1-33:12
 MERGED from [com.squareup.leakcanary:leakcanary-analyzer:1.5.4] C:\Users\user\.gradle\caches\transforms-1\files-1.1\leakcanary-analyzer-1.5.4.aar\4e9b2d6eca766e2459927367afc86ab7\AndroidManifest.xml:17:1-25:12
-MERGED from [com.android.support:animated-vector-drawable:27.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.0.2.aar\457869534289304c93d1dcef17b61ed3\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:27.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.0.2.aar\ce3f8887b8b04b706c911cea89aa3fd1\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:recyclerview-v7:27.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.0.2.aar\0df5f37da20ddfa5c603d3a751feaa9f\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:transition:27.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\transition-27.0.2.aar\ebe2017dba96a95947df306728915309\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-fragment:27.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-fragment-27.0.2.aar\45e7f86d0f02c331b43e0ab4ef6c6c9c\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:27.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.0.2.aar\a3d3e907b49409c101b83234dc8ff6f4\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\aa6c1852702ecd53223af9c9b6e7dd68\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\d00fa32b7739f4eb7dea190e9981dc36\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-media-compat:27.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.0.2.aar\758b529e9e3b53928f8ab0de8f4fd7ce\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:27.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.0.2.aar\81303369bf1d655357e7ea6dfc5fb890\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:27.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-compat-27.0.2.aar\9c9d506b8646d14324217bb7fe7369ac\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:runtime:1.0.3] C:\Users\user\.gradle\caches\transforms-1\files-1.1\runtime-1.0.3.aar\0cfd14a86dc35c95ba6a3ec49de6d39e\AndroidManifest.xml:17:1-24:12
-MERGED from [android.arch.core:runtime:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\e7e5d1871a083c3fc290a5623c0835f7\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\8c42c89f26d0fdde8a076d7a1a67ead2\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\0396cbf125498ae8f984c4b76f7528ae\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\8597ea34ad96c35048f1dcad7ac3dba1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\8a147789100eac1565955ecf23b5faf8\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\1d9c931f8408420498705c327d3f2688\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\82c7866edcafe4f80375a9462356ec14\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\beb8a187dc5bd28b0dfa7a0da9548dbd\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.persistence:db-framework:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\db-framework-1.0.0.aar\7fbb9a761c965e83b2dabd4134c82107\AndroidManifest.xml:17:1-24:12
 MERGED from [android.arch.persistence:db:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\db-1.0.0.aar\a8dca32bd9c94eb32fc45f95acc10dd8\AndroidManifest.xml:17:1-24:12
 MERGED from [com.github.bumptech.glide:gifdecoder:4.6.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.6.1.aar\129043776afa68d98cbe33e5693b09f1\AndroidManifest.xml:2:1-11:12
-INJECTED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:2:1-118:12
-INJECTED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:2:1-118:12
-INJECTED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:2:1-118:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\1f2cbdd326c571bc48b639675b7964f8\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:2:1-139:12
+INJECTED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:2:1-139:12
+INJECTED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:2:1-139:12
 	package
 		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:3:5-32
 		INJECTED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml
-		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:2:1-118:12
+		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:2:1-139:12
 		INJECTED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml
-		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:2:1-118:12
+		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:2:1-139:12
 		INJECTED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:2:11-69
@@ -63,6 +70,8 @@ uses-permission#android.permission.INTERNET
 ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:6:5-67
 MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\crashlytics-2.9.1.aar\3eb43340f7e71acc12a5824515719903\AndroidManifest.xml:9:5-67
 MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\crashlytics-2.9.1.aar\3eb43340f7e71acc12a5824515719903\AndroidManifest.xml:9:5-67
+MERGED from [com.google.android.gms:play-services-maps:15.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-maps-15.0.0.aar\ae71d5b72ce6dbba54fa89dc9e6c205e\AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:15.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-maps-15.0.0.aar\ae71d5b72ce6dbba54fa89dc9e6c205e\AndroidManifest.xml:24:5-67
 MERGED from [com.crashlytics.sdk.android:beta:1.2.7] C:\Users\user\.gradle\caches\transforms-1\files-1.1\beta-1.2.7.aar\027d1eeb84fb5cb8ecd073bcb12eb190\AndroidManifest.xml:9:5-67
 MERGED from [com.crashlytics.sdk.android:beta:1.2.7] C:\Users\user\.gradle\caches\transforms-1\files-1.1\beta-1.2.7.aar\027d1eeb84fb5cb8ecd073bcb12eb190\AndroidManifest.xml:9:5-67
 MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\crashlytics-core-2.6.1.aar\c2dbf0a51f21c31005d0cbb90572daa5\AndroidManifest.xml:52:5-67
@@ -81,6 +90,8 @@ MERGED from [com.squareup.leakcanary:leakcanary-android:1.5.4] C:\Users\user\.gr
 		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:7:22-77
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:8:5-79
+MERGED from [com.google.android.gms:play-services-maps:15.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-maps-15.0.0.aar\ae71d5b72ce6dbba54fa89dc9e6c205e\AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-maps:15.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-maps-15.0.0.aar\ae71d5b72ce6dbba54fa89dc9e6c205e\AndroidManifest.xml:23:5-79
 	android:name
 		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:8:22-76
 uses-permission#android.permission.ACCESS_WIFI_STATE
@@ -95,16 +106,30 @@ uses-permission#android.permission.VIBRATE
 ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:11:5-66
 	android:name
 		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:11:22-63
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:18:5-79
+	android:name
+		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:18:22-76
 application
-ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:13:5-116:19
+ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:20:5-137:19
 MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\crashlytics-2.9.1.aar\3eb43340f7e71acc12a5824515719903\AndroidManifest.xml:11:5-17:19
 MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\crashlytics-2.9.1.aar\3eb43340f7e71acc12a5824515719903\AndroidManifest.xml:11:5-17:19
 MERGED from [com.squareup.leakcanary:leakcanary-android:1.5.4] C:\Users\user\.gradle\caches\transforms-1\files-1.1\leakcanary-android-1.5.4.aar\bd04fbf7d5af89f6189c49043120ef3a\AndroidManifest.xml:26:5-59:19
 MERGED from [com.squareup.leakcanary:leakcanary-android:1.5.4] C:\Users\user\.gradle\caches\transforms-1\files-1.1\leakcanary-android-1.5.4.aar\bd04fbf7d5af89f6189c49043120ef3a\AndroidManifest.xml:26:5-59:19
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\fb98efbfd659f3dd4b0a560c5deb8305\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\fb98efbfd659f3dd4b0a560c5deb8305\AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.gms:play-services-maps:15.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-maps-15.0.0.aar\ae71d5b72ce6dbba54fa89dc9e6c205e\AndroidManifest.xml:30:5-20
+MERGED from [com.google.android.gms:play-services-maps:15.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-maps-15.0.0.aar\ae71d5b72ce6dbba54fa89dc9e6c205e\AndroidManifest.xml:30:5-20
+MERGED from [com.google.android.gms:play-services-base:15.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-base-15.0.0.aar\782d86861d9bf659748fdbb421d1b6bc\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:15.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-base-15.0.0.aar\782d86861d9bf659748fdbb421d1b6bc\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:15.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-tasks-15.0.0.aar\d1d9a65d062b029266e4d8f96df9f679\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:15.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-tasks-15.0.0.aar\d1d9a65d062b029266e4d8f96df9f679\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:15.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-basement-15.0.0.aar\640f128d0a3749da9d05f44d1af4f75f\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:15.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-basement-15.0.0.aar\640f128d0a3749da9d05f44d1af4f75f\AndroidManifest.xml:22:5-26:19
 MERGED from [android.arch.lifecycle:extensions:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\extensions-1.0.0.aar\e6f29fa34125881b83563a527bf0b627\AndroidManifest.xml:24:5-30:19
 MERGED from [android.arch.lifecycle:extensions:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\extensions-1.0.0.aar\e6f29fa34125881b83563a527bf0b627\AndroidManifest.xml:24:5-30:19
+MERGED from [com.tbruyelle.rxpermissions2:rxpermissions:0.9.5] C:\Users\user\.gradle\caches\transforms-1\files-1.1\rxpermissions-0.9.5.aar\5702c8066229b8705a94d2727164859f\AndroidManifest.xml:11:5-20
+MERGED from [com.tbruyelle.rxpermissions2:rxpermissions:0.9.5] C:\Users\user\.gradle\caches\transforms-1\files-1.1\rxpermissions-0.9.5.aar\5702c8066229b8705a94d2727164859f\AndroidManifest.xml:11:5-20
 MERGED from [com.github.bumptech.glide:glide:4.6.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\glide-4.6.1.aar\f8048484d18552dd7b6aaa3abf5c7138\AndroidManifest.xml:11:5-20
 MERGED from [com.github.bumptech.glide:glide:4.6.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\glide-4.6.1.aar\f8048484d18552dd7b6aaa3abf5c7138\AndroidManifest.xml:11:5-20
 MERGED from [com.crashlytics.sdk.android:beta:1.2.7] C:\Users\user\.gradle\caches\transforms-1\files-1.1\beta-1.2.7.aar\027d1eeb84fb5cb8ecd073bcb12eb190\AndroidManifest.xml:11:5-20
@@ -120,177 +145,189 @@ MERGED from [com.squareup.leakcanary:leakcanary-analyzer:1.5.4] C:\Users\user\.g
 MERGED from [com.github.bumptech.glide:gifdecoder:4.6.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.6.1.aar\129043776afa68d98cbe33e5693b09f1\AndroidManifest.xml:9:5-20
 MERGED from [com.github.bumptech.glide:gifdecoder:4.6.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.6.1.aar\129043776afa68d98cbe33e5693b09f1\AndroidManifest.xml:9:5-20
 	android:supportsRtl
-		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:19:9-35
+		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:26:9-35
 	android:label
-		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:17:9-41
+		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:24:9-41
 	android:roundIcon
-		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:18:9-48
+		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:25:9-48
 	android:icon
-		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:16:9-43
+		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:23:9-43
 	android:allowBackup
-		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:15:9-35
+		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:22:9-35
 	android:theme
-		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:20:9-40
+		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:27:9-40
 	android:name
-		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:14:9-32
+		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:21:9-32
 activity#by.nca.it_academy.presentation.screen.usermvp.ActivityCW12
-ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:21:9-23:72
+ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:28:9-30:63
 	android:parentActivityName
-		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:23:13-60
+		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:30:13-60
 	android:name
-		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:22:13-69
+		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:29:13-69
 activity#by.nca.it_academy.work.cw9.ActivityCW9
-ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:31:9-33:63
+ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:38:9-40:63
 	android:parentActivityName
-		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:33:13-60
+		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:40:13-60
 	android:name
-		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:32:13-49
+		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:39:13-49
 activity#by.nca.it_academy.work.hw8.ActivityHW8
-ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:34:9-36:63
+ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:41:9-43:63
 	android:parentActivityName
-		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:36:13-60
+		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:43:13-60
 	android:name
-		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:35:13-49
+		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:42:13-49
 activity#by.nca.it_academy.work.hw7.ActivityHW7
-ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:37:9-39:63
+ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:44:9-46:63
 	android:parentActivityName
-		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:39:13-60
+		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:46:13-60
 	android:name
-		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:38:13-49
+		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:45:13-49
 activity#by.nca.it_academy.work.cw7.ActivityCW7
-ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:40:9-42:63
+ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:47:9-49:63
 	android:parentActivityName
-		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:42:13-60
+		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:49:13-60
 	android:name
-		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:41:13-49
+		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:48:13-49
 activity#by.nca.it_academy.work.hw6.ActivityHW6
-ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:43:9-45:63
+ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:50:9-52:63
 	android:parentActivityName
-		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:45:13-60
+		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:52:13-60
 	android:name
-		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:44:13-49
+		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:51:13-49
 activity#by.nca.it_academy.work.cw6.ActivityCW6
-ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:46:9-48:63
+ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:53:9-55:63
 	android:parentActivityName
-		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:48:13-60
+		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:55:13-60
 	android:name
-		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:47:13-49
+		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:54:13-49
 activity#by.nca.it_academy.work.cw1.ActivityCW1
-ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:49:9-51:63
+ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:56:9-58:63
 	android:parentActivityName
-		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:51:13-60
+		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:58:13-60
 	android:name
-		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:50:13-49
+		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:57:13-49
 activity#by.nca.it_academy.work.hw1.ActivityHW1
-ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:52:9-54:63
+ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:59:9-61:63
 	android:parentActivityName
-		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:54:13-60
+		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:61:13-60
 	android:name
-		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:53:13-49
+		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:60:13-49
 activity#by.nca.it_academy.work.cw2.ActivityCW2
-ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:55:9-57:63
+ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:62:9-64:63
 	android:parentActivityName
-		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:57:13-60
+		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:64:13-60
 	android:name
-		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:56:13-49
+		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:63:13-49
 activity#by.nca.it_academy.work.hw2.ActivityHW2
-ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:58:9-60:63
+ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:65:9-67:63
 	android:parentActivityName
-		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:60:13-60
+		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:67:13-60
 	android:name
-		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:59:13-49
+		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:66:13-49
 activity#by.nca.it_academy.work.cw3.ActivityCW3
-ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:61:9-63:63
+ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:68:9-70:63
 	android:parentActivityName
-		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:63:13-60
+		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:70:13-60
 	android:name
-		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:62:13-49
+		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:69:13-49
 activity#by.nca.it_academy.work.hw3.ActivityHW3
-ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:64:9-66:63
+ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:71:9-73:63
 	android:parentActivityName
-		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:66:13-60
+		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:73:13-60
 	android:name
-		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:65:13-49
+		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:72:13-49
 activity#by.nca.it_academy.work.cw4.ActivityCW4
-ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:67:9-69:63
+ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:74:9-76:63
 	android:parentActivityName
-		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:69:13-60
+		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:76:13-60
 	android:name
-		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:68:13-49
+		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:75:13-49
 activity#by.nca.it_academy.work.cw5.ActivityCW5
-ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:70:9-72:63
+ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:77:9-79:63
 	android:parentActivityName
-		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:72:13-60
+		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:79:13-60
 	android:name
-		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:71:13-49
+		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:78:13-49
 activity#by.nca.it_academy.work.hw4.ActivityHW4
-ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:73:9-77:20
+ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:80:9-84:20
 	android:theme
-		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:75:13-53
+		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:82:13-53
 	android:name
-		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:74:13-49
+		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:81:13-49
 activity#by.nca.it_academy.work.hw5.ActivityHW5
-ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:78:9-80:63
+ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:85:9-87:63
 	android:parentActivityName
-		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:80:13-60
+		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:87:13-60
 	android:name
-		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:79:13-49
+		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:86:13-49
 activity#by.nca.it_academy.main.ActivityMain
-ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:81:9-89:20
+ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:88:9-96:20
 	android:theme
-		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:83:13-53
+		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:90:13-53
 	android:name
-		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:82:13-46
+		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:89:13-46
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:84:13-88:29
+ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:91:13-95:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:85:17-69
+ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:92:17-69
 	android:name
-		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:85:25-66
+		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:92:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:87:17-77
+ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:94:17-77
 	android:name
-		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:87:27-74
+		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:94:27-74
 receiver#by.nca.it_academy.work.cw5.MyReceiver
-ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:91:9-96:20
+ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:98:9-103:20
 	android:name
-		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:91:19-54
+		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:98:19-54
 intent-filter#android.intent.action.ACTION_POWER_DISCONNECTED+android.intent.action.AIRPLANE_MODE
-ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:92:13-95:29
+ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:99:13-102:29
 action#android.intent.action.AIRPLANE_MODE
-ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:93:17-78
+ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:100:17-78
 	android:name
-		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:93:25-75
+		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:100:25-75
 action#android.intent.action.ACTION_POWER_DISCONNECTED
-ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:94:17-90
+ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:101:17-90
 	android:name
-		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:94:25-87
+		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:101:25-87
 service#by.nca.it_academy.work.hw5.MyService
-ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:99:9-55
+ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:106:9-55
 	android:name
-		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:99:18-52
+		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:106:18-52
 meta-data#io.fabric.ApiKey
-ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:101:9-103:72
+ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:108:9-110:72
 	android:value
-		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:103:13-69
+		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:110:13-69
 	android:name
-		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:102:13-44
+		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:109:13-44
 provider#by.nca.it_academy.presentation.utils.MyFileProvider
-ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:105:9-113:20
+ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:112:9-120:20
 	android:grantUriPermissions
-		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:109:13-47
+		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:116:13-47
 	android:authorities
-		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:106:13-86
+		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:114:13-86
 	android:exported
-		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:108:13-37
+		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:115:13-37
 	android:name
-		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:107:13-79
+		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:113:13-62
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:110:13-112:52
+ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:117:13-119:53
 	android:resource
-		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:112:17-50
+		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:119:17-50
 	android:name
-		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:111:17-67
+		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:118:17-67
+meta-data#com.google.android.geo.API_KEY
+ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:130:9-132:55
+	android:value
+		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:132:13-52
+	android:name
+		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:131:13-58
+activity#by.nca.it_academy.presentation.screen.MapsActivity
+ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:134:9-136:68
+	android:label
+		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:136:13-56
+	android:name
+		ADDED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml:135:13-61
 uses-sdk
 INJECTED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml
@@ -309,8 +346,16 @@ MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\us
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\fb98efbfd659f3dd4b0a560c5deb8305\AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.support:design:27.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\design-27.0.2.aar\4ddf5957ae54ace68cf31afbe6b0162e\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:design:27.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\design-27.0.2.aar\4ddf5957ae54ace68cf31afbe6b0162e\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:27.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.0.2.aar\f1f47096e3343b7fbe85ed5e59e2f727\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:27.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.0.2.aar\f1f47096e3343b7fbe85ed5e59e2f727\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\574d457962cb24bb42e8b004a0e7abfe\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\574d457962cb24bb42e8b004a0e7abfe\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:15.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-maps-15.0.0.aar\ae71d5b72ce6dbba54fa89dc9e6c205e\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:15.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-maps-15.0.0.aar\ae71d5b72ce6dbba54fa89dc9e6c205e\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:15.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-base-15.0.0.aar\782d86861d9bf659748fdbb421d1b6bc\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:15.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-base-15.0.0.aar\782d86861d9bf659748fdbb421d1b6bc\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:15.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-tasks-15.0.0.aar\d1d9a65d062b029266e4d8f96df9f679\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:15.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-tasks-15.0.0.aar\d1d9a65d062b029266e4d8f96df9f679\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:15.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-basement-15.0.0.aar\640f128d0a3749da9d05f44d1af4f75f\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:15.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-basement-15.0.0.aar\640f128d0a3749da9d05f44d1af4f75f\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-v4:27.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-v4-27.0.2.aar\dc7be0bb3fbff453574619c823d31c5a\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-v4:27.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-v4-27.0.2.aar\dc7be0bb3fbff453574619c823d31c5a\AndroidManifest.xml:20:5-44
 MERGED from [io.reactivex.rxjava2:rxandroid:2.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\rxandroid-2.0.2.aar\cb80705ab37a9c601428f4dc0e929f4d\AndroidManifest.xml:19:5-43
@@ -321,6 +366,8 @@ MERGED from [android.arch.persistence.room:rxjava2:1.0.0] C:\Users\user\.gradle\
 MERGED from [android.arch.persistence.room:rxjava2:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\rxjava2-1.0.0.aar\91e18be4d56106e4b3e37177ab58fbc1\AndroidManifest.xml:20:5-22:41
 MERGED from [android.arch.persistence.room:runtime:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\04688882da26d1e00a1b4a9bc0c9119c\AndroidManifest.xml:20:5-22:41
 MERGED from [android.arch.persistence.room:runtime:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\04688882da26d1e00a1b4a9bc0c9119c\AndroidManifest.xml:20:5-22:41
+MERGED from [com.tbruyelle.rxpermissions2:rxpermissions:0.9.5] C:\Users\user\.gradle\caches\transforms-1\files-1.1\rxpermissions-0.9.5.aar\5702c8066229b8705a94d2727164859f\AndroidManifest.xml:7:5-9:41
+MERGED from [com.tbruyelle.rxpermissions2:rxpermissions:0.9.5] C:\Users\user\.gradle\caches\transforms-1\files-1.1\rxpermissions-0.9.5.aar\5702c8066229b8705a94d2727164859f\AndroidManifest.xml:7:5-9:41
 MERGED from [com.github.bumptech.glide:glide:4.6.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\glide-4.6.1.aar\f8048484d18552dd7b6aaa3abf5c7138\AndroidManifest.xml:7:5-9:41
 MERGED from [com.github.bumptech.glide:glide:4.6.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\glide-4.6.1.aar\f8048484d18552dd7b6aaa3abf5c7138\AndroidManifest.xml:7:5-9:41
 MERGED from [:domain] C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\domain\build\intermediates\manifests\full\debug\AndroidManifest.xml:6:5-8:41
@@ -335,34 +382,38 @@ MERGED from [io.fabric.sdk.android:fabric:1.4.2] C:\Users\user\.gradle\caches\tr
 MERGED from [io.fabric.sdk.android:fabric:1.4.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\fabric-1.4.2.aar\55fd83503da9020cf1d40641b0712f26\AndroidManifest.xml:27:5-43
 MERGED from [com.squareup.leakcanary:leakcanary-analyzer:1.5.4] C:\Users\user\.gradle\caches\transforms-1\files-1.1\leakcanary-analyzer-1.5.4.aar\4e9b2d6eca766e2459927367afc86ab7\AndroidManifest.xml:21:5-44
 MERGED from [com.squareup.leakcanary:leakcanary-analyzer:1.5.4] C:\Users\user\.gradle\caches\transforms-1\files-1.1\leakcanary-analyzer-1.5.4.aar\4e9b2d6eca766e2459927367afc86ab7\AndroidManifest.xml:21:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.0.2.aar\457869534289304c93d1dcef17b61ed3\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.0.2.aar\457869534289304c93d1dcef17b61ed3\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.0.2.aar\ce3f8887b8b04b706c911cea89aa3fd1\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.0.2.aar\ce3f8887b8b04b706c911cea89aa3fd1\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:recyclerview-v7:27.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.0.2.aar\0df5f37da20ddfa5c603d3a751feaa9f\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:recyclerview-v7:27.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.0.2.aar\0df5f37da20ddfa5c603d3a751feaa9f\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:transition:27.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\transition-27.0.2.aar\ebe2017dba96a95947df306728915309\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:transition:27.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\transition-27.0.2.aar\ebe2017dba96a95947df306728915309\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-fragment-27.0.2.aar\45e7f86d0f02c331b43e0ab4ef6c6c9c\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-fragment-27.0.2.aar\45e7f86d0f02c331b43e0ab4ef6c6c9c\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.0.2.aar\a3d3e907b49409c101b83234dc8ff6f4\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.0.2.aar\a3d3e907b49409c101b83234dc8ff6f4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\aa6c1852702ecd53223af9c9b6e7dd68\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\aa6c1852702ecd53223af9c9b6e7dd68\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\d00fa32b7739f4eb7dea190e9981dc36\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\d00fa32b7739f4eb7dea190e9981dc36\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-media-compat:27.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.0.2.aar\758b529e9e3b53928f8ab0de8f4fd7ce\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-media-compat:27.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.0.2.aar\758b529e9e3b53928f8ab0de8f4fd7ce\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.0.2.aar\81303369bf1d655357e7ea6dfc5fb890\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.0.2.aar\81303369bf1d655357e7ea6dfc5fb890\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-compat-27.0.2.aar\9c9d506b8646d14324217bb7fe7369ac\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-compat-27.0.2.aar\9c9d506b8646d14324217bb7fe7369ac\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.0.3] C:\Users\user\.gradle\caches\transforms-1\files-1.1\runtime-1.0.3.aar\0cfd14a86dc35c95ba6a3ec49de6d39e\AndroidManifest.xml:20:5-22:41
-MERGED from [android.arch.lifecycle:runtime:1.0.3] C:\Users\user\.gradle\caches\transforms-1\files-1.1\runtime-1.0.3.aar\0cfd14a86dc35c95ba6a3ec49de6d39e\AndroidManifest.xml:20:5-22:41
-MERGED from [android.arch.core:runtime:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\e7e5d1871a083c3fc290a5623c0835f7\AndroidManifest.xml:20:5-22:41
-MERGED from [android.arch.core:runtime:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\e7e5d1871a083c3fc290a5623c0835f7\AndroidManifest.xml:20:5-22:41
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\8c42c89f26d0fdde8a076d7a1a67ead2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\8c42c89f26d0fdde8a076d7a1a67ead2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\0396cbf125498ae8f984c4b76f7528ae\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\0396cbf125498ae8f984c4b76f7528ae\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\8597ea34ad96c35048f1dcad7ac3dba1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\8597ea34ad96c35048f1dcad7ac3dba1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\8a147789100eac1565955ecf23b5faf8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\8a147789100eac1565955ecf23b5faf8\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\1d9c931f8408420498705c327d3f2688\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\1d9c931f8408420498705c327d3f2688\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\82c7866edcafe4f80375a9462356ec14\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\82c7866edcafe4f80375a9462356ec14\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\beb8a187dc5bd28b0dfa7a0da9548dbd\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\beb8a187dc5bd28b0dfa7a0da9548dbd\AndroidManifest.xml:20:5-44
 MERGED from [android.arch.persistence:db-framework:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\db-framework-1.0.0.aar\7fbb9a761c965e83b2dabd4134c82107\AndroidManifest.xml:20:5-22:41
 MERGED from [android.arch.persistence:db-framework:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\db-framework-1.0.0.aar\7fbb9a761c965e83b2dabd4134c82107\AndroidManifest.xml:20:5-22:41
 MERGED from [android.arch.persistence:db:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\db-1.0.0.aar\a8dca32bd9c94eb32fc45f95acc10dd8\AndroidManifest.xml:20:5-22:41
 MERGED from [android.arch.persistence:db:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\db-1.0.0.aar\a8dca32bd9c94eb32fc45f95acc10dd8\AndroidManifest.xml:20:5-22:41
 MERGED from [com.github.bumptech.glide:gifdecoder:4.6.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.6.1.aar\129043776afa68d98cbe33e5693b09f1\AndroidManifest.xml:5:5-7:41
 MERGED from [com.github.bumptech.glide:gifdecoder:4.6.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.6.1.aar\129043776afa68d98cbe33e5693b09f1\AndroidManifest.xml:5:5-7:41
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\1f2cbdd326c571bc48b639675b7964f8\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\1f2cbdd326c571bc48b639675b7964f8\AndroidManifest.xml:20:5-44
 INJECTED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml
 INJECTED from C:\Users\user\AndroidStudioProjects\IT_academy_Android\1\presentation\src\main\AndroidManifest.xml
 	android:targetSdkVersion
@@ -437,6 +488,26 @@ ADDED from [com.squareup.leakcanary:leakcanary-android:1.5.4] C:\Users\user\.gra
 		ADDED from [com.squareup.leakcanary:leakcanary-android:1.5.4] C:\Users\user\.gradle\caches\transforms-1\files-1.1\leakcanary-android-1.5.4.aar\bd04fbf7d5af89f6189c49043120ef3a\AndroidManifest.xml:57:13-76
 	android:name
 		ADDED from [com.squareup.leakcanary:leakcanary-android:1.5.4] C:\Users\user\.gradle\caches\transforms-1\files-1.1\leakcanary-android-1.5.4.aar\bd04fbf7d5af89f6189c49043120ef3a\AndroidManifest.xml:51:13-93
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:15.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-maps-15.0.0.aar\ae71d5b72ce6dbba54fa89dc9e6c205e\AndroidManifest.xml:26:5-28:35
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:15.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-maps-15.0.0.aar\ae71d5b72ce6dbba54fa89dc9e6c205e\AndroidManifest.xml:27:9-41
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:15.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-maps-15.0.0.aar\ae71d5b72ce6dbba54fa89dc9e6c205e\AndroidManifest.xml:28:9-32
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:15.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-base-15.0.0.aar\782d86861d9bf659748fdbb421d1b6bc\AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:15.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-base-15.0.0.aar\782d86861d9bf659748fdbb421d1b6bc\AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:15.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-base-15.0.0.aar\782d86861d9bf659748fdbb421d1b6bc\AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:15.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-base-15.0.0.aar\782d86861d9bf659748fdbb421d1b6bc\AndroidManifest.xml:24:13-79
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:15.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-basement-15.0.0.aar\640f128d0a3749da9d05f44d1af4f75f\AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:15.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-basement-15.0.0.aar\640f128d0a3749da9d05f44d1af4f75f\AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:15.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-basement-15.0.0.aar\640f128d0a3749da9d05f44d1af4f75f\AndroidManifest.xml:24:13-58
 provider#android.arch.lifecycle.ProcessLifecycleOwnerInitializer
 ADDED from [android.arch.lifecycle:extensions:1.0.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\extensions-1.0.0.aar\e6f29fa34125881b83563a527bf0b627\AndroidManifest.xml:25:9-29:43
 	android:authorities

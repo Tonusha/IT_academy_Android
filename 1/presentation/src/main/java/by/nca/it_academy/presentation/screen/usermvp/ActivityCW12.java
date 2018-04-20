@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -55,7 +56,15 @@ public class ActivityCW12 extends BaseMvpActivity<UserPresenter,UserRouter> impl
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        File file = ImageChooser.getImageFromResult(this, requestCode, resultCode, data);
+        if(resultCode == Activity.RESULT_OK){
+            File file = ImageChooser.getImageFromResult(this, requestCode, resultCode, data);
+            if (file == null){
+                Log.e("fds", "file " + file.getAbsolutePath());
+            }
+            else {
+                Log.e("AAA", "File is null");
+            }
+        }
     }
 
     @Override
@@ -77,7 +86,8 @@ public class ActivityCW12 extends BaseMvpActivity<UserPresenter,UserRouter> impl
         toolBar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ImageChooser.StartCamera(ActivityCW12.this);
+                //ImageChooser.StartCamera(ActivityCW12.this);
+                ImageChooser.StartGalery(ActivityCW12.this);
 
             }
         });
@@ -106,5 +116,7 @@ public class ActivityCW12 extends BaseMvpActivity<UserPresenter,UserRouter> impl
     public void showUser(UserEntity userEntity) {
        //закидываем данные в xml, например в TextView (нужно предварительно сделать для них  findViewById
     }
+
+
 }
 

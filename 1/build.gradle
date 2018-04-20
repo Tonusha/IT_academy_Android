@@ -42,11 +42,15 @@ ext {
     daggerVersion = "2.15"
     javaInjectVersion = "1"
     retrofitVersion = "2.4.0"
+    rxPermissionVersion = "0.9.5@aar"
 
     archComponentVersion = '1.0.0'
     okhttpVersion = '3.10.0'
     roomVersion = '1.0.0'
     constraintLayoutVersion = '1.0.2'
+    junitVersion = '4.12'
+    androidTestCompileVersion = '24.0.0'
+    androidTestVersion = '0.5'
 
 
     dependencies = [
@@ -78,9 +82,11 @@ ext {
             gson: "com.google.code.gson:gson:$gsonVersion",
             okhttp:"com.squareup.okhttp3:okhttp:$okhttpVersion",
             okhttpLogging:"com.squareup.okhttp3:logging-interceptor:$okhttpVersion",
-            constraintLayout: "com.android.support.constraint:constraint-layout:$constraintLayoutVersion"
-
-
+            constraintLayout: "com.android.support.constraint:constraint-layout:$constraintLayoutVersion",
+            rxPermission: "com.tbruyelle.rxpermissions2:rxpermissions:$rxPermissionVersion",
+            testImplementation: "junit:junit:$junitVersion",
+            androidTestCompile: "com.android.support:support-annotations:$androidTestCompileVersion",
+            androidTest: "com.android.support.test:runner:$androidTestVersion"
     ]
 }
 
